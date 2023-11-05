@@ -1,0 +1,11 @@
+
+__pycache__/
+data/
+build/
+.venv/
+
+CMakeLists.txt.user
+*.db
+*.so
+*.db-shm
+*.db-wal
