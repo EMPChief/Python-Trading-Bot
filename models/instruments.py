@@ -13,10 +13,10 @@ class Instrument:
     @classmethod
     def FromApiObject(cls, ob):
         return Instrument(
-            ob['name'],
-            ob['ins_type'],
-            ob['displayName'],
-            ob['pipLocation'],
-            ob['tradeUnitsPrecision'],
-            ob['marginRate']
+        ob.get('name', ''),
+        ob.get('ins_type', ''),
+        ob.get('displayName', ''),
+        ob.get('pipLocation', ''),
+        ob.get('tradeUnitsPrecision', ''),
+        ob.get('marginRate', '')
         )
