@@ -15,7 +15,7 @@ class OandaApi:
         try:
             response = None
             if verb == 'get':
-                response = self.session.get(self, url, params=params, data=data, headers=headers)
+                response = self.session.get(full_url, params=params, data=data, headers=headers)
             if response == None:
                 return False, {'error': 'verb not found'}
             if response.status_code == code:
@@ -40,3 +40,4 @@ class OandaApi:
     
     def get_instruments(self):
         return self.get_account_ep("instruments", "instruments")
+    
