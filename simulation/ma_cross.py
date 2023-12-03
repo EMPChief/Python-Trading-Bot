@@ -79,7 +79,7 @@ class MAResult:
 
 ic = ic()
 BUY = 1
-SELL = 2
+SELL = -1
 NONE = 0
 get_ma_col = lambda x: f"MA__{x}"
 add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
