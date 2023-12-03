@@ -82,7 +82,8 @@ BUY = 1
 SELL = -1
 NONE = 0
 get_ma_col = lambda x: f"MA__{x}"
-add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
+add_cross = lambda x: f"{x.get('ma_s', x.get('MA__ma_s'))}_{x.get('ma_l', x.get('MA__ma_l'))}"
+
 
 def is_trade(row, ma_l, ma_s):
     """
@@ -136,7 +137,7 @@ def load_price_data(pair, granularity, ma_list):
 
 
 
-def get_trades(df_analysis, instrument, granularity, ma_l, ma_s):
+def get_trades(df_analysis, instrument, granularity):
     """
     Extract trade-related information from the analysis DataFrame.
 
@@ -158,16 +159,15 @@ def get_trades(df_analysis, instrument, granularity, ma_l, ma_s):
     are added for further analysis.
     """
     df_trades = df_analysis[df_analysis.TRADE != NONE].copy()
-    df_trades['DIFF'] = df_trades[ma_s] - df_trades[ma_l]
+    df_trades["DIFF"] = df_trades.mid_c.diff().shift(-1)
     df_trades.fillna(0, inplace=True)
-    df_trades['GAIN'] = df_trades['DIFF'] / instrument.pipLocation
-    df_trades['GAIN'] = df_trades['GAIN'] * df_trades['TRADE']
-    df_trades['granularity'] = granularity
-    df_trades['pair'] = instrument.name
-    df_trades['ma_l'] = ma_l
-    df_trades['ma_s'] = ma_s
-    df_trades['GAIN_C'] = df_trades['GAIN'].cumsum()
+    df_trades["GAIN"] = df_trades.DIFF / instrument.pipLocation
+    df_trades["GAIN"] = df_trades["GAIN"] * df_trades["TRADE"]
+    df_trades["granularity"] = granularity
+    df_trades["pair"] = instrument.name
+    df_trades["GAIN_C"] = df_trades["GAIN"].cumsum()
     return df_trades
+
 
 def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     """
@@ -193,7 +193,7 @@ def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     df_analysis['DELTA'] = df_analysis[ma_s] - df_analysis[ma_l]
     df_analysis['DELTA_PREV'] = df_analysis['DELTA'].shift(1)
     df_analysis['TRADE'] = df_analysis.apply(lambda row: is_trade(row, ma_l, ma_s), axis=1)
-    df_trades = get_trades(df_analysis, instrument, granularity, ma_l, ma_s)
+    df_trades = get_trades(df_analysis, instrument, granularity)
     df_trades["cross"] = df_trades.apply(add_cross, axis=1)
     return MAResult(df_trades, instrument.name, ma_l, ma_s, granularity)
 
