@@ -1,51 +1,51 @@
 import pandas as pd
 from infrastructure.instrument_collection import Instrument, InstrumentCollection as ic
+import os
+import pandas as pd
+from datetime import datetime
+class MAResult:
+    def __init__(self, df_trades, pairname, ma_l, ma_s, granularity):
+        self.pairname = pairname
+        self.df_trades = df_trades
+        self.ma_l = ma_l
+        self.ma_s = ma_s
+        self.granularity = granularity
+        self.result = self.result_ob()
+        
+    def __repr__(self):
+        return str(self.result)
+
+    def result_ob(self):
+        return dict(
+            pair=self.pairname,
+            ma_l=self.ma_l,
+            ma_s=self.ma_s,
+            total_gain=int(self.df_trades['GAIN'].sum()),
+            mean_gain=int(self.df_trades['GAIN'].mean()),
+            min_gain=int(self.df_trades['GAIN'].min()),
+            max_gain=int(self.df_trades['GAIN'].max()),
+            cross = f"{self.ma_s}_{self.ma_l}",
+            number_of_trades=self.df_trades.shape[0],
+            granularity=self.granularity
+        )
+
+
+
 
 ic = ic()
 BUY = 1
 SELL = 2
 NONE = 0
 get_ma_col = lambda x: f"MA__{x}"
+add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
 
 def is_trade(row, ma_l, ma_s):
-    """
-    Determine the trade signal based on the relationship between moving averages.
-
-    Parameters:
-    - row (pd.Series): The row of the DataFrame.
-    - ma_l (str): Column name for the long-term moving average.
-    - ma_s (str): Column name for the short-term moving average.
-
-    Returns:
-    - int: Trade signal (BUY, SELL, or NONE).
-
-    The function compares the changes in moving averages to generate trade signals:
-    - If the current delta (difference between ma_s and ma_l) is non-negative, and the previous delta was negative, it returns BUY.
-    - If the current delta is negative, and the previous delta was non-negative, it returns SELL.
-    - Otherwise, it returns NONE.
-    """
     if row.DELTA >= 0 and row.DELTA_PREV < 0:
         return BUY
     if row.DELTA < 0 and row.DELTA_PREV >= 0:
         return SELL
     return NONE
 def load_price_data(pair, granularity, ma_list):
-    """
-    Load price data for a given currency pair and granularity.
-
-    Parameters:
-    - pair (str): Currency pair (e.g., "EUR_USD").
-    - granularity (str): Time granularity of the data (e.g., "H1").
-    - ma_list (list): List of moving averages to calculate.
-
-    Returns:
-    - pd.DataFrame: Loaded price data.
-
-    This function reads a pickled DataFrame from a file containing historical price data
-    for the specified currency pair and granularity. It calculates additional columns
-    for the moving averages specified in the ma_list and returns the resulting DataFrame
-    after dropping any rows with missing values and resetting the index.
-    """
     df = pd.read_pickle(f"./data/{pair}_{granularity}.pkl")
     for ma in ma_list:
         df[get_ma_col(ma)] = df.mid_c.rolling(window=ma).mean()
@@ -54,83 +54,74 @@ def load_price_data(pair, granularity, ma_list):
     return df
 
 
-def get_trades(df_analysis, instrument):
-    """
-    Extract trades and calculate total gain.
-
-    Parameters:
-    - df_analysis (pd.DataFrame): DataFrame with analysis data.
-    - instrument (Instrument): Financial instrument information.
-
-    Returns:
-    - dict: Dictionary containing total gain and DataFrame with trades.
-
-    This function takes a DataFrame with analysis data and a financial instrument as
-    input. It extracts trades from the analysis data, calculates the price difference
-    between consecutive rows, and then calculates the gain in pips for each trade based
-    on the instrument's pip location. The resulting DataFrame with trades and the total
-    gain are returned as a dictionary.
-    """
+def get_trades(df_analysis, instrument, granularity, ma_l, ma_s):
     df_trades = df_analysis[df_analysis.TRADE != NONE].copy()
-    df_trades['DIFF'] = df_trades.mid_c.diff().shift(-1)
+    df_trades['DIFF'] = df_trades[ma_s] - df_trades[ma_l]
     df_trades.fillna(0, inplace=True)
     df_trades['GAIN'] = df_trades['DIFF'] / instrument.pipLocation
     df_trades['GAIN'] = df_trades['GAIN'] * df_trades['TRADE']
-    total_gain = df_trades['GAIN'].sum()
-    return dict(total_gain=int(total_gain), df_trades=df_trades)
+    df_trades['granularity'] = granularity
+    df_trades['pair'] = instrument.name
+    df_trades['ma_l'] = ma_l
+    df_trades['ma_s'] = ma_s
+    df_trades['GAIN_C'] = df_trades['GAIN'].cumsum()
+    return df_trades
 
 
-def assess_pair(price_data, ma_l, ma_s, instrument):
-    """
-    Assess trading performance for a specific currency pair and moving averages.
 
-    Parameters:
-    - price_data (pd.DataFrame): DataFrame containing price data.
-    - ma_l (str): Column name for the long-term moving average.
-    - ma_s (str): Column name for the short-term moving average.
-    - instrument (Instrument): Financial instrument information.
 
-    Returns:
-    - dict: Dictionary containing total gain and DataFrame with trades.
 
-    This function assesses the trading performance for a given currency pair and moving
-    averages. It takes a DataFrame containing price data, column names for the
-    long-term and short-term moving averages, and financial instrument information as
-    input. The function calculates the delta (difference) between short-term and
-    long-term moving averages, identifies trade signals using the provided 'is_trade'
-    function, and then calls the 'get_trades' function to extract trades and calculate
-    the total gain. The results are returned as a dictionary.
-    """
+def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     df_analysis = price_data.copy()
     df_analysis['DELTA'] = df_analysis[ma_s] - df_analysis[ma_l]
     df_analysis['DELTA_PREV'] = df_analysis['DELTA'].shift(1)
     df_analysis['TRADE'] = df_analysis.apply(lambda row: is_trade(row, ma_l, ma_s), axis=1)
-    return get_trades(df_analysis, instrument)
+    df_trades = get_trades(df_analysis, instrument, granularity, ma_l, ma_s)
+    df_trades["cross"] = df_trades.apply(lambda_cross, axis=1)
+    return MAResult(df_trades, instrument.name, ma_l, ma_s, granularity)
 
 
-def analyse_pair(instrument, granularity, ma_long, ma_short):
-    """
-    Analyze trading performance for different combinations of moving averages.
+def append_df_to_file(df, filename):
+    if os.path.isfile(filename):
+        fd = pd.read_pickle(filename)
+        df = pd.concat([fd, df])
+    df.reset_index(drop=True, inplace=True)
+    df.to_pickle(filename)
+    print(filename, df.shape)
+    print(df.tail(2))
 
-    Parameters:
-    - instrument (Instrument): Financial instrument information.
-    - granularity (str): Time granularity of the data (e.g., "H1").
-    - ma_long (list): List of long-term moving averages.
-    - ma_short (list): List of short-term moving averages.
+def get_fullname(filepath, filename):
+    return f"{filepath}/{filename}.pkl"
 
-    This function analyzes the trading performance for a given financial instrument,
-    considering different combinations of long-term and short-term moving averages.
-    It generates a set of moving averages based on the provided lists and loads the
-    corresponding price data using the 'load_price_data' function. For each pair of
-    long-term and short-term moving averages, it calls the 'assess_pair' function to
-    assess trading performance and prints the results, including the pair name,
-    granularity, total gain, and the number of trades.
-    """
+def process_macro(result_list, filepath):
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    rl = [x.result for x in result_list]
+    df = pd.DataFrame.from_dict(rl)
+    append_df_to_file(df, get_fullname(filepath, f"ma_res_{current_date}"))
+
+def process_trades(result_list, filepath):
+    current_date = datetime.now().strftime("%Y-%m-%d")
+    df = pd.concat([x.df_trades for x in result_list])
+    append_df_to_file(df, get_fullname(filepath, f"ma_trades_{current_date}"))
+
+def process_results(result_list, filepath):
+    process_macro(result_list, filepath)
+    process_trades(result_list, filepath)
+    
+    
+    #rl = [x.result for x in result_list]
+    #df = pd.DataFrame.from_dict(rl)
+    #print(df)
+    #print(result_list[0].df_trades.head(2))
+
+
+
+def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
     ma_list = set(ma_long + ma_short)
     pair = instrument.name
     
     price_data = load_price_data(pair, granularity, ma_list)
-    
+    result_list = []
     for ma_l in ma_long:
         for ma_s in ma_short:
             if ma_l == ma_s:
@@ -139,40 +130,25 @@ def analyse_pair(instrument, granularity, ma_long, ma_short):
                 price_data,
                 get_ma_col(ma_l),
                 get_ma_col(ma_s),
-                instrument
+                instrument,
+                granularity
             )
-            tg = result['total_gain']
-            nt = result['df_trades'].shape[0]
-            print(f"Pair name: {pair}\nGranularity: {granularity}\nMA Long: {ma_l}\nMA Short: {ma_s}\nTotal Gain: {tg}\nHow many trades: {nt}")
+            print(result)
+            result_list.append(result)
+    process_results(result_list, filepath)
 
 
 def run_ma_sim(curr_list=["EUR", "USD"],
-               granularity=["H1"],
-               ma_long=[20, 40, 80],
-               ma_short=[10, 20]):
-    """
-    Run a moving average simulation for multiple currency pairs and moving averages.
-
-    Parameters:
-    - curr_list (list): List of currency pairs.
-    - granularity (list): List of time granularities.
-    - ma_long (list): List of long-term moving averages.
-    - ma_short (list): List of short-term moving averages.
-
-    This function initiates a moving average simulation for the specified currency pairs,
-    time granularities, and moving averages. It loads financial instruments using the
-    'LoadInstruments' method from the 'ic' (InstrumentCollection) instance. For each
-    combination of granularity and currency pairs, it calls the 'analyse_pair' function to
-    analyze trading performance based on different moving average combinations. The results
-    are printed for each pair, including the pair name, granularity, total gain, and the
-    number of trades.
-    """
+               granularity=["H4"],
+               ma_long=[20, 40, 80, 120, 150, 200],
+               ma_short=[10, 20, 30, 40, 50],
+               filepath="./data"):
     ic.LoadInstruments("./data")
     for g in granularity:
         for p1 in curr_list:
             for p2 in curr_list:
                 pair = f"{p1}_{p2}"
                 if pair in ic.instruments_dict.keys():
-                    analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short)
+                    analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
 
 
