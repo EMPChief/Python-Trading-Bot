@@ -9,7 +9,7 @@ get_ma_col = lambda x: f"MA__{x}"
 
 def is_trade(row, ma_l, ma_s):
     """
-    Determine the trade signal based on moving averages.
+    Determine the trade signal based on the relationship between moving averages.
 
     Parameters:
     - row (pd.Series): The row of the DataFrame.
@@ -18,12 +18,17 @@ def is_trade(row, ma_l, ma_s):
 
     Returns:
     - int: Trade signal (BUY, SELL, or NONE).
+
+    The function compares the changes in moving averages to generate trade signals:
+    - If the current delta (difference between ma_s and ma_l) is non-negative, and the previous delta was negative, it returns BUY.
+    - If the current delta is negative, and the previous delta was non-negative, it returns SELL.
+    - Otherwise, it returns NONE.
     """
     if row.DELTA >= 0 and row.DELTA_PREV < 0:
         return BUY
     if row.DELTA < 0 and row.DELTA_PREV >= 0:
         return SELL
-    return 0
+    return NONE
 def load_price_data(pair, granularity, ma_list):
     """
     Load price data for a given currency pair and granularity.
