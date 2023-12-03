@@ -3,8 +3,8 @@ from infrastructure.instrument_collection import Instrument, InstrumentCollectio
 import os
 import pandas as pd
 from datetime import datetime
+
 class MAResult:
-class TradeAnalyzer:
     """
     A class for analyzing trades based on moving averages.
 
