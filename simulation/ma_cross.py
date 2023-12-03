@@ -77,7 +77,7 @@ def get_trades(df_analysis, instrument):
     df_trades['GAIN'] = df_trades['DIFF'] / instrument.pipLocation
     df_trades['GAIN'] = df_trades['GAIN'] * df_trades['TRADE']
     total_gain = df_trades['GAIN'].sum()
-    return dict(total_gain=total_gain, df_trades=df_trades)
+    return dict(total_gain=int(total_gain), df_trades=df_trades)
 
 
 def assess_pair(price_data, ma_l, ma_s, instrument):
@@ -146,7 +146,7 @@ def analyse_pair(instrument, granularity, ma_long, ma_short):
             print(f"Pair name: {pair}\nGranularity: {granularity}\nMA Long: {ma_l}\nMA Short: {ma_s}\nTotal Gain: {tg}\nHow many trades: {nt}")
 
 
-def run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY", "CHF", "AUD"],
+def run_ma_sim(curr_list=["EUR", "USD"],
                granularity=["H1"],
                ma_long=[20, 40, 80],
                ma_short=[10, 20]):

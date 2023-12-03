@@ -10,4 +10,4 @@ if __name__ == "__main__":
     
     #instrumentCollection.LoadInstruments("./data")
     #instrumentCollection.PrintInstruments()
-    run_ma_sim()
+    run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY", "CHF", "AUD", "NZD", "CAD", "HKD", "SEK"])
