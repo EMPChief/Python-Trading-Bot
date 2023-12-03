@@ -113,7 +113,8 @@ def analyse_pair(instrument, granularity, ma_long, ma_short):
 
 def run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY", "CHF", "AUD"],
                granularity=["H1"],
-               ma_long=[20, 40, 80]):
+               ma_long=[20, 40, 80],
+               ma_short=[10, 20]):
     """
     Run a moving average simulation for multiple currency pairs and moving averages.
 
@@ -121,6 +122,7 @@ def run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY", "CHF", "AUD"],
     - curr_list (list): List of currency pairs.
     - granularity (list): List of time granularities.
     - ma_long (list): List of long-term moving averages.
+    - ma_short (list): List of short-term moving averages.
     """
     ic.LoadInstruments("./data")
     for g in granularity:
@@ -128,4 +130,5 @@ def run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY", "CHF", "AUD"],
             for p2 in curr_list:
                 pair = f"{p1}_{p2}"
                 if pair in ic.instruments_dict.keys():
-                    analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_long)
+                    analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short)
+
