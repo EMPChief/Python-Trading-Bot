@@ -145,17 +145,15 @@ def get_trades(df_analysis, instrument, granularity):
     - df_analysis (pd.DataFrame): DataFrame containing analysis results.
     - instrument: The financial instrument being traded.
     - granularity (str): Granularity of the analysis.
-    - ma_l (int): Long-term moving average period.
-    - ma_s (int): Short-term moving average period.
 
     Returns:
     pd.DataFrame: DataFrame containing trade-related information.
 
     Description:
     This function filters the analysis DataFrame to extract rows where trades occur (TRADE is not NONE).
-    It calculates the price difference (DIFF) between short-term (ma_s) and long-term (ma_l) moving averages,
+    It calculates the price difference (DIFF) between short-term and long-term moving averages,
     fills NaN values with 0, and computes the gain for each trade in terms of the instrument's pip location.
-    Additional columns, such as 'granularity', 'pair', 'ma_l', 'ma_s', and 'GAIN_C' (cumulative gain),
+    Additional columns, such as 'granularity', 'pair', and 'GAIN_C' (cumulative gain),
     are added for further analysis.
     """
     df_trades = df_analysis[df_analysis.TRADE != NONE].copy()
