@@ -19,12 +19,11 @@ def is_trade(row, ma_l, ma_s):
     Returns:
     - int: Trade signal (BUY, SELL, or NONE).
     """
-    if row[ma_l] >= 0 and row[ma_s] < 0:
+    if row.DELTA >= 0 and row.DELTA_PREV < 0:
         return BUY
-    elif row[ma_l] < 0 and row[ma_s] >= 0:
+    if row.DELTA < 0 and row.DELTA_PREV >= 0:
         return SELL
-    return NONE
-
+    return 0
 def load_price_data(pair, granularity, ma_list):
     """
     Load price data for a given currency pair and granularity.
