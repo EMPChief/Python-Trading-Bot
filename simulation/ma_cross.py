@@ -77,7 +77,7 @@ def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     df_analysis['DELTA_PREV'] = df_analysis['DELTA'].shift(1)
     df_analysis['TRADE'] = df_analysis.apply(lambda row: is_trade(row, ma_l, ma_s), axis=1)
     df_trades = get_trades(df_analysis, instrument, granularity, ma_l, ma_s)
-    df_trades["cross"] = df_trades.apply(lambda_cross, axis=1)
+    df_trades["cross"] = df_trades.apply(add_cross, axis=1)
     return MAResult(df_trades, instrument.name, ma_l, ma_s, granularity)
 
 
