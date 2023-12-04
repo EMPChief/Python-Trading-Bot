@@ -46,7 +46,9 @@ class CandlePlot:
         """
         Adds a formatted time string column to the DataFrame.
         """
-        self.df_plot['sTime'] = [dt.datetime.strftime(x, "s%Y-%m-%d %H:%M") for x in self.df_plot.time]
+        self.df_plot['time'] = pd.to_datetime(self.df_plot['time'])
+        self.df_plot['sTime'] = [dt.datetime.strftime(x, "s%Y-%m-%d %H:%M") for x in self.df_plot['time']]
+
 
     def create_candle_fig(self):
         """

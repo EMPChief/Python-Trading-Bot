@@ -82,7 +82,7 @@ ic = ic()
 BUY = 1
 SELL = -1
 NONE = 0
-get_ma_col = lambda x: f"MA__{x}"
+get_ma_col = lambda x: f"MA_{x}"
 add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
 
 
@@ -123,10 +123,10 @@ def load_price_data(pair, granularity, ma_list):
     pd.DataFrame: DataFrame containing loaded price data with calculated moving averages.
 
     Description:
-    This function reads price data from a pickle file located at "./data/{pair}_{granularity}.pkl".
+    This function reads price data from a pickle file located at "./data/{pair}_{granularity}.csv".
     It then calculates moving averages for each period in the ma_list and returns the resulting DataFrame.
     """
-    df = pd.read_pickle(f"./data/{pair}_{granularity}.pkl")
+    df = pd.read_csv(f"./data/{pair}_{granularity}.csv")
     
     for ma in ma_list:
         df[get_ma_col(ma)] = df.mid_c.rolling(window=ma).mean()
@@ -221,10 +221,10 @@ def append_df_to_file(df, filename):
     Finally, it prints the filename, shape of the DataFrame, and the last two rows of the DataFrame.
     """
     if os.path.isfile(filename):
-        fd = pd.read_pickle(filename)
+        fd = pd.read_csv(filename)
         df = pd.concat([fd, df])
     df.reset_index(drop=True, inplace=True)
-    df.to_pickle(filename)
+    df.to_csv(filename, index=False)
     print(filename, df.shape)
     print(df.tail(2))
 
@@ -243,7 +243,7 @@ def get_fullname(filepath, filename):
     This function takes a filepath and a filename and returns the full path of the file by concatenating
     the filepath and filename with a '/' separator.
     """
-    return f"{filepath}/{filename}.pkl"
+    return f"{filepath}/{filename}.csv"
 
 def process_macro(result_list, filepath):
     """
@@ -255,7 +255,7 @@ def process_macro(result_list, filepath):
 
     Description:
     This function extracts the results from a list of result objects, converts them into a DataFrame,
-    and appends the DataFrame to a file named "ma_res_{current_date}.pkl" in the specified filepath.
+    and appends the DataFrame to a file named "ma_res_{current_date}.csv" in the specified filepath.
     The current_date is obtained using the current date in the format "%Y-%m-%d".
     """
     current_date = datetime.now().strftime("%Y-%m-%d")
@@ -273,7 +273,7 @@ def process_trades(result_list, filepath):
 
     Description:
     This function extracts the trade results from a list of result objects, concatenates them into a single DataFrame,
-    and appends the DataFrame to a file named "ma_trades_{current_date}.pkl" in the specified filepath.
+    and appends the DataFrame to a file named "ma_trades_{current_date}.csv" in the specified filepath.
     The current_date is obtained using the current date in the format "%Y-%m-%d".
     """
     current_date = datetime.now().strftime("%Y-%m-%d")
