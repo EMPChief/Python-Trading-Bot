@@ -61,17 +61,18 @@ class MAResult:
         Description: This method calculates and returns a dictionary with various trade analysis results.
         """
         return dict(
-            pair=self.pairname,
-            ma_l=self.ma_l,
-            ma_s=self.ma_s,
-            total_gain=int(self.df_trades['GAIN'].sum()),
-            mean_gain=int(self.df_trades['GAIN'].mean()),
-            min_gain=int(self.df_trades['GAIN'].min()),
-            max_gain=int(self.df_trades['GAIN'].max()),
-            cross=f"{self.ma_s}_{self.ma_l}",
-            number_of_trades=self.df_trades.shape[0],
-            granularity=self.granularity
+            pair = self.pairname,
+            num_trades = self.df_trades.shape[0],
+            total_gain = int(self.df_trades.GAIN.sum()),
+            mean_gain = int(self.df_trades.GAIN.mean()),
+            min_gain = int(self.df_trades.GAIN.min()),
+            max_gain = int(self.df_trades.GAIN.max()),
+            ma_l = self.ma_l,
+            ma_s = self.ma_s,
+            cross = f"{self.ma_s}_{self.ma_l}",
+            granularity = self.granularity
         )
+
 
 
 
@@ -82,10 +83,10 @@ BUY = 1
 SELL = -1
 NONE = 0
 get_ma_col = lambda x: f"MA__{x}"
-add_cross = lambda x: f"{x.get('ma_s', x.get('MA__ma_s'))}_{x.get('ma_l', x.get('MA__ma_l'))}"
+add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
 
 
-def is_trade(row, ma_l, ma_s):
+def is_trade(row):
     """
     Determine whether to execute a trade based on the given conditions.
 
@@ -188,12 +189,21 @@ def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     as an instance of the MAResult class.
     """
     df_analysis = price_data.copy()
-    df_analysis['DELTA'] = df_analysis[ma_s] - df_analysis[ma_l]
-    df_analysis['DELTA_PREV'] = df_analysis['DELTA'].shift(1)
-    df_analysis['TRADE'] = df_analysis.apply(lambda row: is_trade(row, ma_l, ma_s), axis=1)
+    df_analysis["DELTA"] = df_analysis[ma_s] - df_analysis[ma_l]
+    df_analysis["DELTA_PREV"] = df_analysis["DELTA"].shift(1)
+    df_analysis["TRADE"] = df_analysis.apply(is_trade, axis=1)
     df_trades = get_trades(df_analysis, instrument, granularity)
+    df_trades["ma_l"] = ma_l
+    df_trades["ma_s"] = ma_s
     df_trades["cross"] = df_trades.apply(add_cross, axis=1)
-    return MAResult(df_trades, instrument.name, ma_l, ma_s, granularity)
+    return MAResult(
+        df_trades,
+        instrument.name,
+        ma_l,
+        ma_s,
+        granularity
+    )
+
 
 
 def append_df_to_file(df, filename):
@@ -312,23 +322,24 @@ def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
     """
     ma_list = set(ma_long + ma_short)
     pair = instrument.name
-    
+
     price_data = load_price_data(pair, granularity, ma_list)
-    result_list = []
+    results_list = []
     for ma_l in ma_long:
         for ma_s in ma_short:
-            if ma_l == ma_s:
+            if ma_l <= ma_s:
                 continue
-            result = assess_pair(
+
+            ma_result = assess_pair(
                 price_data,
                 get_ma_col(ma_l),
                 get_ma_col(ma_s),
                 instrument,
                 granularity
             )
-            print(result)
-            result_list.append(result)
-    process_results(result_list, filepath)
+            #print(ma_result)
+            results_list.append(ma_result)
+    process_results(results_list, filepath)
 
 
 def run_ma_sim(curr_list=["EUR", "USD"],
@@ -357,5 +368,4 @@ def run_ma_sim(curr_list=["EUR", "USD"],
                 pair = f"{p1}_{p2}"
                 if pair in ic.instruments_dict.keys():
                     analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
-
 
