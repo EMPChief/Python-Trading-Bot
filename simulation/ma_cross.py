@@ -340,6 +340,7 @@ def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
             #print(ma_result)
             results_list.append(ma_result)
     process_results(results_list, filepath)
+    pass
 
 
 def run_ma_sim(curr_list=["EUR", "USD"],
@@ -368,4 +369,5 @@ def run_ma_sim(curr_list=["EUR", "USD"],
                 pair = f"{p1}_{p2}"
                 if pair in ic.instruments_dict.keys():
                     analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
+            hello
 
