@@ -8,11 +8,19 @@ from api.oanda_api import OandaApi
 CANDLE_COUNT = 3000
 
 INCREMENTS = {
+    'M1': 1 * CANDLE_COUNT,
     'M5': 5 * CANDLE_COUNT,
     'M15': 15 * CANDLE_COUNT,
+    'M30': 30 * CANDLE_COUNT,
     'H1': 60 * CANDLE_COUNT,
+    'H2': 120 * CANDLE_COUNT,
     'H4': 240 * CANDLE_COUNT,
+    'H8': 480 * CANDLE_COUNT,
     'D1': 1440 * CANDLE_COUNT,
+    'W1': 10080 * CANDLE_COUNT,
+    'MN1': 43200 * CANDLE_COUNT,
+    'Q1': 129600 * CANDLE_COUNT,
+    'Y1': 525600 * CANDLE_COUNT,
 }
 
 
