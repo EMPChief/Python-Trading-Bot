@@ -94,6 +94,20 @@ class OandaApi:
 
     def fetch_candles(self, pair_name, count=10, granularity="H1",
                       price="MBA", date_f=None, date_t=None):
+        """
+        Retrieves candlestick data for a specified instrument and time range.
+
+        Args:
+            pair_name (str): The instrument name (e.g., 'EUR_USD').
+            count (int, optional): The number of candles to retrieve (default is 10).
+            granularity (str, optional): The granularity of the candles (default is 'H1').
+            price (str, optional): The price component of the candles (default is 'MBA').
+            date_f (datetime, optional): The start date for the query (default is None).
+            date_t (datetime, optional): The end date for the query (default is None).
+
+        Returns:
+            list or None: A list of candlestick data if successful, otherwise None.
+        """
         url = f"instruments/{pair_name}/candles"
         params = dict(
             granularity=granularity,
@@ -116,6 +130,16 @@ class OandaApi:
             return None
 
     def get_candles_df(self, pair_name, **kwargs):
+        """
+        Retrieves candlestick data for a specified instrument and time range and returns it as a DataFrame.
+
+        Args:
+            pair_name (str): The instrument name (e.g., 'EUR_USD').
+            **kwargs: Additional parameters for the fetch_candles method.
+
+        Returns:
+            pandas.DataFrame or None: A DataFrame of candlestick data if successful, otherwise None.
+        """
 
         data = self.fetch_candles(pair_name, **kwargs)
 
