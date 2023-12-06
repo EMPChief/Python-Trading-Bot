@@ -1,7 +1,7 @@
 import pandas as pd
 import datetime as dt
 from dateutil import parser
-
+import os
 from infrastructure.instrument_collection import InstrumentCollection
 from api.oanda_api import OandaApi
 
@@ -109,6 +109,10 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
         to_date = from_date + dt.timedelta(minutes=time_step)
         if to_date > end_date:
             to_date = end_date
+        filename = f"{file_prefix}{pair}_{granularity}.csv"
+        if os.path.exists(filename):
+            print(f"{pair} {granularity} {from_date} {to_date} --> Data already exists. Skipping...")
+            return
 
         candles = fetch_candles(
             pair,
@@ -120,8 +124,7 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
 
         if candles is not None:
             candle_dfs.append(candles)
-            print(f"{pair} {granularity} {from_date} {
-                  to_date} --> {candles.shape[0]} candles loaded")
+            print(f"{pair} {granularity} {from_date} {to_date} --> {candles.shape[0]} candles loaded")
         else:
             print(f"{pair} {granularity} {from_date} {to_date} --> NO CANDLES")
 
@@ -132,7 +135,6 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
         save_file(final_df, file_prefix, granularity, pair)
     else:
         print(f"{pair} {granularity} --> NO DATA SAVED!")
-
 
 def run_collection(ic: InstrumentCollection, api: OandaApi):
     """
