@@ -3,7 +3,7 @@ from infrastructure.instrument_collection import Instrument, InstrumentCollectio
 import os
 import pandas as pd
 from datetime import datetime
-
+from simulation.ma_excel import create_ma_result
 
 class MAResult:
     """
@@ -345,7 +345,7 @@ def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
 def run_ma_sim(curr_list=["EUR", "USD"],
                granularity=["H4"],
                ma_long=[20, 40, 80, 120, 150, 200],
-               ma_short=[10, 20, 30, 40, 50],
+               ma_short=[10, 20, 30, 40, 50, 100],
                filepath="./data"):
     """
     Run a moving average simulation for multiple currency pairs, granularities, and moving average periods.
@@ -369,3 +369,4 @@ def run_ma_sim(curr_list=["EUR", "USD"],
                 if pair in ic.instruments_dict.keys():
                     analyse_pair(
                         ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
+            create_ma_result(g)

@@ -5,3 +5,7 @@ requests
 xlsxwriter
 jupyter
 plotly
+flask
+
+(delete if want to run venv but what need for setup:)
+first make a data folder, then make a result and candles inside there then run main_tdi.py

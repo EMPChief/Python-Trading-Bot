@@ -190,6 +190,10 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
         writer)
 
     writer.close()
+def create_ma_result(granularity):
+    df_ma_res = pd.read_csv("./data/result/ma_res.csv")
+    df_ma_trades = pd.read_csv("./data/result/ma_trades.csv")
+    create_excel(df_ma_res, df_ma_trades, granularity)
 
 
 if __name__ == "__main__":
