@@ -1,0 +1,6 @@
+numpy
+pandas
+json
+requests
+xlsxwriter
+jupyter
