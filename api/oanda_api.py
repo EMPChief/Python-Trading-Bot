@@ -1,5 +1,8 @@
 import requests
 import constants.defs as defs
+import pandas as pd
+from dateutil import parser
+from datetime import datetime as dt
 
 
 class OandaApi:
@@ -65,7 +68,7 @@ class OandaApi:
         """
         url = f"accounts/{defs.ACCOUNT_ID}/{ep}"
         ok, data = self.make_request(url)
-        if ok and data_key in data:
+        if ok == True and data_key in data:
             return data[data_key]
         else:
             print("ERROR get_account_ep", data)
@@ -88,3 +91,53 @@ class OandaApi:
             dict or None: The list of instruments if successful, otherwise None.
         """
         return self.get_account_ep("instruments", "instruments")
+
+    def fetch_candles(self, pair_name, count=10, granularity="H1",
+                      price="MBA", date_f=None, date_t=None):
+        url = f"instruments/{pair_name}/candles"
+        params = dict(
+            granularity=granularity,
+            price=price
+        )
+
+        if date_f is not None and date_t is not None:
+            date_format = "%Y-%m-%dT%H:%M:%SZ"
+            params["from"] = dt.strftime(date_f, date_format)
+            params["to"] = dt.strftime(date_t, date_format)
+        else:
+            params["count"] = count
+
+        ok, data = self.make_request(url, params=params)
+
+        if ok == True and 'candles' in data:
+            return data['candles']
+        else:
+            print("ERROR fetch_candles()", params, data)
+            return None
+
+    def get_candles_df(self, pair_name, **kwargs):
+
+        data = self.fetch_candles(pair_name, **kwargs)
+
+        if data is None:
+            return None
+        if len(data) == 0:
+            return pd.DataFrame()
+
+        prices = ['mid', 'bid', 'ask']
+        ohlc = ['o', 'h', 'l', 'c']
+
+        final_data = []
+        for candle in data:
+            if candle['complete'] == False:
+                continue
+            new_dict = {}
+            new_dict['time'] = parser.parse(candle['time'])
+            new_dict['volume'] = candle['volume']
+            for p in prices:
+                if p in candle:
+                    for o in ohlc:
+                        new_dict[f"{p}_{o}"] = float(candle[p][o])
+            final_data.append(new_dict)
+        df = pd.DataFrame.from_dict(final_data)
+        return df
