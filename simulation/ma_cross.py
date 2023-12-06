@@ -370,7 +370,7 @@ def run_ma_sim(curr_list=["EUR", "USD"],
                     analyse_pair(
                         ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
             create_ma_result(g)
-    print("Done")
+    print("Done with MA Simulations")
     
             
 
