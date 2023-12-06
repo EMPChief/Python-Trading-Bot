@@ -1,6 +1,7 @@
 import requests
 import constants.defs as defs
 
+
 class OandaApi:
     """
     A simple wrapper class for making requests to the Oanda API.
@@ -40,7 +41,8 @@ class OandaApi:
         try:
             response = None
             if verb == 'get':
-                response = self.session.get(full_url, params=params, data=data, headers=headers)
+                response = self.session.get(
+                    full_url, params=params, data=data, headers=headers)
             if response is None:
                 return False, {'error': 'verb not found'}
             if response.status_code == code:

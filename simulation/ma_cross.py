@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from datetime import datetime
 
+
 class MAResult:
     """
     A class for analyzing trades based on moving averages.
@@ -29,10 +30,12 @@ class MAResult:
         - granularity (str): Granularity of the analysis.
         """
         self.pairname = pairname  # Description: Name of the trading pair.
-        self.df_trades = df_trades  # Description: DataFrame containing trade data.
+        # Description: DataFrame containing trade data.
+        self.df_trades = df_trades
         self.ma_l = ma_l  # Description: Long-term moving average period.
         self.ma_s = ma_s  # Description: Short-term moving average period.
-        self.granularity = granularity  # Description: Granularity of the analysis.
+        # Description: Granularity of the analysis.
+        self.granularity = granularity
         self.result = self.result_ob()  # Description: Result of the analysis.
 
     def __repr__(self):
@@ -61,29 +64,25 @@ class MAResult:
         Description: This method calculates and returns a dictionary with various trade analysis results.
         """
         return dict(
-            pair = self.pairname,
-            num_trades = self.df_trades.shape[0],
-            total_gain = int(self.df_trades.GAIN.sum()),
-            mean_gain = int(self.df_trades.GAIN.mean()),
-            min_gain = int(self.df_trades.GAIN.min()),
-            max_gain = int(self.df_trades.GAIN.max()),
-            ma_l = self.ma_l,
-            ma_s = self.ma_s,
-            cross = f"{self.ma_s}_{self.ma_l}",
-            granularity = self.granularity
+            pair=self.pairname,
+            num_trades=self.df_trades.shape[0],
+            total_gain=int(self.df_trades.GAIN.sum()),
+            mean_gain=int(self.df_trades.GAIN.mean()),
+            min_gain=int(self.df_trades.GAIN.min()),
+            max_gain=int(self.df_trades.GAIN.max()),
+            ma_l=self.ma_l,
+            ma_s=self.ma_s,
+            cross=f"{self.ma_s}_{self.ma_l}",
+            granularity=self.granularity
         )
-
-
-
-
 
 
 ic = ic()
 BUY = 1
 SELL = -1
 NONE = 0
-get_ma_col = lambda x: f"MA_{x}"
-add_cross = lambda x: f"{x.ma_s}_{x.ma_l}"
+def get_ma_col(x): return f"MA_{x}"
+def add_cross(x): return f"{x.ma_s}_{x.ma_l}"
 
 
 def is_trade(row):
@@ -110,6 +109,7 @@ def is_trade(row):
         return SELL
     return NONE
 
+
 def load_price_data(pair, granularity, ma_list):
     """
     Load price data from a saved pickle file and calculate moving averages.
@@ -127,15 +127,14 @@ def load_price_data(pair, granularity, ma_list):
     It then calculates moving averages for each period in the ma_list and returns the resulting DataFrame.
     """
     df = pd.read_csv(f"./data/{pair}_{granularity}.csv")
-    
+
     for ma in ma_list:
         df[get_ma_col(ma)] = df.mid_c.rolling(window=ma).mean()
-    
+
     df.dropna(inplace=True)
     df.reset_index(drop=True, inplace=True)
-    
-    return df
 
+    return df
 
 
 def get_trades(df_analysis, instrument, granularity):
@@ -205,7 +204,6 @@ def assess_pair(price_data, ma_l, ma_s, instrument, granularity):
     )
 
 
-
 def append_df_to_file(df, filename):
     """
     Append a DataFrame to a file or create a new file if it doesn't exist.
@@ -228,6 +226,7 @@ def append_df_to_file(df, filename):
     print(filename, df.shape)
     print(df.tail(2))
 
+
 def get_fullname(filepath, filename):
     """
     Get the full path for a file.
@@ -244,6 +243,7 @@ def get_fullname(filepath, filename):
     the filepath and filename with a '/' separator.
     """
     return f"{filepath}/{filename}.csv"
+
 
 def process_macro(result_list, filepath):
     """
@@ -263,6 +263,7 @@ def process_macro(result_list, filepath):
     df = pd.DataFrame.from_dict(rl)
     append_df_to_file(df, get_fullname(filepath, f"ma_res_{current_date}"))
 
+
 def process_trades(result_list, filepath):
     """
     Process a list of trade results and save them to a file.
@@ -280,6 +281,7 @@ def process_trades(result_list, filepath):
     df = pd.concat([x.df_trades for x in result_list])
     append_df_to_file(df, get_fullname(filepath, f"ma_trades_{current_date}"))
 
+
 def process_results(result_list, filepath):
     """
     Process a list of results, including macro and trade results, and save them to files.
@@ -294,13 +296,11 @@ def process_results(result_list, filepath):
     """
     process_macro(result_list, filepath)
     process_trades(result_list, filepath)
-    
-    
-    #rl = [x.result for x in result_list]
-    #df = pd.DataFrame.from_dict(rl)
-    #print(df)
-    #print(result_list[0].df_trades.head(2))
 
+    # rl = [x.result for x in result_list]
+    # df = pd.DataFrame.from_dict(rl)
+    # print(df)
+    # print(result_list[0].df_trades.head(2))
 
 
 def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
@@ -337,7 +337,7 @@ def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
                 instrument,
                 granularity
             )
-            #print(ma_result)
+            # print(ma_result)
             results_list.append(ma_result)
     process_results(results_list, filepath)
 
@@ -367,5 +367,5 @@ def run_ma_sim(curr_list=["EUR", "USD"],
             for p2 in curr_list:
                 pair = f"{p1}_{p2}"
                 if pair in ic.instruments_dict.keys():
-                    analyse_pair(ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
-
+                    analyse_pair(
+                        ic.instruments_dict[pair], g, ma_long, ma_short, filepath)

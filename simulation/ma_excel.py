@@ -8,6 +8,7 @@ WIDTHS = {
     'B:F': 9
 }
 
+
 def set_widths(pair, writer):
     """
     Set column widths for a specific pair in the Excel writer.
@@ -24,6 +25,7 @@ def set_widths(pair, writer):
     worksheet = writer.sheets[pair]
     for k, v in WIDTHS.items():
         worksheet.set_column(k, v)
+
 
 def get_line_chart(book, start_row, end_row, labels_col, data_col, title, sheetname):
     """
@@ -56,6 +58,7 @@ def get_line_chart(book, start_row, end_row, labels_col, data_col, title, sheetn
     chart.set_legend({'none': True})
     return chart
 
+
 def add_chart(pair, cross, df, writer):
     """
     Add a line chart to an Excel worksheet based on the provided DataFrame.
@@ -79,6 +82,7 @@ def add_chart(pair, cross, df, writer):
     chart.set_size({'x_scale': 2.5, 'y_scale': 2.5})
     worksheet.insert_chart('O1', chart)
 
+
 def add_pair_charts(df_ma_res, df_ma_trades, writer):
     """
     Add line charts for each trading pair to an Excel workbook.
@@ -99,9 +103,11 @@ def add_pair_charts(df_ma_res, df_ma_trades, writer):
     for _, row in df_temp.iterrows():
         dft = df_ma_trades[(df_ma_trades.cross == row.cross) &
                            (df_ma_trades.pair == row.pair)]
-        dft[cols].to_excel(writer, sheet_name=row.pair, index=False, startrow=0, startcol=11)
+        dft[cols].to_excel(writer, sheet_name=row.pair,
+                           index=False, startrow=0, startcol=11)
         set_widths(row.pair, writer)
         add_chart(row.pair, row.cross, dft, writer)
+
 
 def add_pair_sheets(df_ma_res, writer):
     """
@@ -120,6 +126,7 @@ def add_pair_sheets(df_ma_res, writer):
         tdf = df_ma_res[df_ma_res.pair == p]
         tdf.to_excel(writer, sheet_name=p, index=False)
 
+
 def prepare_data(df_ma_res, df_ma_trades):
     """
     Prepare dataframes for creating an Excel workbook.
@@ -137,7 +144,8 @@ def prepare_data(df_ma_res, df_ma_trades):
         by=['pair', 'total_gain'],
         ascending=[True, False],
         inplace=True)
-    df_ma_trades['time'] = pd.to_datetime(df_ma_trades['time']).dt.tz_localize(None)
+    df_ma_trades['time'] = pd.to_datetime(
+        df_ma_trades['time']).dt.tz_localize(None)
 
 
 def process_data(df_ma_res, df_ma_trades, writer):
@@ -157,6 +165,7 @@ def process_data(df_ma_res, df_ma_trades, writer):
     prepare_data(df_ma_res, df_ma_trades)
     add_pair_sheets(df_ma_res, writer)
     add_pair_charts(df_ma_res, df_ma_trades, writer)
+
 
 def create_excel(df_ma_res, df_ma_trades, granularity):
     """
@@ -181,6 +190,7 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
         writer)
 
     writer.close()
+
 
 if __name__ == "__main__":
 

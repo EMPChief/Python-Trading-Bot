@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import datetime as dt
 
+
 class CandlePlot:
     """
     A class for creating candlestick charts using Plotly.
@@ -27,7 +28,7 @@ class CandlePlot:
     cp = CandlePlot(df, candles=True)
     cp.show_plot()
     """
-    
+
     def __init__(self, df, candles=True):
         """
         Initializes the CandlePlot object.
@@ -41,14 +42,14 @@ class CandlePlot:
         self.df_plot = df.copy()
         self.candles = candles
         self.create_candle_fig()
-    
+
     def add_timestring(self):
         """
         Adds a formatted time string column to the DataFrame.
         """
         self.df_plot['time'] = pd.to_datetime(self.df_plot['time'])
-        self.df_plot['sTime'] = [dt.datetime.strftime(x, "s%Y-%m-%d %H:%M") for x in self.df_plot['time']]
-
+        self.df_plot['sTime'] = [dt.datetime.strftime(
+            x, "s%Y-%m-%d %H:%M") for x in self.df_plot['time']]
 
     def create_candle_fig(self):
         """
@@ -68,7 +69,7 @@ class CandlePlot:
                 increasing=dict(fillcolor='#00cc00', line_color='#006600'),
                 decreasing=dict(fillcolor='#ff0000', line_color='#990000'),
             ))
-    
+
     def update_layout(self, width, height, nticks):
         """
         Updates the layout of the chart.
@@ -83,7 +84,7 @@ class CandlePlot:
         """
         self.fig.update_yaxes(gridcolor='gray')
         self.fig.update_xaxes(
-            gridcolor='gray', 
+            gridcolor='gray',
             rangeslider=dict(visible=False),
             nticks=nticks)
 
@@ -98,7 +99,7 @@ class CandlePlot:
             plot_bgcolor='black',
             font=dict(color='white', size=12)
         )
-    
+
     def add_traces(self, line_traces):
         """
         Adds line traces to the chart.
@@ -115,7 +116,7 @@ class CandlePlot:
                 line_shape="spline",
                 name=t,
             ))
-    
+
     def show_plot(self, width=1500, height=800, nticks=5, line_traces=[]):
         """
         Displays the candlestick chart with optional line traces.

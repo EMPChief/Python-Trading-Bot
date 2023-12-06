@@ -1,6 +1,7 @@
 from models.instruments import Instrument
 import json
 
+
 class InstrumentCollection:
     """
     A class representing a collection of financial instruments.
@@ -12,7 +13,8 @@ class InstrumentCollection:
     """
 
     FILENAME = "instruments.json"
-    API_KEYS = ['name', 'type', 'displayName', 'pipLocation', 'displayPrecision', 'tradeUnitsPrecision', 'marginRate']
+    API_KEYS = ['name', 'type', 'displayName', 'pipLocation',
+                'displayPrecision', 'tradeUnitsPrecision', 'marginRate']
 
     def __init__(self):
         """
@@ -48,7 +50,8 @@ class InstrumentCollection:
         instruments_dict = {}
         for instrument_data in data:
             key = instrument_data['name']
-            instruments_dict[key] = {k: instrument_data[k] for k in self.API_KEYS}
+            instruments_dict[key] = {k: instrument_data[k]
+                                     for k in self.API_KEYS}
 
         file_name = f"{path}/{self.FILENAME}"
         with open(file_name, "w") as file:
@@ -60,5 +63,6 @@ class InstrumentCollection:
         """
         [print(key, value) for key, value in self.instruments_dict.items()]
         print(len(self.instruments_dict.keys()), 'instruments')
+
 
 instrumentCollection = InstrumentCollection()
