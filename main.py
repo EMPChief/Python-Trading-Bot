@@ -4,11 +4,11 @@ from simulation.ma_cross import run_ma_sim
 if __name__ == "__main__":
     # api = OandaApi()
 
-    # instrumentCollection = InstrumentCollection()
+    instrumentCollection = InstrumentCollection()
 
-    # instrumentCollection.CreateFile(api.get_account_instruments(), "./data")
+    instrumentCollection.CreateFile(api.get_account_instruments(), "./data")
 
     # instrumentCollection.LoadInstruments("./data")
     # instrumentCollection.PrintInstruments()
-    run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY"],
-               granularity=["M15", "M30", "H1", "H4"],)
+    #run_ma_sim(curr_list=["EUR", "USD", "GBP", "JPY"],
+#               granularity=["M15", "M30", "H1", "H4"],)

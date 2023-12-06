@@ -126,7 +126,7 @@ def load_price_data(pair, granularity, ma_list):
     This function reads price data from a pickle file located at "./data/{pair}_{granularity}.csv".
     It then calculates moving averages for each period in the ma_list and returns the resulting DataFrame.
     """
-    df = pd.read_csv(f"./data/{pair}_{granularity}.csv")
+    df = pd.read_csv(f"./data/candles/{pair}_{granularity}.csv")
 
     for ma in ma_list:
         df[get_ma_col(ma)] = df.mid_c.rolling(window=ma).mean()

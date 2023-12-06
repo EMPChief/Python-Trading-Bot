@@ -194,8 +194,8 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
 
 if __name__ == "__main__":
 
-    df_ma_res = pd.read_csv("./data/ma_res_2023-12-04.csv")
-    df_ma_trades = pd.read_csv("./data/ma_trades_2023-12-04.csv")
+    df_ma_res = pd.read_csv("./data/result/ma_res_2023-12-04.csv")
+    df_ma_trades = pd.read_csv("./data/result/ma_trades_2023-12-04.csv")
     create_excel(df_ma_res, df_ma_trades, "M15")
     create_excel(df_ma_res, df_ma_trades, "M30")
     create_excel(df_ma_res, df_ma_trades, "H1")
