@@ -73,7 +73,7 @@ def fetch_candles(pair, granularity, date_f: dt.datetime, date_t: dt.datetime, a
         )
 
         if candles_df is not None:
-            break
+            y
 
         attempts += 1
 
@@ -111,7 +111,8 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
             to_date = end_date
         filename = f"{file_prefix}{pair}_{granularity}.csv"
         if os.path.exists(filename):
-            print(f"{pair} {granularity} {from_date} {to_date} --> Data already exists. Skipping...")
+            print(f"{pair} {granularity} {from_date} {
+                  to_date} --> Data already exists. Skipping...")
             return
 
         candles = fetch_candles(
@@ -124,7 +125,8 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
 
         if candles is not None:
             candle_dfs.append(candles)
-            print(f"{pair} {granularity} {from_date} {to_date} --> {candles.shape[0]} candles loaded")
+            print(f"{pair} {granularity} {from_date} {
+                  to_date} --> {candles.shape[0]} candles loaded")
         else:
             print(f"{pair} {granularity} {from_date} {to_date} --> NO CANDLES")
 
@@ -135,6 +137,7 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
         save_file(final_df, file_prefix, granularity, pair)
     else:
         print(f"{pair} {granularity} --> NO DATA SAVED!")
+
 
 def run_collection(ic: InstrumentCollection, api: OandaApi):
     """
@@ -149,7 +152,7 @@ def run_collection(ic: InstrumentCollection, api: OandaApi):
         for p2 in our_curr:
             pair = f"{p1}_{p2}"
             if pair in ic.instruments_dict.keys():
-                for granularity in ["M5","M15", "M30", "H1","H2", "H4"]:
+                for granularity in ["M5", "M15", "M30", "H1", "H2", "H4"]:
                     print(pair, granularity)
                     collect_data(
                         pair,
