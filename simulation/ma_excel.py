@@ -198,7 +198,8 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
 
 def create_ma_result(granularity):
     df_ma_res = pd.read_csv("./data/result/ma_res_2023-12-08.csv")
-    df_ma_trades = pd.read_csv("./data/result/ma_res_2023-12-08.csv")
+    df_ma_trades = pd.read_csv("./data/result/ma_trades_2023-12-08.csv")
+
     create_excel(df_ma_res, df_ma_trades, granularity)
 
 

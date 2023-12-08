@@ -239,12 +239,10 @@ def get_fullname(filepath, filename):
 
     Description:
     This function takes a filepath and a filename and returns the full path of the result file by concatenating
-    the filepath and filename with a '/' separator. The result file is assumed to be stored in a 'result' subdirectory.
-    If the 'result' subdirectory doesn't exist, it will be created.
+    the filepath and filename with a '/' separator.
     """
-    result_directory = os.path.join(filepath, 'result')
-    os.makedirs(result_directory, exist_ok=True)
-    return os.path.join(result_directory, f"{filename}.csv")
+    os.makedirs(filepath, exist_ok=True)
+    return os.path.join(filepath, f"{filename}.csv")
 
 
 def process_macro(result_list, filepath):
