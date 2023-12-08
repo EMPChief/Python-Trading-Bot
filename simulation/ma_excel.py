@@ -1,7 +1,7 @@
 from sys import float_repr_style
 import pandas as pd
 import sys
-sys.path.append('../')
+import os
 
 WIDTHS = {
     'L:L': 20,
@@ -179,9 +179,13 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
     Example:
     ```python
     create_excel(df_results, df_trades, "H4")
-    ```
     """
-    filename = f"ma_sim_{granularity}.xlsx"
+    excel_directory = "./data/excel/"
+
+    os.makedirs(excel_directory, exist_ok=True)
+
+    filename = f"{excel_directory}ma_sim_{granularity}.xlsx"
+
     writer = pd.ExcelWriter(filename, engine="xlsxwriter")
 
     process_data(
@@ -190,16 +194,18 @@ def create_excel(df_ma_res, df_ma_trades, granularity):
         writer)
 
     writer.close()
+
+
 def create_ma_result(granularity):
-    df_ma_res = pd.read_csv("./data/result/ma_res.csv")
-    df_ma_trades = pd.read_csv("./data/result/ma_trades.csv")
+    df_ma_res = pd.read_csv("./data/result/ma_res_2023-12-08.csv")
+    df_ma_trades = pd.read_csv("./data/result/ma_res_2023-12-08.csv")
     create_excel(df_ma_res, df_ma_trades, granularity)
 
 
 if __name__ == "__main__":
 
-    df_ma_res = pd.read_csv("./data/result/ma_res_2023-12-04.csv")
-    df_ma_trades = pd.read_csv("./data/result/ma_trades_2023-12-04.csv")
+    df_ma_res = pd.read_csv("./data/result/ma_res_2023-12-08.csv")
+    df_ma_trades = pd.read_csv("./data/result/ma_trades_2023-12-08.csv")
     create_excel(df_ma_res, df_ma_trades, "M15")
     create_excel(df_ma_res, df_ma_trades, "M30")
     create_excel(df_ma_res, df_ma_trades, "H1")

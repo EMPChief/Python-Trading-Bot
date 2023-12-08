@@ -5,6 +5,7 @@ import pandas as pd
 from datetime import datetime
 from simulation.ma_excel import create_ma_result
 
+
 class MAResult:
     """
     A class for analyzing trades based on moving averages.
@@ -29,14 +30,12 @@ class MAResult:
         - ma_s (int): Short-term moving average period.
         - granularity (str): Granularity of the analysis.
         """
-        self.pairname = pairname  # Description: Name of the trading pair.
-        # Description: DataFrame containing trade data.
+        self.pairname = pairname
         self.df_trades = df_trades
-        self.ma_l = ma_l  # Description: Long-term moving average period.
-        self.ma_s = ma_s  # Description: Short-term moving average period.
-        # Description: Granularity of the analysis.
+        self.ma_l = ma_l
+        self.ma_s = ma_s
         self.granularity = granularity
-        self.result = self.result_ob()  # Description: Result of the analysis.
+        self.result = self.result_ob()
 
     def __repr__(self):
         """
@@ -229,39 +228,44 @@ def append_df_to_file(df, filename):
 
 def get_fullname(filepath, filename):
     """
-    Get the full path for a file.
+    Get the full path for a result file.
 
     Parameters:
-    - filepath (str): Path to the directory containing the file.
-    - filename (str): Name of the file.
+    - filepath (str): Path to the directory where the result file will be saved.
+    - filename (str): Name of the result file.
 
     Returns:
-    str: Full path of the file.
+    str: Full path of the result file.
 
     Description:
-    This function takes a filepath and a filename and returns the full path of the file by concatenating
-    the filepath and filename with a '/' separator.
+    This function takes a filepath and a filename and returns the full path of the result file by concatenating
+    the filepath and filename with a '/' separator. The result file is assumed to be stored in a 'result' subdirectory.
+    If the 'result' subdirectory doesn't exist, it will be created.
     """
-    return f"{filepath}/{filename}.csv"
+    result_directory = os.path.join(filepath, 'result')
+    os.makedirs(result_directory, exist_ok=True)
+    return os.path.join(result_directory, f"{filename}.csv")
 
 
 def process_macro(result_list, filepath):
     """
-    Process a list of results and save them to a file.
+    Process a list of macro results and save them to a file.
 
     Parameters:
-    - result_list (list): List of result objects.
-    - filepath (str): Path to the directory where the file will be saved.
+    - result_list (list): List of macro result objects.
+    - filepath (str): Path to the directory where the macro result file will be saved.
 
     Description:
-    This function extracts the results from a list of result objects, converts them into a DataFrame,
+    This function extracts the macro results from a list of result objects, converts them into a DataFrame,
     and appends the DataFrame to a file named "ma_res_{current_date}.csv" in the specified filepath.
     The current_date is obtained using the current date in the format "%Y-%m-%d".
+    The resulting file is stored in a 'result' subdirectory.
     """
     current_date = datetime.now().strftime("%Y-%m-%d")
     rl = [x.result for x in result_list]
     df = pd.DataFrame.from_dict(rl)
-    append_df_to_file(df, get_fullname(filepath, f"ma_res_{current_date}"))
+    result_filename = get_fullname(filepath, f"ma_res_{current_date}")
+    append_df_to_file(df, result_filename)
 
 
 def process_trades(result_list, filepath):
@@ -269,13 +273,14 @@ def process_trades(result_list, filepath):
     Process a list of trade results and save them to a file.
 
     Parameters:
-    - result_list (list): List of result objects.
-    - filepath (str): Path to the directory where the file will be saved.
+    - result_list (list): List of trade result objects.
+    - filepath (str): Path to the directory where the trade result file will be saved.
 
     Description:
     This function extracts the trade results from a list of result objects, concatenates them into a single DataFrame,
     and appends the DataFrame to a file named "ma_trades_{current_date}.csv" in the specified filepath.
     The current_date is obtained using the current date in the format "%Y-%m-%d".
+    The resulting file is stored in a 'result' subdirectory.
     """
     current_date = datetime.now().strftime("%Y-%m-%d")
     df = pd.concat([x.df_trades for x in result_list])
@@ -304,22 +309,6 @@ def process_results(result_list, filepath):
 
 
 def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
-    """
-    Analyze a trading pair based on different combinations of long-term and short-term moving averages.
-
-    Parameters:
-    - instrument: The financial instrument being traded.
-    - granularity (str): Granularity of the analysis.
-    - ma_long (list): List of long-term moving average periods.
-    - ma_short (list): List of short-term moving average periods.
-    - filepath (str): Path to the directory where result files will be saved.
-
-    Description:
-    This function loads price data for the specified trading pair and moving average periods.
-    It then assesses the trading pair for each combination of long-term and short-term moving averages,
-    excluding combinations where ma_l and ma_s are the same.
-    The assessment results are saved to separate files for macro and trade results.
-    """
     ma_list = set(ma_long + ma_short)
     pair = instrument.name
 
@@ -337,16 +326,15 @@ def analyse_pair(instrument, granularity, ma_long, ma_short, filepath):
                 instrument,
                 granularity
             )
-            # print(ma_result)
             results_list.append(ma_result)
-    process_results(results_list, filepath)
+    process_results(results_list, filepath.replace('candles', 'result'))
 
 
-def run_ma_sim(curr_list=["EUR", "USD"],
-               granularity=["H4"],
+def run_ma_sim(curr_list=["AUD", "CAD", "JPY", "USD", "EUR", "GBP", "NZD"],
+               granularity=["M5", "M15", "M30", "H1", "H2", "H4"],
                ma_long=[20, 40, 80, 120, 150, 200],
                ma_short=[10, 20, 30, 40, 50, 100],
-               filepath="./data"):
+               filepath="./data/candles"):
     """
     Run a moving average simulation for multiple currency pairs, granularities, and moving average periods.
 
@@ -360,6 +348,7 @@ def run_ma_sim(curr_list=["EUR", "USD"],
     Description:
     This function loads instruments, iterates through combinations of currency pairs, granularities,
     and moving average periods, and runs the moving average simulation using the `analyse_pair` function.
+    The results are saved in the specified filepath.
     """
     ic.LoadInstruments("./data")
     for g in granularity:
@@ -371,6 +360,3 @@ def run_ma_sim(curr_list=["EUR", "USD"],
                         ic.instruments_dict[pair], g, ma_long, ma_short, filepath)
             create_ma_result(g)
     print("Done with MA Simulations")
-    
-            
-
