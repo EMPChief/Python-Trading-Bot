@@ -145,7 +145,8 @@ def run_collection(ic: InstrumentCollection, api: OandaApi):
         - ic (InstrumentCollection): An instance of the InstrumentCollection class.
         - api (OandaApi): An instance of the OandaApi class.
     """
-    our_curr = ["AUD", "CAD", "JPY", "USD", "EUR", "GBP", "NZD"]
+    our_curr = ["AUD", "CAD", "JPY", "USD", "EUR", "GBP",
+                "NZD", "SEK", "CHF", "CNY", "HKD", "IDR", "INR",]
     for p1 in our_curr:
         for p2 in our_curr:
             pair = f"{p1}_{p2}"
