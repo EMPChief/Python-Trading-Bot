@@ -3,9 +3,13 @@ __pycache__/
 data/
 build/
 .venv/
-
+/venv
 CMakeLists.txt.user
 *.db
 *.so
 *.db-shm
 *.db-wal
+/__pycache__
+.pyc
+/venv
+/.venv

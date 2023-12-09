@@ -41,8 +41,7 @@ def save_file(final_df: pd.DataFrame, file_prefix, granularity, pair):
     final_df.reset_index(drop=True, inplace=True)
     final_df.to_csv(filename)
 
-    s1 = f"*** {pair} {granularity} {final_df.time.min()
-                                     } {final_df.time.max()}"
+    s1 = f"*** {pair} {granularity} {final_df.time.min()} {final_df.time.max()}"
     print(f"*** {s1} --> {final_df.shape[0]} candles ***")
 
 
@@ -64,7 +63,6 @@ def fetch_candles(pair, granularity, date_f: dt.datetime, date_t: dt.datetime, a
     attempts = 0
 
     while attempts < 3:
-
         candles_df = api.get_candles_df(
             pair,
             granularity=granularity,
@@ -73,11 +71,11 @@ def fetch_candles(pair, granularity, date_f: dt.datetime, date_t: dt.datetime, a
         )
 
         if candles_df is not None:
-            y
+            break
 
         attempts += 1
 
-    if candles_df is not None and candles_df.empty == False:
+    if candles_df is not None and not candles_df.empty:
         return candles_df
     else:
         return None
@@ -111,8 +109,8 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
             to_date = end_date
         filename = f"{file_prefix}{pair}_{granularity}.csv"
         if os.path.exists(filename):
-            print(f"{pair} {granularity} {from_date} {
-                  to_date} --> Data already exists. Skipping...")
+            print(
+                f"{pair} {granularity} {from_date} to {to_date} --> Data already exists. Skipping...")
             return
 
         candles = fetch_candles(
@@ -125,10 +123,10 @@ def collect_data(pair, granularity, date_f, date_t, file_prefix, api: OandaApi):
 
         if candles is not None:
             candle_dfs.append(candles)
-            print(f"{pair} {granularity} {from_date} {
-                  to_date} --> {candles.shape[0]} candles loaded")
+            print(
+                f"{pair} {granularity} {from_date} to {to_date} --> {candles.shape[0]} candles loaded")
         else:
-            print(f"{pair} {granularity} {from_date} {to_date} --> NO CANDLES")
+            print(f"{pair} {granularity} {from_date} to {to_date} --> NO CANDLES")
 
         from_date = to_date
 
@@ -157,7 +155,7 @@ def run_collection(ic: InstrumentCollection, api: OandaApi):
                     collect_data(
                         pair,
                         granularity,
-                        "2015-01-07T00:00:00Z",
+                        "2013-01-07T00:00:00Z",
                         "2023-11-30T00:00:00Z",
                         "./data/candles/",
                         api
