@@ -139,11 +139,6 @@ def Aroon_Oscillator(df: pd.DataFrame, n=14):
     return df
 
 
-def CCI(df: pd.DataFrame, n=20):
-    # The code for this function is already in your file
-    return df
-
-
 def CMF(df: pd.DataFrame, n=20):
     mf_multiplier = (df.mid_c - df.mid_l - df.mid_h +
                      df.mid_c) / (df.mid_h - df.mid_l)
