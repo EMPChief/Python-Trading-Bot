@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 import datetime as dt
+from plotly.subplots import make_subplots
 
 
 class CandlePlot:
@@ -56,7 +57,7 @@ class CandlePlot:
         Creates a candlestick chart using Plotly.
         """
         self.add_timestring()
-        self.fig = go.Figure()
+        self.fig = make_subplots(specs=[[{"secondary_y": True}]])
         if self.candles == True:
             self.fig.add_trace(go.Candlestick(
                 x=self.df_plot.sTime,
@@ -100,13 +101,15 @@ class CandlePlot:
             font=dict(color='white', size=12)
         )
 
-    def add_traces(self, line_traces):
+    def add_traces(self, line_traces, is_secondary=False):
         """
         Adds line traces to the chart.
 
         Parameters:
         - line_traces: list
             List of column names to be used as line traces on the chart.
+        - is_secondary: bool, optional
+            Flag indicating whether the trace should be on the secondary y-axis.
         """
         for t in line_traces:
             self.fig.add_trace(go.Scatter(
@@ -115,9 +118,9 @@ class CandlePlot:
                 line=dict(width=2),
                 line_shape="spline",
                 name=t,
-            ))
+            ), secondary_y=is_secondary)
 
-    def show_plot(self, width=1500, height=800, nticks=5, line_traces=[]):
+    def show_plot(self, width=1500, height=800, nticks=5, line_traces=[], sec_traces=[]):
         """
         Displays the candlestick chart with optional line traces.
 
@@ -130,7 +133,10 @@ class CandlePlot:
             Number of ticks on the x-axis (default is 5).
         - line_traces: list, optional
             List of column names to be used as line traces on the chart.
+        - sec_traces: list, optional
+            List of column names for line traces on the secondary y-axis.
         """
         self.add_traces(line_traces)
+        self.add_traces(sec_traces, is_secondary=True)
         self.update_layout(width, height, nticks)
         self.fig.show()
