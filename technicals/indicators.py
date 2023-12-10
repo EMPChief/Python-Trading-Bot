@@ -99,3 +99,89 @@ def CommodityChannelIndex(df: pd.DataFrame, n: int = 20):
     df['CCI'] = (TP - TP.rolling(window=n).mean()) / \
         (0.015 * TP.rolling(window=n).std())
     return df
+
+
+def Momentum(df: pd.DataFrame, n: int = 14):
+    df['Momentum'] = df.mid_c - df.mid_c.shift(n)
+    return df
+
+
+def RateOfChange(df: pd.DataFrame, n: int = 14):
+    df['ROC'] = ((df.mid_c - df.mid_c.shift(n)) / df.mid_c.shift(n)) * 100
+    return df
+
+
+def OnBalanceVolume(df: pd.DataFrame):
+    df['OBV'] = (np.sign(df.mid_c.diff()) * df.volume).fillna(0).cumsum()
+    return df
+
+
+def ADL(df: pd.DataFrame):
+    clv = ((df.mid_c - df.mid_l) - (df.mid_h - df.mid_c)) / \
+        (df.mid_h - df.mid_l)
+    # NaNs (resulting from zero division) are replaced with 0
+    clv = clv.fillna(0)
+    df['ADL'] = (clv * df.volume).cumsum()
+    return df
+
+
+def Aroon(df: pd.DataFrame, n=14):
+    df['Aroon_Up'] = df.mid_h.rolling(n).apply(
+        lambda x: float(np.argmax(x) + 1) / n * 100)
+    df['Aroon_Down'] = df.mid_l.rolling(n).apply(
+        lambda x: float(np.argmin(x) + 1) / n * 100)
+    return df
+
+
+def Aroon_Oscillator(df: pd.DataFrame, n=14):
+    df = Aroon(df, n)
+    df['Aroon_Oscillator'] = df['Aroon_Up'] - df['Aroon_Down']
+    return df
+
+
+def CCI(df: pd.DataFrame, n=20):
+    # The code for this function is already in your file
+    return df
+
+
+def CMF(df: pd.DataFrame, n=20):
+    mf_multiplier = (df.mid_c - df.mid_l - df.mid_h +
+                     df.mid_c) / (df.mid_h - df.mid_l)
+    mf_volume = mf_multiplier * df.volume
+    df['CMF'] = mf_volume.rolling(n).sum() / df.volume.rolling(n).sum()
+    return df
+
+
+def EVM(df: pd.DataFrame, n=14):
+    dm = ((df.mid_h + df.mid_l) / 2) - \
+        ((df.mid_h.shift(1) + df.mid_l.shift(1)) / 2)
+    br = (df.volume / 1e6) / ((df.mid_h - df.mid_l))
+    df['EVM'] = dm / br.rolling(n).mean()
+    return df
+
+
+def ForceIndex(df: pd.DataFrame, n=2):
+    df['ForceIndex'] = df.volume * (df.mid_c - df.mid_c.shift(1))
+    df['ForceIndex'] = df['ForceIndex'].rolling(n).mean()
+    return df
+
+
+def MassIndex(df: pd.DataFrame, n=9, n2=25):
+    hl_diff = df.mid_h - df.mid_l
+    ema1 = hl_diff.ewm(span=n, adjust=False).mean()
+    ema2 = ema1.ewm(span=n, adjust=False).mean()
+    mass = ema1 / ema2
+    df['MassIndex'] = mass.rolling(n2).sum()
+    return df
+
+
+def MFI(df: pd.DataFrame, n=14):
+    typical_price = (df.mid_h + df.mid_l + df.mid_c) / 3
+    money_flow = typical_price * df.volume
+    positive_money_flow = money_flow.where(
+        df.mid_c > df.mid_c.shift(1), 0).rolling(n).sum()
+    negative_money_flow = money_flow.where(
+        df.mid_c < df.mid_c.shift(1), 0).rolling(n).sum()
+    money_flow_ratio = positive_money_flow / negative_money_flow
+    df['MFI'] = 100 - (100 / (1 + money_flow_ratio))
+    return df
