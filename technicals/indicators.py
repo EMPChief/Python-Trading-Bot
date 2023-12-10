@@ -74,3 +74,28 @@ def ADX(df: pd.DataFrame, n: int = 14) -> pd.DataFrame:
     dx = np.abs((pos_di - neg_di) / (pos_di + neg_di)) * 100
     df['ADX'] = dx.rolling(window=n).mean()
     return df
+
+
+def StochasticOscillator(df: pd.DataFrame, n: int = 14):
+    low_min = df.mid_l.rolling(window=n).min()
+    high_max = df.mid_h.rolling(window=n).max()
+    df['%K'] = (df.mid_c - low_min) / (high_max - low_min) * 100
+    df['%D'] = df['%K'].rolling(window=3).mean()
+    return df
+
+
+def MovingAverage(df: pd.DataFrame, n: int = 50):
+    df[f'MA_{n}'] = df.mid_c.rolling(window=n).mean()
+    return df
+
+
+def ExponentialMovingAverage(df: pd.DataFrame, n: int = 50):
+    df[f'EMA_{n}'] = df.mid_c.ewm(span=n, adjust=False).mean()
+    return df
+
+
+def CommodityChannelIndex(df: pd.DataFrame, n: int = 20):
+    TP = (df.mid_h + df.mid_l + df.mid_c) / 3
+    df['CCI'] = (TP - TP.rolling(window=n).mean()) / \
+        (0.015 * TP.rolling(window=n).std())
+    return df
