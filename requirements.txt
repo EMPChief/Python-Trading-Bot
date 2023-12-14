@@ -5,3 +5,4 @@ xlsxwriter
 jupyter
 plotly
 flask
+dask

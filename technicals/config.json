@@ -1,0 +1,28 @@
+{
+    "pattern_config_data": {
+        "HANGING_MAN_BODY": 15.0,
+        "HANGING_MAN_HEIGHT": 75.0,
+        "SHOOTING_STAR_HEIGHT": 25.0,
+        "SPINNING_TOP_MIN": 40.0,
+        "SPINNING_TOP_MAX": 60.0,
+        "MARUBOZU": 98.0,
+        "ENGULFING_FACTOR": 1.1,
+        "MORNING_STAR_PREV2_BODY": 90.0,
+        "MORNING_STAR_PREV_BODY": 10.0,
+        "TWEEZER_BODY": 15.0,
+        "TWEEZER_HL": 0.01,
+        "TWEEZER_TOP_BODY": 40.0,
+        "TWEEZER_BOTTOM_BODY": 60.0,
+        "DOJI_BODY": 5.0,
+        "HAMMER_UPPER": 20.0,
+        "HAMMER_LOWER": 80.0,
+        "INVERTED_HAMMER_UPPER": 80.0,
+        "INVERTED_HAMMER_LOWER": 20.0,
+        "DARK_CLOUD_COVER_PERCENTAGE": 50.0,
+        "PIERCING_PERCENTAGE": 50.0,
+        "BULLISH_ENGULFING_PERCENTAGE": 100.0,
+        "BULLISH_HARAMI_PERCENTAGE": 30.0,
+        "BEARISH_ENGULFING_PERCENTAGE": 100.0,
+        "BEARISH_HARAMI_PERCENTAGE": 30.0
+    }
+}
