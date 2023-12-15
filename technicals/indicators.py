@@ -4,15 +4,26 @@ import pandas as pd
 
 
 def BollingerBands(df: pd.DataFrame, n=20, s=2):
-    # Calculate Bollinger Bands
+    """
+    Calculate Bollinger Bands.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate Bollinger Bands on.
+        n (int): The number of days to use for the moving average.
+        s (float): The standard deviation multiplier.
+
+    Returns:
+        pd.DataFrame: The DataFrame with Bollinger Bands added.
+    """
+
+    # Calculate Typical Price (TP)
     typical_p = (df.mid_c + df.mid_h + df.mid_l) / 3
-    rolling_window = typical_p.rolling(window=n)
 
     # Calculate Moving Average (BB_MA)
-    df['BB_MA'] = rolling_window.mean()
+    df['BB_MA'] = typical_p.rolling(window=n).mean()
 
     # Calculate Standard Deviation
-    stddev = rolling_window.std()
+    stddev = typical_p.rolling(window=n).std()
 
     # Calculate Upper and Lower Bands (BB_UP and BB_LW)
     df['BB_UP'] = df['BB_MA'] + stddev * s
@@ -21,6 +32,18 @@ def BollingerBands(df: pd.DataFrame, n=20, s=2):
 
 
 def KeltnerChannels(df: pd.DataFrame, n_ema=20, n_atr=10):
+    """
+    Calculate Keltner Channels.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate Keltner Channels on.
+        n_ema (int): The number of days to use for the EMA.
+        n_atr (int): The number of days to use for the ATR.
+
+    Returns:
+        pd.DataFrame: The DataFrame with Keltner Channels added.
+    """
+
     # Calculate Exponential Moving Average (EMA)
     df['EMA'] = df.mid_c.ewm(span=n_ema, min_periods=n_ema).mean()
 
@@ -36,32 +59,79 @@ def KeltnerChannels(df: pd.DataFrame, n_ema=20, n_atr=10):
 
 
 def ATR(df: pd.DataFrame, n=14):
-    # Calculate Average True Range (ATR)
+    """
+    Calculate Average True Range (ATR).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate ATR on.
+        n (int): The number of days to use for the ATR.
+
+    Returns:
+        pd.DataFrame: The DataFrame with ATR added.
+    """
+
+    # Calculate True Range (TR)
     prev_c = df.mid_c.shift(1)
     tr1 = df.mid_h - df.mid_l
     tr2 = abs(df.mid_h - prev_c)
     tr3 = abs(prev_c - df.mid_l)
     tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+
+    # Calculate Average True Range (ATR)
     df[f"ATR_{n}"] = tr.rolling(window=n).mean()
     return df
 
 
 def RSI(df: pd.DataFrame, n=14):
-    # Calculate Relative Strength Index (RSI)
+    """
+    Calculate Relative Strength Index (RSI).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate RSI on.
+        n (int): The number of days to use for the RSI.
+
+    Returns:
+        pd.DataFrame: The DataFrame with RSI added.
+    """
+
+    # Calculate Delta
     delta = df.mid_c.diff()
+
+    # Calculate Gains and Losses
     gains = delta.clip(lower=0)
     losses = -delta.clip(upper=0)
+
+    # Calculate Average Gain (avg_gain) and Average Loss (avg_loss)
     avg_gain = gains.rolling(window=n).mean()
     avg_loss = losses.rolling(window=n).mean()
+
+    # Calculate Relative Strength (RS)
     rs = avg_gain / avg_loss
+
+    # Calculate Relative Strength Index (RSI)
     df[f"RSI_{n}"] = 100 - (100 / (1 + rs))
     return df
 
 
 def MACD(df: pd.DataFrame, n_slow=26, n_fast=12, n_signal=9):
-    # Calculate Moving Average Convergence Divergence (MACD)
+    """
+    Calculate Moving Average Convergence Divergence (MACD).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate MACD on.
+        n_slow (int): The number of days to use for the slow EMA.
+        n_fast (int): The number of days to use for the fast EMA.
+        n_signal (int): The number of days to use for the signal line.
+
+    Returns:
+        pd.DataFrame: The DataFrame with MACD added.
+    """
+
+    # Calculate Exponential Moving Average (EMA)
     ema_long = df.mid_c.ewm(span=n_slow, min_periods=n_slow).mean()
     ema_short = df.mid_c.ewm(span=n_fast, min_periods=n_fast).mean()
+
+    # Calculate MACD
     df['MACD'] = ema_short - ema_long
 
     # Calculate Signal Line (SIGNAL)
@@ -73,6 +143,16 @@ def MACD(df: pd.DataFrame, n_slow=26, n_fast=12, n_signal=9):
 
 
 def VWAP(df: pd.DataFrame):
+    """
+    Calculate Volume Weighted Average Price (VWAP).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate VWAP on.
+
+    Returns:
+        pd.DataFrame: The DataFrame with VWAP added.
+    """
+
     # Calculate Volume Weighted Average Price (VWAP)
     tp = (df.mid_h + df.mid_l + df.mid_c) / 3
     vwap = (tp * df.volume).cumsum() / df.volume.cumsum()
@@ -81,7 +161,17 @@ def VWAP(df: pd.DataFrame):
 
 
 def VWAP(df: pd.DataFrame):
-    # Calculate the Volume Weighted Average Price (VWAP)
+    """
+    Calculate the Volume Weighted Average Price (VWAP).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate VWAP on.
+
+    Returns:
+        pd.DataFrame: The DataFrame with VWAP added.
+    """
+
+    # Calculate Volume Weighted Average Price (VWAP)
     tp = (df.mid_h + df.mid_l + df.mid_c) / 3
     vwap = (tp * df.volume).cumsum() / df.volume.cumsum()
     df['VWAP'] = vwap
@@ -89,7 +179,17 @@ def VWAP(df: pd.DataFrame):
 
 
 def ADX(df: pd.DataFrame, n=14) -> pd.DataFrame:
-    # Calculate the Average Directional Index (ADX)
+    """
+    Calculate the Average Directional Index (ADX).
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate ADX on.
+        n (int): The number of days to use for the ADX.
+
+    Returns:
+        pd.DataFrame: The DataFrame with ADX added.
+    """
+
     # Calculate True Range (TR)
     tr1 = df.mid_h - df.mid_l
     tr2 = np.abs(df.mid_h - df.mid_c.shift(1))
@@ -113,86 +213,169 @@ def ADX(df: pd.DataFrame, n=14) -> pd.DataFrame:
 
 
 def StochasticOscillator(df: pd.DataFrame, n=14):
-    # Calculate the Stochastic Oscillator
+    """
+    Calculate the Stochastic Oscillator.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Stochastic Oscillator on.
+        n (int): The number of days to use for the Stochastic Oscillator.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Stochastic Oscillator added.
+    """
+
+    # Calculate Low Minimum (low_min) and High Maximum (high_max)
     low_min = df.mid_l.rolling(window=n).min()
     high_max = df.mid_h.rolling(window=n).max()
+
+    # Calculate %K and %D
     df['%K'] = (df.mid_c - low_min) / (high_max - low_min) * 100
     df['%D'] = df['%K'].rolling(window=3).mean()
     return df
 
 
 def MovingAverage(df: pd.DataFrame, n=50):
-    # Calculate the Moving Average (MA) for a given DataFrame.
-    # MA is the average of a set of prices over a specified period of time.
+    """
+    Calculate the Moving Average (MA) for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Moving Average on.
+        n (int): The number of days to use for the Moving Average.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Moving Average added.
+    """
+
+    # Calculate the Moving Average (MA)
     df[f'MA_{n}'] = df.mid_c.rolling(window=n).mean()
     return df
 
 
 def ExponentialMovingAverage(df: pd.DataFrame, n=50):
-    # Calculate the Exponential Moving Average (EMA) for a given DataFrame.
-    # EMA gives more weight to recent prices, making it more responsive to price changes.
+    """
+    Calculate the Exponential Moving Average (EMA) for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Exponential Moving Average on.
+        n (int): The number of days to use for the Exponential Moving Average.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Exponential Moving Average added.
+    """
+
+    # Calculate the Exponential Moving Average (EMA)
     df[f'EMA_{n}'] = df.mid_c.ewm(span=n, adjust=False).mean()
     return df
 
 
 def CommodityChannelIndex(df: pd.DataFrame, n=20):
-    # Calculate the Commodity Channel Index (CCI) for a given DataFrame.
-    # CCI is a momentum-based oscillator used to identify cyclical trends in a security.
+    """
+    Calculate the Commodity Channel Index (CCI) for a given DataFrame.
 
-    # Typical Price (TP) calculation
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Commodity Channel Index on.
+        n (int): The number of days to use for the Commodity Channel Index.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Commodity Channel Index added.
+    """
+
+    # Calculate the Typical Price (TP)
     TP = (df.mid_h + df.mid_l + df.mid_c) / 3
 
-    # CCI calculation
+    # Calculate the Commodity Channel Index (CCI)
     df['CCI'] = (TP - TP.rolling(window=n).mean()) / \
         (0.015 * TP.rolling(window=n).std())
     return df
 
 
 def Momentum(df: pd.DataFrame, n=14):
-    # Calculate the Momentum indicator for a given DataFrame.
-    # Momentum measures the rate of change of a security's price over a specified period of time.
+    """
+    Calculate the Momentum indicator for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Momentum indicator on.
+        n (int): The number of days to use for the Momentum indicator.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Momentum indicator added.
+    """
+
+    # Calculate the Momentum
     df['Momentum'] = df.mid_c - df.mid_c.shift(n)
     return df
 
 
 def RateOfChange(df: pd.DataFrame, n=14):
-    # Calculate the Rate of Change (ROC) for a given DataFrame.
-    # ROC is a momentum oscillator that measures the percentage change in price over a specified period of time.
+    """
+    Calculate the Rate of Change (ROC) for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Rate of Change on.
+        n (int): The number of days to use for the Rate of Change.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Rate of Change added.
+    """
+
+    # Calculate the Rate of Change (ROC)
     df['ROC'] = ((df.mid_c - df.mid_c.shift(n)) / df.mid_c.shift(n)) * 100
     return df
 
 
 def OnBalanceVolume(df: pd.DataFrame):
-    # Calculate the On-Balance Volume (OBV) for a given DataFrame.
-    # OBV uses volume flow to predict changes in stock price and measures buying and selling pressure.
+    """
+    Calculate the On-Balance Volume (OBV) for a given DataFrame.
 
-    # Price change direction
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the On-Balance Volume on.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the On-Balance Volume added.
+    """
+
+    # Calculate the Price Change Direction
     price_direction = np.sign(df.mid_c.diff())
 
-    # OBV calculation
+    # Calculate the On-Balance Volume (OBV)
     df['OBV'] = (price_direction * df.volume).fillna(0).cumsum()
     return df
 
 
 def ADL(df: pd.DataFrame):
-    # Calculate the Accumulation/Distribution Line (ADL) for a given DataFrame.
-    # ADL measures the cumulative flow of money into or out of a security.
+    """
+    Calculate the Accumulation/Distribution Line (ADL) for a given DataFrame.
 
-    # Money Flow calculation
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Accumulation/Distribution Line on.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Accumulation/Distribution Line added.
+    """
+
+    # Calculate the Money Flow
     clv = ((df.mid_c - df.mid_l) - (df.mid_h - df.mid_c)) / \
         (df.mid_h - df.mid_l)
     clv = clv.fillna(0)  # Replace NaNs resulting from zero division with 0
 
-    # ADL calculation
+    # Calculate the Accumulation/Distribution Line (ADL)
     df['ADL'] = (clv * df.volume).cumsum()
     return df
 
 
 def Aroon(df: pd.DataFrame, n=14):
-    # Calculate the Aroon indicator for a given DataFrame.
-    # Aroon identifies the strength and direction of a trend using two lines: Aroon Up and Aroon Down.
+    """
+    Calculate the Aroon indicator for a given DataFrame.
 
-    # Aroon Up and Down calculation
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Aroon indicator on.
+        n (int): The number of days to use for the Aroon indicator.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Aroon indicator added.
+    """
+
+    # Calculate the Aroon Up and Down
     df['Aroon_Up'] = df.mid_h.rolling(n).apply(
         lambda x: float(np.argmax(x) + 1) / n * 100)
     df['Aroon_Down'] = df.mid_l.rolling(n).apply(
@@ -201,76 +384,99 @@ def Aroon(df: pd.DataFrame, n=14):
 
 
 def Aroon_Oscillator(df: pd.DataFrame, n=14):
-    # Calculate the Aroon Oscillator for a given DataFrame.
-    # Aroon Oscillator measures the difference between Aroon Up and Aroon Down lines.
+    """
+    Calculate the Aroon Oscillator for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Aroon Oscillator on.
+        n (int): The number of days to use for the Aroon Oscillator.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Aroon Oscillator added.
+    """
+
+    # Calculate the Aroon Up and Down
     df = Aroon(df, n)
     df['Aroon_Oscillator'] = df['Aroon_Up'] - df['Aroon_Down']
     return df
 
 
 def CMF(df: pd.DataFrame, n=20):
-    # Calculate the Chaikin Money Flow (CMF) for a given DataFrame.
-    # CMF combines price and volume to determine the strength of a trend.
+    """
+    Calculate the Chaikin Money Flow (CMF) for a given DataFrame.
 
-    # Money Flow Multiplier and Volume calculation
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Chaikin Money Flow on.
+        n (int): The number of days to use for the Chaikin Money Flow.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Chaikin Money Flow added.
+    """
+
+    # Calculate the Money Flow Multiplier and Volume
     mf_multiplier = (df.mid_c - df.mid_l - df.mid_h +
                      df.mid_c) / (df.mid_h - df.mid_l)
     mf_volume = mf_multiplier * df.volume
 
-    # CMF calculation
+    # Calculate the Chaikin Money Flow (CMF)
     df['CMF'] = mf_volume.rolling(n).sum() / df.volume.rolling(n).sum()
     return df
 
 
 def EVM(df: pd.DataFrame, n=14):
-    # Calculate the Ease of Movement (EVM) for a given DataFrame.
-    # EVM measures the relationship between price change and volume to identify the strength and direction of a trend.
+    """
+    Calculate the Ease of Movement (EVM) for a given DataFrame.
 
-    # Distance Moved and Box Ratio calculation
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Ease of Movement on.
+        n (int): The number of days to use for the Ease of Movement.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Ease of Movement added.
+    """
+
+    # Calculate the Distance Moved and Box Ratio
     dm = ((df.mid_h + df.mid_l) / 2) - \
         ((df.mid_h.shift(1) + df.mid_l.shift(1)) / 2)
     br = (df.volume / 1e6) / ((df.mid_h - df.mid_l))
 
-    # EVM calculation
-    df['EVM'] = dm / br.rolling(n).mean()
+    # Calculate the Ease of Movement (EVM)
+    df['EVM'] = dm / br
     return df
 
+# add ichidoku cloud
 
-def ForceIndex(df: pd.DataFrame, n=2):
-    # Calculate the Force Index for a given DataFrame.
-    # Force Index measures the strength of a price trend by combining price and volume.
 
-    # Force Index calculation
-    df['ForceIndex'] = df.volume * (df.mid_c - df.mid_c.shift(1))
-    df['ForceIndex'] = df['ForceIndex'].rolling(n).mean()
+def IchimokuCloud(df: pd.DataFrame, n1=9, n2=26, n3=52):
+    """
+    Calculate the Ichimoku Cloud for a given DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to calculate the Ichimoku Cloud on.
+        n1 (int): The number of days to use for the Tenkan-sen.
+        n2 (int): The number of days to use for the Kijun-sen.
+        n3 (int): The number of days to use for the Senkou Span A.
+
+    Returns:
+        pd.DataFrame: The DataFrame with the Ichimoku Cloud added.
+    """
+
+    # Calculate the Tenkan-sen (Conversion Line)
+    df['Tenkan_sen'] = (df.mid_h.rolling(n1).max() +
+                        df.mid_l.rolling(n1).min()) / 2
+
+    # Calculate the Kijun-sen (Base Line)
+    df['Kijun_sen'] = (df.mid_h.rolling(n2).max() +
+                       df.mid_l.rolling(n2).min()) / 2
+
+    # Calculate the Senkou Span A (Leading Span A)
+    df['Senkou_Span_A'] = ((df['Tenkan_sen'] + df['Kijun_sen']) / 2).shift(n3)
+
+    # Calculate the Senkou Span B (Leading Span B)
+    df['Senkou_Span_B'] = (
+        (df.mid_h.rolling(n3).max() + df.mid_l.rolling(n3).min()) / 2).shift(n3)
+
+    # Calculate the Chikou Span (Lagging Span)
+    df['Chikou_Span'] = df.mid_c.shift(-n2)
+
     return df
-
-
-def MassIndex(df: pd.DataFrame, n=9, n2=25):
-    # Calculate the Mass Index for a given DataFrame.
-    # Mass Index measures the volatility of a security's price movement.
-
-    # High-Low Range and Exponential Moving Averages calculation
-    hl_diff = df.mid_h - df.mid_l
-    ema1 = hl_diff.ewm(span=n, adjust=False).mean()
-    ema2 = ema1.ewm(span=n, adjust=False).mean()
-
-    # Mass Index calculation
-    mass = ema1 / ema2
-    df['MassIndex'] = mass.rolling(n2).sum()
-    return df
-
-
-def MFI(df: pd.DataFrame, n=14):
-    # Calculate the Money Flow Index (MFI) for a given DataFrame.
-    # MFI measures the strength and direction of money flow in and out of a security.
-
-    # Typical Price and Money Flow calculation
-    typical_price = (df.mid_h + df.mid_l + df.mid_c) / 3
-    money_flow = typical_price * df.volume
-    positive_money_flow = money_flow.where(
-        df.mid_c > df.mid_c.shift(1), 0).rolling(n).sum()
-    negative_money_flow = money_flow.where(
-        df.mid_c < df.mid_c.shift(1), 0).rolling(n).sum()
-
-    # Money Flow Index

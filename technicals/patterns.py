@@ -10,7 +10,7 @@ def read_config(file_path):
     return config
 
 
-config = read_config('../technicals/config.json')
+config = read_config('../config.json')
 pattern_config_data = config['pattern_config_data']
 
 
@@ -175,6 +175,45 @@ def set_candle_patterns(df_an: pd.DataFrame):
         (df_an['direction'] == -1) &
         (df_an['body_size'] < df_an['body_size_prev']
          * BEARISH_HARAMI_PERCENTAGE)
+    )
+    df_an['THREE_WHITE_SOLDIERS'] = (
+        (df_an['direction'] == 1) &
+        (df_an['direction'].shift(1) == 1) &
+        (df_an['direction'].shift(2) == 1) &
+        (df_an['mid_c'] > df_an['mid_c'].shift(1)) &
+        (df_an['mid_c'].shift(1) > df_an['mid_c'].shift(2)) &
+        (df_an['mid_o'] < df_an['mid_c'].shift(1)) &
+        (df_an['mid_o'].shift(1) < df_an['mid_c'].shift(2))
+    )
+    df_an['THREE_BLACK_CROWS'] = (
+        (df_an['direction'] == -1) &
+        (df_an['direction'].shift(1) == -1) &
+        (df_an['direction'].shift(2) == -1) &
+        (df_an['mid_c'] < df_an['mid_c'].shift(1)) &
+        (df_an['mid_c'].shift(1) < df_an['mid_c'].shift(2)) &
+        (df_an['mid_o'] > df_an['mid_c'].shift(1)) &
+        (df_an['mid_o'].shift(1) > df_an['mid_c'].shift(2))
+    )
+    df_an['BULLISH_ABANDONED_BABY'] = (
+        (df_an['direction'].shift(2) == -1) &
+        (df_an['direction'] == 1) &
+        (df_an['body_percentage'].shift(1) < DOJI_BODY) &
+        (df_an['mid_o'].shift(1) < df_an['mid_c'].shift(2)) &
+        (df_an['mid_o'] > df_an['mid_c'].shift(1))
+    )
+    df_an['BEARISH_ABANDONED_BABY'] = (
+        (df_an['direction'].shift(2) == 1) &
+        (df_an['direction'] == -1) &
+        (df_an['body_percentage'].shift(1) < DOJI_BODY) &
+        (df_an['mid_o'].shift(1) > df_an['mid_c'].shift(2)) &
+        (df_an['mid_o'] < df_an['mid_c'].shift(1))
+    )
+    df_an['BULLISH_TRI_STAR'] = (
+        (df_an['body_percentage'] < DOJI_BODY) &
+        (df_an['body_percentage'].shift(1) < DOJI_BODY) &
+        (df_an['body_percentage'].shift(2) < DOJI_BODY) &
+        (df_an['mid_o'].shift(1) < df_an['mid_c'].shift(2)) &
+        (df_an['mid_o'] > df_an['mid_c'].shift(1))
     )
 
 
