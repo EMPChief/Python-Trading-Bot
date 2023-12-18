@@ -38,7 +38,7 @@ def prepare_data(df: pd.DataFrame, slow, fast, signal, ema):
 
 
 def load_data(pair, time_d=1):
-    start = parser.parse("2020-10-01T00:00:00Z")
+    start = parser.parse("2016-10-01T00:00:00Z")
     end = parser.parse("2021-01-01T00:00:00Z")
 
     df = pd.read_csv(f"./data/candles/{pair}_H{time_d}.csv")
@@ -107,7 +107,7 @@ def run_pair(pair):
                         signal=signal
                     ))
     pd.concat(trades).to_csv(
-        f"./data/result/macd_ema_trades_{pair}.pkl")
+        f"./data/result/trades/macd_ema_trades_{pair}.csv")
     return pd.DataFrame.from_dict(results)
 
 
