@@ -1,113 +1,71 @@
 import requests
-import constants.defs as defs
 import pandas as pd
+import json
+import constants.defs as defs
+
 from dateutil import parser
 from datetime import datetime as dt
+from infrastructure.instrument_collection import instrumentCollection as ic
+from models.api_price import ApiPrice
+from models.open_trade import OpenTrade
 
 
 class OandaApi:
-    """
-    A simple wrapper class for making requests to the Oanda API.
-
-    Attributes:
-        session (requests.Session): A session object for making HTTP requests.
-    """
 
     def __init__(self):
-        """
-        Initializes the OandaApi object.
-
-        This constructor sets up the session with the required headers for making API requests.
-        """
         self.session = requests.Session()
         self.session.headers.update({
-            'Content-Type': 'application/json',
-            'Authorization': f'Bearer {defs.API_KEY}'
+            "Authorization": f"Bearer {defs.API_KEY}",
+            "Content-Type": "application/json"
         })
 
     def make_request(self, url, verb='get', code=200, params=None, data=None, headers=None):
-        """
-        Makes an HTTP request to the specified URL using the provided parameters.
+        full_url = f"{defs.OANDA_URL}/{url}"
 
-        Args:
-            url (str): The API endpoint to make the request to.
-            verb (str, optional): The HTTP verb for the request (default is 'get').
-            code (int, optional): The expected HTTP status code for a successful response (default is 200).
-            params (dict, optional): The query parameters for the request (default is None).
-            data (dict, optional): The request payload data (default is None).
-            headers (dict, optional): Additional headers for the request (default is None).
+        if data is not None:
+            data = json.dumps(data)
 
-        Returns:
-            tuple: A tuple containing a boolean indicating success and the response data in JSON format.
-        """
-        full_url = f'{defs.OANDA_URL}{url}'
         try:
             response = None
-            if verb == 'get':
+            if verb == "get":
                 response = self.session.get(
                     full_url, params=params, data=data, headers=headers)
-            if response is None:
+            if verb == "post":
+                response = self.session.post(
+                    full_url, params=params, data=data, headers=headers)
+            if verb == "put":
+                response = self.session.put(
+                    full_url, params=params, data=data, headers=headers)
+
+            if response == None:
                 return False, {'error': 'verb not found'}
+
             if response.status_code == code:
                 return True, response.json()
             else:
                 return False, response.json()
-        except Exception as e:
-            return False, {'error': str(e)}
+
+        except Exception as error:
+            return False, {'Exception': error}
 
     def get_account_ep(self, ep, data_key):
-        """
-        Retrieves specific data from the Oanda API for the account.
-
-        Args:
-            ep (str): The API endpoint for the specific data.
-            data_key (str): The key in the API response containing the desired data.
-
-        Returns:
-            dict or None: The requested data if successful, otherwise None.
-        """
         url = f"accounts/{defs.ACCOUNT_ID}/{ep}"
         ok, data = self.make_request(url)
+
         if ok == True and data_key in data:
             return data[data_key]
         else:
-            print("ERROR get_account_ep", data)
+            print("ERROR get_account_ep()", data)
             return None
 
     def get_account_summary(self):
-        """
-        Retrieves the summary data for the account.
-
-        Returns:
-            dict or None: The account summary data if successful, otherwise None.
-        """
         return self.get_account_ep("summary", "account")
 
     def get_account_instruments(self):
-        """
-        Retrieves the list of instruments for the account.
-
-        Returns:
-            dict or None: The list of instruments if successful, otherwise None.
-        """
         return self.get_account_ep("instruments", "instruments")
 
     def fetch_candles(self, pair_name, count=10, granularity="H1",
                       price="MBA", date_f=None, date_t=None):
-        """
-        Retrieves candlestick data for a specified instrument and time range.
-
-        Args:
-            pair_name (str): The instrument name (e.g., 'EUR_USD').
-            count (int, optional): The number of candles to retrieve (default is 10).
-            granularity (str, optional): The granularity of the candles (default is 'H1').
-            price (str, optional): The price component of the candles (default is 'MBA').
-            date_f (datetime, optional): The start date for the query (default is None).
-            date_t (datetime, optional): The end date for the query (default is None).
-
-        Returns:
-            list or None: A list of candlestick data if successful, otherwise None.
-        """
         url = f"instruments/{pair_name}/candles"
         params = dict(
             granularity=granularity,
@@ -130,16 +88,6 @@ class OandaApi:
             return None
 
     def get_candles_df(self, pair_name, **kwargs):
-        """
-        Retrieves candlestick data for a specified instrument and time range and returns it as a DataFrame.
-
-        Args:
-            pair_name (str): The instrument name (e.g., 'EUR_USD').
-            **kwargs: Additional parameters for the fetch_candles method.
-
-        Returns:
-            pandas.DataFrame or None: A DataFrame of candlestick data if successful, otherwise None.
-        """
 
         data = self.fetch_candles(pair_name, **kwargs)
 
@@ -165,3 +113,88 @@ class OandaApi:
             final_data.append(new_dict)
         df = pd.DataFrame.from_dict(final_data)
         return df
+
+    def last_complete_candle(self, pair_name, granularity):
+        df = self.get_candles_df(pair_name, granularity=granularity, count=10)
+        if df.shape[0] == 0:
+            return None
+        return df.iloc[-1].time
+
+    def place_trade(self, pair_name: str, units: float, direction: int,
+                    stop_loss: float = None, take_profit: float = None):
+
+        url = f"accounts/{defs.ACCOUNT_ID}/orders"
+
+        instrument = ic.instruments_dict[pair_name]
+        units = round(units, instrument.tradeUnitsPrecision)
+
+        if direction == defs.SELL:
+            units = units * -1
+
+        data = dict(
+            order=dict(
+                units=str(units),
+                instrument=pair_name,
+                type="MARKET"
+            )
+        )
+
+        if stop_loss is not None:
+            sld = dict(price=str(round(stop_loss, instrument.displayPrecision)))
+            data['order']['stopLossOnFill'] = sld
+
+        if take_profit is not None:
+            tpd = dict(
+                price=str(round(take_profit, instrument.displayPrecision)))
+            data['order']['takeProfitOnFill'] = tpd
+
+        # print(data)
+
+        ok, response = self.make_request(url, verb="post", data=data, code=201)
+
+        # print(ok, response)
+
+        if ok == True and 'orderFillTransaction' in response:
+            return response['orderFillTransaction']['id']
+        else:
+            return None
+
+    def close_trade(self, trade_id):
+        url = f"accounts/{defs.ACCOUNT_ID}/trades/{trade_id}/close"
+        ok, _ = self.make_request(url, verb="put", code=200)
+
+        if ok == True:
+            print(f"Closed {trade_id} successfully")
+        else:
+            print(f"Failed to close {trade_id}")
+
+        return ok
+
+    def get_open_trade(self, trade_id):
+        url = f"accounts/{defs.ACCOUNT_ID}/trades/{trade_id}"
+        ok, response = self.make_request(url)
+
+        if ok == True and 'trade' in response:
+            return OpenTrade(response['trade'])
+
+    def get_open_trades(self):
+        url = f"accounts/{defs.ACCOUNT_ID}/openTrades"
+        ok, response = self.make_request(url)
+
+        if ok == True and 'trades' in response:
+            return [OpenTrade(x) for x in response['trades']]
+
+    def get_prices(self, instruments_list):
+        url = f"accounts/{defs.ACCOUNT_ID}/pricing"
+
+        params = dict(
+            instruments=','.join(instruments_list),
+            includeHomeConversions=True
+        )
+
+        ok, response = self.make_request(url, params=params)
+
+        if ok == True and 'prices' in response and 'homeConversions' in response:
+            return [ApiPrice(x, response['homeConversions']) for x in response['prices']]
+
+        return None
