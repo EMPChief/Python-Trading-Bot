@@ -1,9 +1,9 @@
 import json
 import time
-from pathlib import Path  # Add this import
+from pathlib import Path
 from bot.candle_manager import CandleManager
 from bot.technicals_manager import get_trade_decision
-from bot.trade_manager import place_trade, trade_is_open
+from bot.trade_manager import place_trade
 from infrastructure.log_wrapper import LogWrapper
 from models.trade_settings import TradeSettings
 from api.oanda_api import OandaApi
@@ -11,9 +11,10 @@ import constants.defs as defs
 
 
 class Bot:
+
     ERROR_LOG = "error"
     MAIN_LOG = "main"
-    GRANULARITY = "M5"
+    GRANULARITY = "M1"
     SLEEP = 10
 
     def __init__(self):
@@ -27,20 +28,14 @@ class Bot:
         self.log_to_main("Bot started")
         self.log_to_error("Bot started")
 
-        def load_settings(self):
-            settings_path = Path(__file__).resolve(
-            ).parent.parent / "bot" / "settings.json"
-            print(f"Loading settings from: {settings_path}")
-
-            if not settings_path.exists():
-                print(f"Error: Settings file not found at {settings_path}")
-                return
-
-            with open(settings_path, "r") as f:
-                data = json.loads(f.read())
-                self.trade_settings = {k: TradeSettings(
-                    v, k) for k, v in data['pairs'].items()}
-                self.trade_risk = data['trade_risk']
+    def load_settings(self):
+        settings_path = Path(__file__).parent / "settings.json"
+        print(f"Loading settings from: {settings_path}")
+        with open(settings_path, "r") as f:
+            data = json.loads(f.read())
+            self.trade_settings = {k: TradeSettings(
+                v, k) for k, v in data['pairs'].items()}
+            self.trade_risk = data['trade_risk']
 
     def setup_logs(self):
         self.logs = {}
@@ -68,20 +63,12 @@ class Bot:
             for p in triggered:
                 last_time = self.candle_manager.timings[p].last_time
                 trade_decision = get_trade_decision(last_time, p, Bot.GRANULARITY, self.api,
-                                                    self.trade_settings[p],  self.log_message)
+                                                    self.trade_settings[p], self.log_message)
                 if trade_decision is not None and trade_decision.signal != defs.NONE:
                     self.log_message(f"Place Trade: {trade_decision}", p)
                     self.log_to_main(f"Place Trade: {trade_decision}")
-                    place_trade(trade_decision, self.api, self.log_message,
-                                self.log_to_error, self.trade_risk)
-
-    def close_all_trades(self):
-        for pair in self.trade_settings.keys():
-            open_trade = trade_is_open(pair, self.api)
-            if open_trade is not None:
-                self.api.close_trade(open_trade.id)
-                self.log_to_main(
-                    f"Closed trade {open_trade.id} for {pair} due to error or shutdown")
+                    place_trade(trade_decision, self.api,
+                                self.log_message, self.log_to_error, self.trade_risk)
 
     def run(self):
         while True:
@@ -90,5 +77,4 @@ class Bot:
                 self.process_candles(self.candle_manager.update_timings())
             except Exception as error:
                 self.log_to_error(f"CRASH: {error}")
-                self.close_all_trades()
                 break

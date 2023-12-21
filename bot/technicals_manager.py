@@ -82,11 +82,14 @@ def process_candles(df: pd.DataFrame, pair, trade_settings: TradeSettings, log_m
 def get_trade_decision(candle_time, pair, granularity, api: OandaApi,
                        trade_settings: TradeSettings, log_message):
 
+    bollinger_settings = trade_settings.bollinger_bands_settings
+    ichimoku_settings = trade_settings.ichimoku_cloud_settings
+    cmf_settings = trade_settings.cmf_settings
+
     max_rows = max(
-        trade_settings.bollinger_bands_settings['n_ma'],
-        trade_settings.ichimoku_cloud_settings['n1'] +
-        trade_settings.ichimoku_cloud_settings['n3'],
-        trade_settings.cmf_settings['n_cmf'],
+        bollinger_settings.get('n_ma', 0),
+        ichimoku_settings.get('n1', 0) + ichimoku_settings.get('n3', 0),
+        cmf_settings.get('n_cmf', 0),
     ) + ADDROWS
 
     log_message(
