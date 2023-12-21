@@ -32,3 +32,22 @@ EUR_USD Settings:
 2023-12-21 21:34:06 process_candles triggered:['GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
 2023-12-21 21:34:27 process_candles triggered:['GBP_CHF', 'EUR_CHF']
 2023-12-21 21:35:08 process_candles triggered:['GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:35:29 process_candles triggered:['GBP_CHF', 'EUR_CHF']
+2023-12-21 21:36:10 process_candles triggered:['GBP_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:36:31 process_candles triggered:['EUR_CHF']
+2023-12-21 21:37:11 process_candles triggered:['GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:37:12 Place Trade: TradeDecision(pair=EUR_GBP, direction=1, gain=0.4263, sl=0.6538, tp=1.2933)
+2023-12-21 21:37:34 process_candles triggered:['GBP_CHF', 'EUR_CHF']
+2023-12-21 21:38:14 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:39:15 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:40:15 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:41:15 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:42:13 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:42:13 Place Trade: TradeDecision(pair=GBP_USD, direction=1, gain=0.5863, sl=0.9753, tp=1.8548)
+2023-12-21 21:42:15 Place Trade: TradeDecision(pair=USD_CHF, direction=-1, gain=0.4678, sl=1.0908, tp=0.3891)
+2023-12-21 21:43:09 process_candles triggered:['GBP_JPY', 'GBP_USD', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:43:31 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'EUR_GBP']
+2023-12-21 21:44:11 process_candles triggered:['GBP_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:44:33 process_candles triggered:['EUR_CHF']
+2023-12-21 21:45:13 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
+2023-12-21 21:46:15 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_JPY', 'EUR_USD']
