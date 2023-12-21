@@ -39,6 +39,8 @@ def apply_TP(row):
 
 def fetch_candles(pair, row_count, candle_time, granularity, api: OandaApi, log_message, attempts=3):
     for _ in range(attempts):
+        row_count = int(row_count)
+
         df = api.get_candles_df(pair, count=row_count, granularity=granularity)
 
         if df is not None and df.shape[0] != 0 and df.iloc[-1].time == candle_time:
@@ -57,9 +59,25 @@ def process_candles(df: pd.DataFrame, pair, trade_settings: TradeSettings, log_m
     df['PAIR'] = pair
     df['SPREAD'] = df.ask_c - df.bid_c
 
-    df = IchimokuCloud(df, **trade_settings.ichimoku_cloud_settings)
-    df = BollingerBands(df, **trade_settings.bollinger_bands_settings)
-    df = CMF(df, trade_settings.cmf_settings)
+    # Extract the required parameters for each indicator
+    bollinger_params = {
+        "n": int(trade_settings.bollinger_bands_settings['n_ma']),
+        "n_std": float(trade_settings.bollinger_bands_settings['n_std'])
+    }
+
+    ichimoku_params = {
+        "n1": int(trade_settings.ichimoku_cloud_settings['n1']),
+        "n2": int(trade_settings.ichimoku_cloud_settings['n2']),
+        "n3": int(trade_settings.ichimoku_cloud_settings['n3'])
+    }
+
+    cmf_params = {
+        "n_cmf": int(trade_settings.cmf_settings['n_cmf'])
+    }
+
+    df = IchimokuCloud(df, **ichimoku_params)
+    df = BollingerBands(df, **bollinger_params)
+    df = CMF(df, **cmf_params)
 
     df['GAIN'] = 0.5 * (
         abs(df.mid_c - df.BB_MA) + abs(df.mid_c -
@@ -79,18 +97,14 @@ def process_candles(df: pd.DataFrame, pair, trade_settings: TradeSettings, log_m
     return df[log_cols].iloc[-1]
 
 
-def get_trade_decision(candle_time, pair, granularity, api: OandaApi,
-                       trade_settings: TradeSettings, log_message):
-
-    bollinger_settings = trade_settings.bollinger_bands_settings
-    ichimoku_settings = trade_settings.ichimoku_cloud_settings
-    cmf_settings = trade_settings.cmf_settings
-
-    max_rows = max(
-        bollinger_settings.get('n_ma', 0),
-        ichimoku_settings.get('n1', 0) + ichimoku_settings.get('n3', 0),
-        cmf_settings.get('n_cmf', 0),
-    ) + ADDROWS
+def get_trade_decision(candle_time, pair, granularity, api: OandaApi, trade_settings: TradeSettings, log_message):
+    max_rows = (
+        trade_settings.bollinger_bands_settings['n_ma']
+        + trade_settings.ichimoku_cloud_settings['n1']
+        + trade_settings.ichimoku_cloud_settings['n3']
+        + trade_settings.cmf_settings['n_cmf']
+        + ADDROWS
+    )
 
     log_message(
         f"tech_manager: max_rows:{max_rows} candle_time:{candle_time} granularity:{granularity}", pair)

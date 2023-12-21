@@ -1,3 +1,4 @@
-2023-12-21 20:33:38 LogWrapper init() ./logs/EUR_CHF.log
-2023-12-21 20:33:38 {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
-2023-12-21 20:33:43 CandleManager() init last_candle:last_candle:23-12-21 19:32 is_ready:False
+2023-12-21 20:56:09 LogWrapper init() ./logs/EUR_CHF.log
+2023-12-21 20:56:09 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 20:56:14 CandleManager() init last_candle:last_candle:23-12-21 19:55 is_ready:False
+2023-12-21 20:57:08 CandleManager() new candle:last_candle:23-12-21 19:56 is_ready:True

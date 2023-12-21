@@ -1,14 +1,15 @@
-2023-12-21 20:33:38 LogWrapper init() ./logs/main.log
-2023-12-21 20:33:38 Bot started with Trade Settings:
+2023-12-21 20:56:09 LogWrapper init() ./logs/main.log
+2023-12-21 20:56:09 Bot started with Trade Settings:
 GBP_CHF Settings:
-    GBP_CHF: {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
+    GBP_CHF: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 EUR_CHF Settings:
-    EUR_CHF: {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
+    EUR_CHF: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 GBP_JPY Settings:
-    GBP_JPY: {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.04, 'mingain': 0.06, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
+    GBP_JPY: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.04, 'mingain': 0.06, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 GBP_USD Settings:
-    GBP_USD: {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
+    GBP_USD: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 EUR_GBP Settings:
-    EUR_GBP: {'bollinger_bands_settings': {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2}, 'ichimoku_cloud_settings': {'n1': 9, 'n2': 26, 'n3': 52}, 'cmf_settings': {'n_cmf': 20}}
+    EUR_GBP: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 
-2023-12-21 20:33:43 Bot started
+2023-12-21 20:56:14 Bot started
+2023-12-21 20:57:09 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
