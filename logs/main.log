@@ -11,3 +11,4 @@
 2023-12-22 00:50:15 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_USD']
 2023-12-22 00:51:11 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_CAD', 'AUD_JPY', 'USD_CHF', 'EUR_USD']
 2023-12-22 00:52:02 process_candles triggered:['GBP_JPY', 'AUD_JPY', 'USD_CHF', 'EUR_USD']
+2023-12-22 00:52:24 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_USD', 'EUR_GBP', 'USD_CAD']
