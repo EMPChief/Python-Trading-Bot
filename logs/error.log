@@ -1,2 +1,3 @@
 2023-12-21 21:19:23 LogWrapper init() ./logs/error.log
 2023-12-21 21:19:33 Bot started
+2023-12-21 21:26:23 Error placing TradeDecision(pair=EUR_CHF, direction=-1, gain=0.4432, sl=1.1642, tp=0.4994): 'Instrument' object has no attribute 'displayPrecision'
