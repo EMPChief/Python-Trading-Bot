@@ -138,11 +138,11 @@ def Aroon_Oscillator(df: pd.DataFrame, n=14):
     return df
 
 
-def CMF(df: pd.DataFrame, n=20):
+def CMF(df: pd.DataFrame, n_cmf=20):
     mf_multiplier = (df.mid_c - df.mid_l - df.mid_h +
                      df.mid_c) / (df.mid_h - df.mid_l)
     mf_volume = mf_multiplier * df.volume
-    df['CMF'] = mf_volume.rolling(n).sum() / df.volume.rolling(n).sum()
+    df['CMF'] = mf_volume.rolling(n_cmf).sum() / df.volume.rolling(n_cmf).sum()
     return df
 
 

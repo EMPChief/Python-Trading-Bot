@@ -1,5 +1,5 @@
-2023-12-21 20:56:09 LogWrapper init() ./logs/main.log
-2023-12-21 20:56:09 Bot started with Trade Settings:
+2023-12-21 21:03:34 LogWrapper init() ./logs/main.log
+2023-12-21 21:03:34 Bot started with Trade Settings:
 GBP_CHF Settings:
     GBP_CHF: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 EUR_CHF Settings:
@@ -11,5 +11,7 @@ GBP_USD Settings:
 EUR_GBP Settings:
     EUR_GBP: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 
-2023-12-21 20:56:14 Bot started
-2023-12-21 20:57:09 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
+2023-12-21 21:03:39 Bot started
+2023-12-21 21:04:08 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
+2023-12-21 21:05:08 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
+2023-12-21 21:05:09 Place Trade: TradeDecision(pair=GBP_USD, direction=1, gain=0.6628, sl=0.9368, tp=1.9311)

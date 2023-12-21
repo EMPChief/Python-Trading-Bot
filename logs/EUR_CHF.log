@@ -1,4 +1,21 @@
-2023-12-21 20:56:09 LogWrapper init() ./logs/EUR_CHF.log
-2023-12-21 20:56:09 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
-2023-12-21 20:56:14 CandleManager() init last_candle:last_candle:23-12-21 19:55 is_ready:False
-2023-12-21 20:57:08 CandleManager() new candle:last_candle:23-12-21 19:56 is_ready:True
+2023-12-21 21:03:34 LogWrapper init() ./logs/EUR_CHF.log
+2023-12-21 21:03:34 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 21:03:39 CandleManager() init last_candle:last_candle:23-12-21 20:02 is_ready:False
+2023-12-21 21:04:08 CandleManager() new candle:last_candle:23-12-21 20:03 is_ready:True
+2023-12-21 21:04:08 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:03:00+00:00 granularity:M1
+2023-12-21 21:04:09 process_candles:
+        PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
+107  EUR_CHF 2023-12-21 19:59:00+00:00  0.94260  0.94248  0.0  0.0  0.00018  0.554800  0.94260       0
+108  EUR_CHF 2023-12-21 20:00:00+00:00  0.94256  0.94260  0.0  0.0  0.00019  0.540535  0.94256       0
+109  EUR_CHF 2023-12-21 20:01:00+00:00  0.94253  0.94256  0.0  0.0  0.00018  0.553354  0.94253       0
+110  EUR_CHF 2023-12-21 20:02:00+00:00  0.94245  0.94252  0.0  0.0  0.00018  0.538636  0.94245       0
+111  EUR_CHF 2023-12-21 20:03:00+00:00  0.94244  0.94243  0.0  0.0  0.00018  0.516032  0.94244       0
+2023-12-21 21:05:04 CandleManager() new candle:last_candle:23-12-21 20:04 is_ready:True
+2023-12-21 21:05:08 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:04:00+00:00 granularity:M1
+2023-12-21 21:05:08 process_candles:
+        PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
+107  EUR_CHF 2023-12-21 20:00:00+00:00  0.94256  0.94260  0.0  0.0  0.00019  0.540535  0.94256       0
+108  EUR_CHF 2023-12-21 20:01:00+00:00  0.94253  0.94256  0.0  0.0  0.00018  0.553354  0.94253       0
+109  EUR_CHF 2023-12-21 20:02:00+00:00  0.94245  0.94252  0.0  0.0  0.00018  0.538636  0.94245       0
+110  EUR_CHF 2023-12-21 20:03:00+00:00  0.94244  0.94243  0.0  0.0  0.00018  0.516032  0.94244       0
+111  EUR_CHF 2023-12-21 20:04:00+00:00  0.94244  0.94244  0.0  0.0  0.00019  0.539367  0.94244       0

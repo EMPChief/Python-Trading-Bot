@@ -13,7 +13,7 @@ ADDROWS = 20
 
 
 def apply_signal(row, trade_settings: TradeSettings):
-    if row.SPREAD <= trade_settings.maxspread and row.GAIN >= trade_settings.mingain:
+    if row.SPREAD <= trade_settings.bollinger_bands_settings['maxspread'] and row.GAIN >= trade_settings.bollinger_bands_settings['mingain']:
         if row.mid_c > row.BB_UP and row.mid_o < row.BB_UP:
             return defs.SELL
         elif row.mid_c < row.BB_LW and row.mid_o > row.BB_LW:
@@ -23,9 +23,9 @@ def apply_signal(row, trade_settings: TradeSettings):
 
 def apply_SL(row, trade_settings: TradeSettings):
     if row.SIGNAL == defs.BUY:
-        return row.mid_c - (row.GAIN / trade_settings.riskreward)
+        return row.mid_c - (row.GAIN / trade_settings.bollinger_bands_settings['riskreward'])
     elif row.SIGNAL == defs.SELL:
-        return row.mid_c + (row.GAIN / trade_settings.riskreward)
+        return row.mid_c + (row.GAIN / trade_settings.bollinger_bands_settings['riskreward'])
     return 0.0
 
 
