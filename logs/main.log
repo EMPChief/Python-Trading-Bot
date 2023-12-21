@@ -35,3 +35,16 @@ AUD_JPY Settings:
 2023-12-21 21:26:04 process_candles triggered:['NZD_USD', 'USD_CAD', 'AUD_JPY']
 2023-12-21 21:26:22 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD']
 2023-12-21 21:26:22 Place Trade: TradeDecision(pair=EUR_CHF, direction=-1, gain=0.4432, sl=1.1642, tp=0.4994)
+2023-12-21 21:27:02 process_candles triggered:['USD_JPY', 'NZD_USD', 'USD_CAD', 'AUD_JPY']
+2023-12-21 21:27:02 Place Trade: TradeDecision(pair=USD_JPY, direction=1, gain=71.2888, sl=106.5976, tp=213.5308)
+2023-12-21 21:27:03 Place Trade: TradeDecision(pair=NZD_USD, direction=-1, gain=0.1914, sl=0.7243, tp=0.4372)
+2023-12-21 21:27:23 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'AUD_USD']
+2023-12-21 21:27:24 Place Trade: TradeDecision(pair=GBP_USD, direction=-1, gain=0.6107, sl=1.5740, tp=0.6579)
+2023-12-21 21:27:24 Place Trade: TradeDecision(pair=AUD_USD, direction=-1, gain=0.2119, sl=0.7856, tp=0.4677)
+2023-12-21 21:28:03 process_candles triggered:['USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY']
+2023-12-21 21:28:04 Place Trade: TradeDecision(pair=AUD_USD, direction=-1, gain=0.1895, sl=0.7745, tp=0.4902)
+2023-12-21 21:28:04 Place Trade: TradeDecision(pair=NZD_USD, direction=-1, gain=0.1652, sl=0.7112, tp=0.4634)
+2023-12-21 21:28:24 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
+2023-12-21 21:28:25 Place Trade: TradeDecision(pair=EUR_GBP, direction=-1, gain=0.3173, sl=1.0258, tp=0.5499)
+2023-12-21 21:29:04 process_candles triggered:['NZD_USD', 'USD_CAD', 'AUD_JPY']
+2023-12-21 21:29:05 Place Trade: TradeDecision(pair=AUD_JPY, direction=-1, gain=48.3414, sl=120.8587, tp=48.3466)
