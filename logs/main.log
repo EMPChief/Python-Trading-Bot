@@ -1,5 +1,5 @@
-2023-12-21 21:13:16 LogWrapper init() ./logs/main.log
-2023-12-21 21:13:16 Bot started with Trade Settings:
+2023-12-21 21:19:23 LogWrapper init() ./logs/main.log
+2023-12-21 21:19:23 Bot started with Trade Settings:
 GBP_CHF Settings:
     GBP_CHF: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 EUR_CHF Settings:
@@ -10,6 +10,19 @@ GBP_USD Settings:
     GBP_USD: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 EUR_GBP Settings:
     EUR_GBP: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+USD_JPY Settings:
+    USD_JPY: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.04, 'mingain': 0.06, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+AUD_USD Settings:
+    AUD_USD: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+NZD_USD Settings:
+    NZD_USD: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+USD_CAD Settings:
+    USD_CAD: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+AUD_JPY Settings:
+    AUD_JPY: {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.04, 'mingain': 0.06, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
 
-2023-12-21 21:13:21 Bot started
-2023-12-21 21:14:06 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP']
+2023-12-21 21:19:33 Bot started
+2023-12-21 21:20:12 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY']
+2023-12-21 21:21:12 process_candles triggered:['EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY']
+2023-12-21 21:21:33 process_candles triggered:['GBP_CHF']
+2023-12-21 21:22:12 process_candles triggered:['GBP_CHF', 'EUR_CHF', 'GBP_JPY', 'GBP_USD', 'EUR_GBP', 'USD_JPY', 'AUD_USD', 'NZD_USD', 'USD_CAD', 'AUD_JPY']

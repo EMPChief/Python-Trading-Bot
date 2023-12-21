@@ -85,6 +85,142 @@
             "chaikin_money_flow": {
                 "n_cmf": 20
             }
+        },
+        "USD_JPY": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.04,
+                "mingain": 0.06,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "AUD_USD": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.0003,
+                "mingain": 0.0005,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "NZD_USD": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.0003,
+                "mingain": 0.0005,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "USD_CAD": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.0003,
+                "mingain": 0.0005,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "AUD_JPY": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.04,
+                "mingain": 0.06,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "USD_CHF": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.0003,
+                "mingain": 0.0005,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "EUR_JPY": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.04,
+                "mingain": 0.06,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
+        },
+        "EUR_USD": {
+            "bollinger_bands": {
+                "n_ma": 12,
+                "n_std": 2.5,
+                "maxspread": 0.0003,
+                "mingain": 0.0005,
+                "riskreward": 2
+            },
+            "ichimoku_cloud": {
+                "n1": 9,
+                "n2": 26,
+                "n3": 52
+            },
+            "chaikin_money_flow": {
+                "n_cmf": 20
+            }
         }
     }
 }
