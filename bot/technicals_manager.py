@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from technicals.indicators import BollingerBands, IchimokuCloud, CMF
+from technicals.indicators import BollingerBands, IchimokuCloud, CMF, ATR
 from models.trade_decision import TradeDecision
 from api.oanda_api import OandaApi
 from models.trade_settings import TradeSettings
@@ -13,28 +13,50 @@ ADDROWS = 20
 
 
 def apply_signal(row, trade_settings: TradeSettings):
-    if row.SPREAD <= trade_settings.bollinger_bands_settings['maxspread'] and row.GAIN >= trade_settings.bollinger_bands_settings['mingain']:
-        if row.mid_c > row.BB_UP and row.mid_o < row.BB_UP:
-            return defs.SELL
-        elif row.mid_c < row.BB_LW and row.mid_o > row.BB_LW:
-            return defs.BUY
-    return defs.NONE
+    bb_settings = trade_settings.bollinger_bands_settings
+    ichimoku_settings = trade_settings.ichimoku_cloud_settings
+
+    if row['SPREAD'] <= bb_settings['maxspread'] and row['GAIN'] >= bb_settings['mingain']:
+        if row['mid_c'] > row['BB_UP'] and row['mid_o'] < row['BB_UP']:
+            bb_signal = defs.SELL
+        elif row['mid_c'] < row['BB_LW'] and row['mid_o'] > row['BB_LW']:
+            bb_signal = defs.BUY
+        else:
+            bb_signal = defs.NONE
+    else:
+        bb_signal = defs.NONE
+    if row['mid_c'] > row['Senkou_Span_A'] and row['mid_c'] > row['Senkou_Span_B']:
+        ichimoku_signal = defs.BUY
+    elif row['mid_c'] < row['Senkou_Span_A'] and row['mid_c'] < row['Senkou_Span_B']:
+        ichimoku_signal = defs.SELL
+    else:
+        ichimoku_signal = defs.NONE
+
+    # Combining Signals
+    if bb_signal == defs.BUY and ichimoku_signal == defs.BUY:
+        return defs.BUY
+    elif bb_signal == defs.SELL and ichimoku_signal == defs.SELL:
+        return defs.SELL
+    else:
+        return defs.NONE
 
 
 def apply_SL(row, trade_settings: TradeSettings):
+    atr = row['ATR']
     if row.SIGNAL == defs.BUY:
-        return row.mid_c - (row.GAIN / trade_settings.bollinger_bands_settings['riskreward'])
+        return row.mid_c - atr * trade_settings.bollinger_bands_settings['riskreward']
     elif row.SIGNAL == defs.SELL:
-        return row.mid_c + (row.GAIN / trade_settings.bollinger_bands_settings['riskreward'])
-    return 0.0
+        return row.mid_c + atr * trade_settings.bollinger_bands_settings['riskreward']
+    return defs.NONE
 
 
-def apply_TP(row):
+def apply_TP(row, trade_settings: TradeSettings):
+    atr = row['ATR']
     if row.SIGNAL == defs.BUY:
-        return row.mid_c + row.GAIN
+        return row.mid_c + atr * trade_settings.bollinger_bands_settings['riskreward']
     elif row.SIGNAL == defs.SELL:
-        return row.mid_c - row.GAIN
-    return 0.0
+        return row.mid_c - atr * trade_settings.bollinger_bands_settings['riskreward']
+    return defs.NONE
 
 
 def fetch_candles(pair, row_count, candle_time, granularity, api: OandaApi, log_message, attempts=3):
@@ -75,6 +97,11 @@ def process_candles(df: pd.DataFrame, pair, trade_settings: TradeSettings, log_m
         "n_cmf": int(trade_settings.cmf_settings['n_cmf'])
     }
 
+    atr_params = {
+        "n_atr": int(trade_settings.atr_settings['n_atr'])
+    }
+
+    df = ATR(df, **atr_params)
     df = IchimokuCloud(df, **ichimoku_params)
     df = BollingerBands(df, **bollinger_params)
     df = CMF(df, **cmf_params)
@@ -86,7 +113,7 @@ def process_candles(df: pd.DataFrame, pair, trade_settings: TradeSettings, log_m
 
     df['SIGNAL'] = df.apply(apply_signal, axis=1,
                             trade_settings=trade_settings)
-    df['TP'] = df.apply(apply_TP, axis=1)
+    df['TP'] = df.apply(apply_TP, axis=1, trade_settings=trade_settings)
     df['SL'] = df.apply(apply_SL, axis=1, trade_settings=trade_settings)
     df['LOSS'] = abs(df.mid_c - df.SL)
 

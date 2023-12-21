@@ -21,13 +21,13 @@ def KeltnerChannels(df: pd.DataFrame, n_ema=20, n_atr=10):
     return df
 
 
-def ATR(df: pd.DataFrame, n=14, column_name="ATR"):
+def ATR(df: pd.DataFrame, n_atr=14, column_name="ATR"):
     prev_c = df.mid_c.shift(1)
     tr1 = df.mid_h - df.mid_l
     tr2 = abs(df.mid_h - prev_c)
     tr3 = abs(prev_c - df.mid_l)
     tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-    df[column_name] = tr.rolling(window=n).mean()
+    df[column_name] = tr.rolling(window=n_atr).mean()
     return df
 
 

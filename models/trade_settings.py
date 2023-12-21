@@ -1,32 +1,45 @@
 class TradeSettings:
     def __init__(self, ob, pair):
-        self.bollinger_bands_settings = {
-            "n_ma": float(ob.get('bollinger_bands', {}).get('n_ma', 0)),
-            "n_std": float(ob.get('bollinger_bands', {}).get('n_std', 0)),
-            "maxspread": float(ob.get('bollinger_bands', {}).get('maxspread', 0)),
-            "mingain": float(ob.get('bollinger_bands', {}).get('mingain', 0)),
-            "riskreward": float(ob.get('bollinger_bands', {}).get('riskreward', 0))
-        }
-        self.ichimoku_cloud_settings = {
-            "n1": float(ob.get('ichimoku_cloud', {}).get('n1', 0)),
-            "n2": float(ob.get('ichimoku_cloud', {}).get('n2', 0)),
-            "n3": float(ob.get('ichimoku_cloud', {}).get('n3', 0))
-        }
-        self.cmf_settings = {
-            "n_cmf": float(ob.get('chaikin_money_flow', {}).get('n_cmf', 0))
-        }
+        self.pair = pair
+        self.bollinger_bands_settings = self._extract_settings(ob, 'bollinger_bands',
+                                                               ['n_ma', 'n_std', 'maxspread', 'mingain', 'riskreward'])
+        self.ichimoku_cloud_settings = self._extract_settings(ob, 'ichimoku_cloud',
+                                                              ['n1', 'n2', 'n3'])
+        self.cmf_settings = self._extract_settings(
+            ob, 'chaikin_money_flow', ['n_cmf'])
+        self.atr_settings = self._extract_settings(ob, 'atr',
+                                                   ['n_atr', 'tp_multiplier', 'sl_multiplier'])
+
+    def _extract_settings(self, ob, key, params):
+        """Helper method to extract settings for a given indicator."""
+        settings = {}
+        for param in params:
+            value = ob.get(key, {}).get(param, 0)
+            # Parameters expected to be integers
+            if param in ['n_ma', 'n1', 'n2', 'n3', 'n_cmf', 'n_atr']:
+                try:
+                    settings[param] = int(value)
+                except ValueError:
+                    print(
+                        f"Invalid value for {param} in {key}: {value}. Defaulting to 0.")
+                    settings[param] = 0
+            else:
+                settings[param] = float(value)
+        return settings
 
     def __repr__(self):
-        return str(vars(self))
+        return f"TradeSettings(pair={self.pair}, " \
+               f"bollinger_bands={self.bollinger_bands_settings}, " \
+               f"ichimoku_cloud={self.ichimoku_cloud_settings}, " \
+               f"cmf={self.cmf_settings}, " \
+               f"atr_settings={self.atr_settings})"
 
     @classmethod
     def settings_to_str(cls, settings):
+        """Converts the settings dictionary to a string representation."""
         ret_str = "Trade Settings:\n"
         for indicator, params in settings.items():
             ret_str += f"{indicator} Settings:\n"
-            if isinstance(params, dict):
-                for k, v in params.items():
-                    ret_str += f"    {k}: {v}\n"
-            else:
-                ret_str += f"    {indicator}: {params}\n"
+            for k, v in (params.items() if isinstance(params, dict) else [(indicator, params)]):
+                ret_str += f"    {k}: {v}\n"
         return ret_str

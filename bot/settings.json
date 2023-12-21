@@ -16,6 +16,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         },
         "EUR_CHF": {
@@ -33,6 +38,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         },
         "GBP_JPY": {
@@ -50,6 +60,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 1.5,
+                "sl_multiplier": 1
             }
         },
         "GBP_USD": {
@@ -67,6 +82,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 10,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         },
         "EUR_GBP": {
@@ -84,57 +104,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
-            }
-        },
-        "USD_JPY": {
-            "bollinger_bands": {
-                "n_ma": 12,
-                "n_std": 2.5,
-                "maxspread": 0.04,
-                "mingain": 0.06,
-                "riskreward": 2
             },
-            "ichimoku_cloud": {
-                "n1": 9,
-                "n2": 26,
-                "n3": 52
-            },
-            "chaikin_money_flow": {
-                "n_cmf": 20
-            }
-        },
-        "AUD_USD": {
-            "bollinger_bands": {
-                "n_ma": 12,
-                "n_std": 2.5,
-                "maxspread": 0.0003,
-                "mingain": 0.0005,
-                "riskreward": 2
-            },
-            "ichimoku_cloud": {
-                "n1": 9,
-                "n2": 26,
-                "n3": 52
-            },
-            "chaikin_money_flow": {
-                "n_cmf": 20
-            }
-        },
-        "NZD_USD": {
-            "bollinger_bands": {
-                "n_ma": 12,
-                "n_std": 2.5,
-                "maxspread": 0.0003,
-                "mingain": 0.0005,
-                "riskreward": 2
-            },
-            "ichimoku_cloud": {
-                "n1": 9,
-                "n2": 26,
-                "n3": 52
-            },
-            "chaikin_money_flow": {
-                "n_cmf": 20
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         },
         "USD_CAD": {
@@ -152,6 +126,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1.5
             }
         },
         "AUD_JPY": {
@@ -169,6 +148,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 1.5,
+                "sl_multiplier": 1
             }
         },
         "USD_CHF": {
@@ -186,23 +170,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
-            }
-        },
-        "EUR_JPY": {
-            "bollinger_bands": {
-                "n_ma": 12,
-                "n_std": 2.5,
-                "maxspread": 0.04,
-                "mingain": 0.06,
-                "riskreward": 2
             },
-            "ichimoku_cloud": {
-                "n1": 9,
-                "n2": 26,
-                "n3": 52
-            },
-            "chaikin_money_flow": {
-                "n_cmf": 20
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         },
         "EUR_USD": {
@@ -220,6 +192,11 @@
             },
             "chaikin_money_flow": {
                 "n_cmf": 20
+            },
+            "atr": {
+                "n_atr": 14,
+                "tp_multiplier": 2,
+                "sl_multiplier": 1
             }
         }
     }
