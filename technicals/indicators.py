@@ -16,16 +16,9 @@ def BollingerBands(df: pd.DataFrame, n=20, s=2):
         pd.DataFrame: The DataFrame with Bollinger Bands added.
     """
 
-    # Calculate Typical Price (TP)
     typical_p = (df.mid_c + df.mid_h + df.mid_l) / 3
-
-    # Calculate Moving Average (BB_MA)
     df['BB_MA'] = typical_p.rolling(window=n).mean()
-
-    # Calculate Standard Deviation
     stddev = typical_p.rolling(window=n).std()
-
-    # Calculate Upper and Lower Bands (BB_UP and BB_LW)
     df['BB_UP'] = df['BB_MA'] + stddev * s
     df['BB_LW'] = df['BB_MA'] - stddev * s
     return df

@@ -1,2 +1,4 @@
-2023-12-20 19:06:07 LogWrapper init() ./logs/GBP_JPY.log
-2023-12-20 19:06:07 {'n_ma': 12, 'n_std': 2.5, 'maxspread': 0.04, 'mingain': 0.06, 'riskreward': 1.5}
+2023-12-21 19:49:47 LogWrapper init() ./logs/GBP_JPY.log
+2023-12-21 19:49:47 {'bollinger_bands_settings': {'n_ma': 0, 'n_std': 0, 'maxspread': 0, 'mingain': 0, 'riskreward': 0}, 'ichimoku_cloud_settings': {'n1': 0, 'n2': 0, 'n3': 0}, 'cmf_settings': {'n_cmf': 0}}
+2023-12-21 19:49:57 CandleManager() init last_candle:last_candle:23-12-21 18:40 is_ready:False
+2023-12-21 19:50:07 CandleManager() new candle:last_candle:23-12-21 18:45 is_ready:True

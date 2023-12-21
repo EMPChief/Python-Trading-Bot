@@ -2,7 +2,7 @@ import pandas as pd
 
 from timeit import default_timer as timer
 
-df = pd.read_pickle("./data/GBP_JPY_M5.pkl")
+df = pd.read_csv("./data/candles/GBP_JPY_M5.csv")
 
 print(f"Total Rows:{df.shape[0]}")
 
@@ -27,7 +27,7 @@ for index in range(ar1.shape[0]):
 print(f"ar1[index]    -> {(timer()-start):.4f}s")
 
 start = timer()
-items = [df.mid_c.array,df.mid_h.array]
+items = [df.mid_c.array, df.mid_h.array]
 for index in range(ar1.shape[0]):
     val1 = items[0][index] * 12
     val2 = items[1][index] - 14
