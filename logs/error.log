@@ -9,3 +9,8 @@
 2023-12-21 21:28:04 Error placing TradeDecision(pair=NZD_USD, direction=-1, gain=0.1652, sl=0.7112, tp=0.4634): 'Instrument' object has no attribute 'displayPrecision'
 2023-12-21 21:28:25 Error placing TradeDecision(pair=EUR_GBP, direction=-1, gain=0.3173, sl=1.0258, tp=0.5499): 'Instrument' object has no attribute 'displayPrecision'
 2023-12-21 21:29:05 Error placing TradeDecision(pair=AUD_JPY, direction=-1, gain=48.3414, sl=120.8587, tp=48.3466): 'Instrument' object has no attribute 'displayPrecision'
+2023-12-21 21:29:25 Error placing TradeDecision(pair=GBP_JPY, direction=-1, gain=90.2397, sl=225.5659, tp=90.2063): 'Instrument' object has no attribute 'displayPrecision'
+2023-12-21 21:29:26 Error placing TradeDecision(pair=AUD_USD, direction=-1, gain=0.1856, sl=0.7726, tp=0.4943): 'Instrument' object has no attribute 'displayPrecision'
+2023-12-21 21:30:06 Error placing TradeDecision(pair=AUD_USD, direction=-1, gain=0.1629, sl=0.7614, tp=0.5171): 'Instrument' object has no attribute 'displayPrecision'
+2023-12-21 21:30:07 Error placing TradeDecision(pair=USD_CAD, direction=1, gain=0.8598, sl=0.8989, tp=2.1886): 'Instrument' object has no attribute 'displayPrecision'
+2023-12-21 21:30:07 Error placing TradeDecision(pair=AUD_JPY, direction=-1, gain=48.3419, sl=120.8710, tp=48.3581): 'Instrument' object has no attribute 'displayPrecision'
