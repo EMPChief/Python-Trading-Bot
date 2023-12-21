@@ -1,0 +1,21 @@
+2023-12-21 21:32:55 LogWrapper init() ./logs/USD_CHF.log
+2023-12-21 21:32:55 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 21:33:05 CandleManager() init last_candle:last_candle:23-12-21 20:32 is_ready:False
+2023-12-21 21:34:05 CandleManager() new candle:last_candle:23-12-21 20:33 is_ready:True
+2023-12-21 21:34:07 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:33:00+00:00 granularity:M1
+2023-12-21 21:34:07 process_candles:
+        PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
+107  USD_CHF 2023-12-21 20:29:00+00:00  0.85677  0.85683  0.0  0.0  0.00014  0.571944  0.85677       0
+108  USD_CHF 2023-12-21 20:30:00+00:00  0.85674  0.85674  0.0  0.0  0.00015  0.570334  0.85674       0
+109  USD_CHF 2023-12-21 20:31:00+00:00  0.85668  0.85677  0.0  0.0  0.00018  0.565263  0.85668       0
+110  USD_CHF 2023-12-21 20:32:00+00:00  0.85674  0.85669  0.0  0.0  0.00015  0.550901  0.85674       0
+111  USD_CHF 2023-12-21 20:33:00+00:00  0.85668  0.85674  0.0  0.0  0.00015  0.558931  0.85668       0
+2023-12-21 21:35:07 CandleManager() new candle:last_candle:23-12-21 20:34 is_ready:True
+2023-12-21 21:35:09 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:34:00+00:00 granularity:M1
+2023-12-21 21:35:09 process_candles:
+        PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
+107  USD_CHF 2023-12-21 20:30:00+00:00  0.85674  0.85674  0.0  0.0  0.00015  0.570334  0.85674       0
+108  USD_CHF 2023-12-21 20:31:00+00:00  0.85668  0.85677  0.0  0.0  0.00018  0.565263  0.85668       0
+109  USD_CHF 2023-12-21 20:32:00+00:00  0.85674  0.85669  0.0  0.0  0.00015  0.550901  0.85674       0
+110  USD_CHF 2023-12-21 20:33:00+00:00  0.85668  0.85674  0.0  0.0  0.00015  0.558931  0.85668       0
+111  USD_CHF 2023-12-21 20:34:00+00:00  0.85672  0.85669  0.0  0.0  0.00019  0.579200  0.85672       0
