@@ -1,22 +1,12 @@
-2023-12-21 21:03:34 LogWrapper init() ./logs/GBP_USD.log
-2023-12-21 21:03:34 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
-2023-12-21 21:03:39 CandleManager() init last_candle:last_candle:23-12-21 20:02 is_ready:False
-2023-12-21 21:04:08 CandleManager() new candle:last_candle:23-12-21 20:03 is_ready:True
-2023-12-21 21:04:09 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:03:00+00:00 granularity:M1
-2023-12-21 21:04:09 process_candles:
+2023-12-21 21:13:16 LogWrapper init() ./logs/GBP_USD.log
+2023-12-21 21:13:16 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 21:13:21 CandleManager() init last_candle:last_candle:23-12-21 20:12 is_ready:False
+2023-12-21 21:14:05 CandleManager() new candle:last_candle:23-12-21 20:13 is_ready:True
+2023-12-21 21:14:06 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:13:00+00:00 granularity:M1
+2023-12-21 21:14:06 process_candles:
         PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
-107  GBP_USD 2023-12-21 19:59:00+00:00  1.26852  1.26856  0.0  0.0  0.00015  0.571086  1.26852       0
-108  GBP_USD 2023-12-21 20:00:00+00:00  1.26843  1.26850  0.0  0.0  0.00016  0.607157  1.26843       0
-109  GBP_USD 2023-12-21 20:01:00+00:00  1.26852  1.26842  0.0  0.0  0.00020  0.618294  1.26852       0
-110  GBP_USD 2023-12-21 20:02:00+00:00  1.26850  1.26850  0.0  0.0  0.00017  0.603534  1.26850       0
-111  GBP_USD 2023-12-21 20:03:00+00:00  1.26842  1.26849  0.0  0.0  0.00018  0.613087  1.26842       0
-2023-12-21 21:05:08 CandleManager() new candle:last_candle:23-12-21 20:04 is_ready:True
-2023-12-21 21:05:09 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:04:00+00:00 granularity:M1
-2023-12-21 21:05:09 process_candles:
-        PAIR                      time    mid_c    mid_o       SL       TP   SPREAD      GAIN     LOSS  SIGNAL
-107  GBP_USD 2023-12-21 20:00:00+00:00  1.26843  1.26850  0.00000  0.00000  0.00016  0.607157  1.26843       0
-108  GBP_USD 2023-12-21 20:01:00+00:00  1.26852  1.26842  0.00000  0.00000  0.00020  0.618294  1.26852       0
-109  GBP_USD 2023-12-21 20:02:00+00:00  1.26850  1.26850  0.00000  0.00000  0.00017  0.603534  1.26850       0
-110  GBP_USD 2023-12-21 20:03:00+00:00  1.26842  1.26849  0.00000  0.00000  0.00018  0.613087  1.26842       0
-111  GBP_USD 2023-12-21 20:04:00+00:00  1.26825  1.26842  0.93684  1.93107  0.00018  0.662820  0.33141       1
-2023-12-21 21:05:09 Place Trade: TradeDecision(pair=GBP_USD, direction=1, gain=0.6628, sl=0.9368, tp=1.9311)
+107  GBP_USD 2023-12-21 20:09:00+00:00  1.26800  1.26806  0.0  0.0  0.00015  0.653141  1.26800       0
+108  GBP_USD 2023-12-21 20:10:00+00:00  1.26810  1.26800  0.0  0.0  0.00017  0.657313  1.26810       0
+109  GBP_USD 2023-12-21 20:11:00+00:00  1.26841  1.26810  0.0  0.0  0.00016  0.648415  1.26841       0
+110  GBP_USD 2023-12-21 20:12:00+00:00  1.26828  1.26840  0.0  0.0  0.00017  0.641986  1.26828       0
+111  GBP_USD 2023-12-21 20:13:00+00:00  1.26828  1.26830  0.0  0.0  0.00019  0.658665  1.26828       0

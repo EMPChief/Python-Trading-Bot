@@ -1,21 +1,12 @@
-2023-12-21 21:03:34 LogWrapper init() ./logs/GBP_CHF.log
-2023-12-21 21:03:34 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
-2023-12-21 21:03:39 CandleManager() init last_candle:last_candle:23-12-21 20:02 is_ready:False
-2023-12-21 21:04:04 CandleManager() new candle:last_candle:23-12-21 20:03 is_ready:True
-2023-12-21 21:04:08 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:03:00+00:00 granularity:M1
-2023-12-21 21:04:08 process_candles:
+2023-12-21 21:13:16 LogWrapper init() ./logs/GBP_CHF.log
+2023-12-21 21:13:16 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 21:13:21 CandleManager() init last_candle:last_candle:23-12-21 20:12 is_ready:False
+2023-12-21 21:14:01 CandleManager() new candle:last_candle:23-12-21 20:13 is_ready:True
+2023-12-21 21:14:06 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:13:00+00:00 granularity:M1
+2023-12-21 21:14:06 process_candles:
         PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
-107  GBP_CHF 2023-12-21 19:59:00+00:00  1.08708  1.08702  0.0  0.0  0.00023  0.543944  1.08708       0
-108  GBP_CHF 2023-12-21 20:00:00+00:00  1.08708  1.08709  0.0  0.0  0.00022  0.545495  1.08708       0
-109  GBP_CHF 2023-12-21 20:01:00+00:00  1.08712  1.08709  0.0  0.0  0.00022  0.548807  1.08712       0
-110  GBP_CHF 2023-12-21 20:02:00+00:00  1.08701  1.08711  0.0  0.0  0.00020  0.541097  1.08701       0
-111  GBP_CHF 2023-12-21 20:03:00+00:00  1.08689  1.08700  0.0  0.0  0.00022  0.548577  1.08689       0
-2023-12-21 21:05:04 CandleManager() new candle:last_candle:23-12-21 20:04 is_ready:True
-2023-12-21 21:05:08 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:04:00+00:00 granularity:M1
-2023-12-21 21:05:08 process_candles:
-        PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
-107  GBP_CHF 2023-12-21 20:00:00+00:00  1.08708  1.08709  0.0  0.0  0.00022  0.545495  1.08708       0
-108  GBP_CHF 2023-12-21 20:01:00+00:00  1.08712  1.08709  0.0  0.0  0.00022  0.548807  1.08712       0
-109  GBP_CHF 2023-12-21 20:02:00+00:00  1.08701  1.08711  0.0  0.0  0.00020  0.541097  1.08701       0
-110  GBP_CHF 2023-12-21 20:03:00+00:00  1.08689  1.08700  0.0  0.0  0.00022  0.548577  1.08689       0
-111  GBP_CHF 2023-12-21 20:04:00+00:00  1.08691  1.08688  0.0  0.0  0.00020  0.578132  1.08691       0
+107  GBP_CHF 2023-12-21 20:09:00+00:00  1.08700  1.08700  0.0  0.0  0.00021  0.564856  1.08700       0
+108  GBP_CHF 2023-12-21 20:10:00+00:00  1.08704  1.08700  0.0  0.0  0.00019  0.538595  1.08704       0
+109  GBP_CHF 2023-12-21 20:11:00+00:00  1.08718  1.08704  0.0  0.0  0.00022  0.501348  1.08718       0
+110  GBP_CHF 2023-12-21 20:12:00+00:00  1.08702  1.08715  0.0  0.0  0.00021  0.515702  1.08702       0
+111  GBP_CHF 2023-12-21 20:13:00+00:00  1.08694  1.08705  0.0  0.0  0.00021  0.541560  1.08694       0

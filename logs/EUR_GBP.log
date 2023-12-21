@@ -1,13 +1,12 @@
-2023-12-21 21:03:34 LogWrapper init() ./logs/EUR_GBP.log
-2023-12-21 21:03:34 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
-2023-12-21 21:03:39 CandleManager() init last_candle:last_candle:23-12-21 20:02 is_ready:False
-2023-12-21 21:04:08 CandleManager() new candle:last_candle:23-12-21 20:03 is_ready:True
-2023-12-21 21:04:09 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:03:00+00:00 granularity:M1
-2023-12-21 21:04:09 process_candles:
+2023-12-21 21:13:16 LogWrapper init() ./logs/EUR_GBP.log
+2023-12-21 21:13:16 {'bollinger_bands_settings': {'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, 'ichimoku_cloud_settings': {'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, 'cmf_settings': {'n_cmf': 20.0}}
+2023-12-21 21:13:21 CandleManager() init last_candle:last_candle:23-12-21 20:12 is_ready:False
+2023-12-21 21:14:06 CandleManager() new candle:last_candle:23-12-21 20:13 is_ready:True
+2023-12-21 21:14:06 tech_manager: max_rows:113.0 candle_time:2023-12-21 20:13:00+00:00 granularity:M1
+2023-12-21 21:14:06 process_candles:
         PAIR                      time    mid_c    mid_o   SL   TP   SPREAD      GAIN     LOSS  SIGNAL
-108  EUR_GBP 2023-12-21 19:59:00+00:00  0.86710  0.86705  0.0  0.0  0.00012  0.394107  0.86710       0
-109  EUR_GBP 2023-12-21 20:00:00+00:00  0.86706  0.86708  0.0  0.0  0.00013  0.392511  0.86706       0
-110  EUR_GBP 2023-12-21 20:01:00+00:00  0.86700  0.86705  0.0  0.0  0.00014  0.384471  0.86700       0
-111  EUR_GBP 2023-12-21 20:02:00+00:00  0.86704  0.86698  0.0  0.0  0.00014  0.379592  0.86704       0
-112  EUR_GBP 2023-12-21 20:03:00+00:00  0.86711  0.86702  0.0  0.0  0.00012  0.335544  0.86711       0
-2023-12-21 21:05:08 CandleManager() new candle:last_candle:23-12-21 20:04 is_ready:True
+107  EUR_GBP 2023-12-21 20:09:00+00:00  0.86702  0.86701  0.0  0.0  0.00013  0.330838  0.86702       0
+108  EUR_GBP 2023-12-21 20:10:00+00:00  0.86702  0.86704  0.0  0.0  0.00013  0.365309  0.86702       0
+109  EUR_GBP 2023-12-21 20:11:00+00:00  0.86698  0.86700  0.0  0.0  0.00015  0.396146  0.86698       0
+110  EUR_GBP 2023-12-21 20:12:00+00:00  0.86702  0.86696  0.0  0.0  0.00015  0.397762  0.86702       0
+111  EUR_GBP 2023-12-21 20:13:00+00:00  0.86713  0.86706  0.0  0.0  0.00016  0.353365  0.86713       0
