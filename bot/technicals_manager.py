@@ -32,7 +32,6 @@ def apply_signal(row, trade_settings: TradeSettings):
     else:
         ichimoku_signal = defs.NONE
 
-    # Combining Signals
     if bb_signal == defs.BUY and ichimoku_signal == defs.BUY:
         return defs.BUY
     elif bb_signal == defs.SELL and ichimoku_signal == defs.SELL:
