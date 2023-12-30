@@ -2,7 +2,7 @@ from multiprocessing import Process
 import pandas as pd
 from dateutil import parser
 from technicals.indicators import MACD, RSI, CMF, EVM, IchimokuCloud
-from simulation.guru_tester_fast import GuruTesterFast
+from simulation.guru_tester import GuruTester
 from infrastructure.instrument_collection import InstrumentCollection
 
 BUY = 1
@@ -48,7 +48,8 @@ def prepare_data_for_simulation(df, slow, fast, signal, ema, rsi_period, cmf_per
     df_analyzed = CMF(df_analyzed, n_cmf=cmf_period)
 
     df_analyzed = EVM(df_analyzed, n=evm_period)
-    df_analyzed = IchimokuCloud(df_analyzed, **ichimoku_params)
+    df_analyzed = IchimokuCloud(df_analyzed, n1=ichimoku_params['conversion_line_period'],
+                                n2=ichimoku_params['base_line_period'], n3=ichimoku_params['lagging_span_period'])
     df_analyzed.dropna(inplace=True)
     df_analyzed.reset_index(drop=True, inplace=True)
     df_analyzed['direction'] = df_analyzed.apply(
@@ -81,8 +82,8 @@ def load_data_for_pair(pair, timeframe=1):
 def simulate_with_parameters(pair, hourly_data, five_min_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params, timeframe):
     prepared_data = prepare_data_for_simulation(
         hourly_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params)
-    tester = GuruTesterFast(prepared_data, apply_trading_signal,
-                            five_min_data, use_spread=True, time_d=timeframe)
+    tester = GuruTester(prepared_data, apply_trading_signal,
+                        five_min_data, use_spread=True, time_d=timeframe)
     tester.run_test()
 
     tester.df_results['slow'] = slow
@@ -92,7 +93,10 @@ def simulate_with_parameters(pair, hourly_data, five_min_data, slow, fast, signa
     tester.df_results['rsi_period'] = rsi_period
     tester.df_results['cmf_period'] = cmf_period
     tester.df_results['evm_period'] = evm_period
-    tester.df_results.update(ichimoku_params)
+    ichimoku_params_df = pd.DataFrame(ichimoku_params, index=[0])
+    tester.df_results = tester.df_results.append(
+        ichimoku_params_df, ignore_index=True)
+
     tester.df_results['pair'] = pair
 
     return tester.df_results

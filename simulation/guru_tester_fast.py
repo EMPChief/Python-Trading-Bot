@@ -6,13 +6,13 @@ SELL = -1
 NONE = 0
 
 
-def calculate_take_profit(row, profit_factor):
+def calculate_take_profit(row, profit_factor=1.5):
     if row['SIGNAL'] != NONE:
         if row['SIGNAL'] == BUY:
             return (row['ask_c'] - row['ask_o']) * profit_factor + row['ask_c']
         else:
             return (row['bid_c'] - row['bid_o']) * profit_factor + row['bid_c']
-    return 0.0
+    return NONE
 
 
 def calculate_stop_loss(row):
@@ -61,17 +61,17 @@ INDEX_name = 10
 class Trade:
     def __init__(self, values, index, profit_factor, loss_factor):
         self.running = True
-        self.start_index_m5 = values[INDEX_name][index]
+        self.start_index_m5 = values[index, INDEX_name]
         self.profit_factor = profit_factor
         self.loss_factor = loss_factor
-        self.start_price = values[INDEX_start_price_BUY][index] if values[
-            INDEX_SIGNAL][index] == BUY else values[INDEX_start_price_SELL][index]
+        self.start_price = values[index, INDEX_start_price_BUY] if values[
+            index, INDEX_SIGNAL] == BUY else values[index, INDEX_start_price_SELL]
         self.trigger_price = self.start_price
-        self.SIGNAL = values[INDEX_SIGNAL][index]
-        self.TP = values[INDEX_TP][index]
-        self.SL = values[INDEX_SL][index]
+        self.SIGNAL = values[index, INDEX_SIGNAL]
+        self.TP = values[index, INDEX_TP]
+        self.SL = values[index, INDEX_SL]
         self.result = 0.0
-        self.start_time = values[INDEX_time][index]
+        self.start_time = values[index, INDEX_time]
         self.end_time = None
 
     def close_trade(self, values, index, result, trigger_price):
@@ -92,7 +92,7 @@ class Trade:
 
 
 class GuruTesterFast:
-    def __init__(self, main_df, signal_function, minute_5_df, use_spread=True, loss_factor=-1.0, profit_factor=1.5, time_delta=1):
+    def __init__(self, main_df, signal_function, minute_5_df, use_spread=True, loss_factor=-1.0, profit_factor=1.5, time_delta=1, time_d=5):
         self.main_df = main_df.copy()
         self.use_spread = use_spread
         self.signal_function = signal_function
@@ -100,6 +100,7 @@ class GuruTesterFast:
         self.loss_factor = loss_factor
         self.profit_factor = profit_factor
         self.time_delta = time_delta
+        self.time_d = time_d
         self.prepare_data()
 
     def prepare_data(self):

@@ -42,8 +42,7 @@ def RSI(df: pd.DataFrame, n=14):
     rs = avg_gain / avg_loss
     rsi = 100 - (100 / (1 + rs))
 
-    df['RSI'] = rsi.fillna(method='bfill')
-
+    df['RSI'] = rsi.ffill()
     return df
 
 
