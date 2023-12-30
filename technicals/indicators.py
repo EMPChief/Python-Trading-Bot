@@ -33,12 +33,17 @@ def ATR(df: pd.DataFrame, n_atr=14, column_name="ATR"):
 
 def RSI(df: pd.DataFrame, n=14):
     delta = df.mid_c.diff()
-    gains = delta.clip(lower=0)
-    losses = -delta.clip(upper=0)
-    avg_gain = gains.rolling(window=n).mean()
-    avg_loss = losses.rolling(window=n).mean()
+    gain = delta.clip(lower=0)
+    loss = -delta.clip(upper=0)
+
+    avg_gain = gain.rolling(window=n, min_periods=1).mean()
+    avg_loss = loss.rolling(window=n, min_periods=1).mean()
+
     rs = avg_gain / avg_loss
-    df[f"RSI_{n}"] = 100 - (100 / (1 + rs))
+    rsi = 100 - (100 / (1 + rs))
+
+    df['RSI'] = rsi.fillna(method='bfill')
+
     return df
 
 

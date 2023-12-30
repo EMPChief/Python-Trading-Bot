@@ -1,9 +1,8 @@
 from multiprocessing import Process
-
 import pandas as pd
 from dateutil import parser
-from technicals.indicators import MACD
-from simulation.guru_tester import GuruTester
+from technicals.indicators import MACD, RSI, CMF, EVM, IchimokuCloud
+from simulation.guru_tester_fast import GuruTesterFast
 from infrastructure.instrument_collection import InstrumentCollection
 
 BUY = 1
@@ -11,146 +10,172 @@ SELL = -1
 NONE = 0
 
 
-def apply_signal(row):
-    if row.direction == BUY and row.mid_l > row.EMA:
-        return BUY
-    if row.direction == SELL and row.mid_h < row.EMA:
-        return SELL
-    return NONE
+def apply_trading_signal(row, rsi_buy_threshold=50, rsi_sell_threshold=50, cmf_threshold=0, evm_threshold=0):
+    buy_signals = 0
+    sell_signals = 0
+    if row.mid_l > row.EMA:
+        buy_signals += 1
+    elif row.mid_h < row.EMA:
+        sell_signals += 1
+    if row.RSI > rsi_buy_threshold:
+        buy_signals += 1
+    elif row.RSI < rsi_sell_threshold:
+        sell_signals += 1
+    if row.CMF > cmf_threshold:
+        buy_signals += 1
+    elif row.CMF < -cmf_threshold:
+        sell_signals += 1
+    if row.EVM > evm_threshold:
+        buy_signals += 1
+    elif row.EVM < -evm_threshold:
+        sell_signals += 1
+
+    return BUY if buy_signals >= 3 else SELL if sell_signals >= 3 else NONE
 
 
-def apply_cross(row):
-    if row.macd_delta > 0 and row.macd_delta_prev < 0:
-        return BUY
-    if row.macd_delta < 0 and row.macd_delta_prev > 0:
-        return SELL
-    return NONE
+def apply_macd_cross_signal(row):
+    return BUY if row.macd_delta > 0 and row.macd_delta_prev < 0 else SELL if row.macd_delta < 0 and row.macd_delta_prev > 0 else NONE
 
 
-def prepare_data(df: pd.DataFrame, slow, fast, signal, ema):
-    df_an = df.copy()
-    df_an = MACD(df_an, n_slow=slow, n_fast=fast, n_signal=signal)
-    df_an['macd_delta'] = df_an.MACD - df_an.SIGNAL
-    df_an['macd_delta_prev'] = df_an.macd_delta.shift(1)
-    df_an['direction'] = df_an.apply(apply_cross, axis=1)
-    df_an['EMA'] = df_an.mid_c.ewm(span=ema, min_periods=ema).mean()
-    df_an.dropna(inplace=True)
-    df_an.reset_index(drop=True, inplace=True)
-    return df_an
+def prepare_data_for_simulation(df, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params):
+    df_analyzed = df.copy()
+    df_analyzed = MACD(df_analyzed, n_slow=slow, n_fast=fast, n_signal=signal)
+    df_analyzed['macd_delta'] = df_analyzed['MACD'] - df_analyzed['SIGNAL']
+    df_analyzed['macd_delta_prev'] = df_analyzed['macd_delta'].shift(1)
+    df_analyzed['EMA'] = df_analyzed['mid_c'].ewm(
+        span=ema, min_periods=ema).mean()
+    df_analyzed = RSI(df_analyzed, n=rsi_period)
+    df_analyzed = CMF(df_analyzed, n_cmf=cmf_period)
+
+    df_analyzed = EVM(df_analyzed, n=evm_period)
+    df_analyzed = IchimokuCloud(df_analyzed, **ichimoku_params)
+    df_analyzed.dropna(inplace=True)
+    df_analyzed.reset_index(drop=True, inplace=True)
+    df_analyzed['direction'] = df_analyzed.apply(
+        apply_trading_signal, axis=1, rsi_buy_threshold=60, rsi_sell_threshold=40, cmf_threshold=0.05, evm_threshold=0.1)
+
+    return df_analyzed
 
 
-def load_data(pair, time_d=1):
+def load_data_for_pair(pair, timeframe=1):
+    start_date = parser.parse("2015-11-01T00:00:00Z")
+    end_date = parser.parse("2023-10-01T00:00:00Z")
 
-    start = parser.parse("2020-11-01T00:00:00Z")
-    end = parser.parse("2021-01-01T00:00:00Z")
+    hourly_data = pd.read_csv(f"./data/candles/{pair}_H{timeframe}.csv")
+    five_min_data = pd.read_csv(f"./data/candles/{pair}_M5.csv")
 
-    df = pd.read_pickle(f"./data/{pair}_H{time_d}.pkl")
-    df_m5 = pd.read_pickle(f"./data/{pair}_M5.pkl")
+    hourly_data['time'] = pd.to_datetime(hourly_data['time'])
+    five_min_data['time'] = pd.to_datetime(five_min_data['time'])
 
-    df = df[(df.time >= start) & (df.time < end)]
-    df_m5 = df_m5[(df_m5.time >= start) & (df_m5.time < end)]
+    hourly_data = hourly_data[(hourly_data.time >= start_date) & (
+        hourly_data.time < end_date)]
+    five_min_data = five_min_data[(five_min_data.time >= start_date) & (
+        five_min_data.time < end_date)]
 
-    df.reset_index(drop=True, inplace=True)
-    df_m5.reset_index(drop=True, inplace=True)
+    hourly_data.reset_index(drop=True, inplace=True)
+    five_min_data.reset_index(drop=True, inplace=True)
 
-    return df, df_m5
-
-
-def simulate_params(pair, df, df_m5,  slow, fast, signal, ema, time_d):
-    prepped_df = prepare_data(df, slow, fast, signal, ema)
-    gt = GuruTester(
-        prepped_df,
-        apply_signal,
-        df_m5,
-        use_spread=True,
-        time_d=time_d
-    )
-    gt.run_test()
-
-    gt.df_results['slow'] = slow
-    gt.df_results['fast'] = fast
-    gt.df_results['signal'] = signal
-    gt.df_results['ema'] = ema
-    gt.df_results['pair'] = pair
-
-    return gt.df_results
+    return hourly_data, five_min_data
 
 
-def run_pair(pair):
+def simulate_with_parameters(pair, hourly_data, five_min_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params, timeframe):
+    prepared_data = prepare_data_for_simulation(
+        hourly_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params)
+    tester = GuruTesterFast(prepared_data, apply_trading_signal,
+                            five_min_data, use_spread=True, time_d=timeframe)
+    tester.run_test()
 
-    time_d = 4
+    tester.df_results['slow'] = slow
+    tester.df_results['fast'] = fast
+    tester.df_results['signal'] = signal
+    tester.df_results['ema'] = ema
+    tester.df_results['rsi_period'] = rsi_period
+    tester.df_results['cmf_period'] = cmf_period
+    tester.df_results['evm_period'] = evm_period
+    tester.df_results.update(ichimoku_params)
+    tester.df_results['pair'] = pair
 
-    df, df_m5 = load_data(pair, time_d=time_d)
+    return tester.df_results
+
+
+def run_simulation_for_pair(pair):
+    timeframe = 4
+    hourly_data, five_min_data = load_data_for_pair(pair, timeframe=timeframe)
 
     results = []
     trades = []
-
-    print("\n--> Running", pair)
-
-    for slow in [26, 52]:
-        for fast in [12, 18]:
+    for slow in [26, 52, 78]:
+        for fast in [12, 18, 24]:
             if slow <= fast:
                 continue
-            for signal in [9, 12]:
-                for ema in [50, 100]:
-                    sim_res_df = simulate_params(
-                        pair, df, df_m5, slow, fast, signal, ema, time_d)
-                    r = sim_res_df.result.sum()
-                    trades.append(sim_res_df)
-                    print(f"--> {pair} {slow} {fast} {ema} {signal} {r}")
-                    results.append(dict(
-                        pair=pair,
-                        slow=slow,
-                        fast=fast,
-                        ema=ema,
-                        result=r,
-                        signal=signal
-                    ))
-    pd.concat(trades).to_pickle(
-        f"./exploration/macd_ema/trades/macd_ema_trades_{pair}.pkl")
-    return pd.DataFrame.from_dict(results)
+            for signal in [9, 12, 15]:
+                for ema in [50, 100, 150]:
+                    for rsi_period in [14, 28, 42]:
+                        for cmf_period in [20, 40, 60]:
+                            for evm_period in [14, 28, 42]:
+                                for ichimoku_params in [{'conversion_line_period': 9, 'base_line_period': 26, 'lagging_span_period': 52, 'displacement': 26}, {'conversion_line_period': 20, 'base_line_period': 60, 'lagging_span_period': 120, 'displacement': 30}, {'conversion_line_period': 10, 'base_line_period': 30, 'lagging_span_period': 60, 'displacement': 30}]:
+                                    sim_results = simulate_with_parameters(
+                                        pair, hourly_data, five_min_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params, timeframe)
+                                    total_result = sim_results.result.sum()
+                                    trades.append(sim_results)
+                                    print(
+                                        f"--> {pair} {slow} {fast} {ema} {signal} {rsi_period} {cmf_period} {evm_period} {ichimoku_params} {total_result}")
+                                    results.append({
+                                        'pair': pair,
+                                        'slow': slow,
+                                        'fast': fast,
+                                        'ema': ema,
+                                        'signal': signal,
+                                        'rsi_period': rsi_period,
+                                        'cmf_period': cmf_period,
+                                        'evm_period': evm_period,
+                                        'ichimoku_params': ichimoku_params,
+                                        'result': total_result,
+                                    })
+
+    pd.concat(trades).to_csv(
+        f"./data/result/trades/macd_ema_trades_{pair}.csv")
+    return pd.DataFrame(results)
 
 
-def run_process(pair):
-    print("PROCESS", pair, "STARTED")
-    results = run_pair(pair)
-    results.to_pickle(f"./exploration/macd_ema/macd_ema_res_{pair}.pkl")
-    print("PROCESS", pair, "ENDED")
+def run_simulation_process(pair):
+    print(f"PROCESS {pair} STARTED")
+    simulation_results = run_simulation_for_pair(pair)
+    simulation_results.to_pickle(
+        f"./data/result/macd_ema/macd_ema_res_{pair}.csv")
+    print(f"PROCESS {pair} ENDED")
 
 
-def get_sim_pairs(l_curr, ic: InstrumentCollection):
-    pairs = []
-    for p1 in l_curr:
-        for p2 in l_curr:
-            pair = f"{p1}_{p2}"
-            if pair in ic.instruments_dict.keys():
-                pairs.append(pair)
-    return pairs
+def generate_simulation_pairs(l_curr, instrument_collection):
+    simulation_pairs = []
+    for base_currency in l_curr:
+        for quote_currency in l_curr:
+            pair = f"{base_currency}_{quote_currency}"
+            if pair in instrument_collection.instruments_dict:
+                simulation_pairs.append(pair)
+    return simulation_pairs
 
 
-def run_ema_macd(ic: InstrumentCollection):
+def run_full_stimulation(instrument_collection):
+    simulation_pairs = generate_simulation_pairs(
+        ['USD', 'GBP', 'JPY', 'NZD', 'AUD', 'CAD'], instrument_collection)
+    process_limit = 4
+    current_index = 0
 
-    pairs = get_sim_pairs(['USD', 'GBP', 'JPY', 'NZD', 'AUD', 'CAD'], ic)
-
-    limit = 4
-    current = 0
-
-    while current < len(pairs):
-
+    while current_index < len(simulation_pairs):
         processes = []
-        todo = len(pairs) - current
-        if todo < limit:
-            limit = todo
+        remaining_pairs = len(simulation_pairs) - current_index
+        process_limit = min(remaining_pairs, process_limit)
 
-        for _ in range(limit):
-            processes.append(
-                Process(target=run_process, args=(pairs[current],)))
-            current += 1
+        for _ in range(process_limit):
+            processes.append(Process(target=run_simulation_process,
+                             args=(simulation_pairs[current_index],)))
+            current_index += 1
 
-        for p in processes:
-            p.start()
+        for process in processes:
+            process.start()
 
-        for p in processes:
-            p.join()
+        for process in processes:
+            process.join()
 
-    print("ALL DONE")
+    print("ALL SIMULATIONS COMPLETED")
