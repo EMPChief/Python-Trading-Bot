@@ -94,8 +94,12 @@ def simulate_with_parameters(pair, hourly_data, five_min_data, slow, fast, signa
     tester.df_results['cmf_period'] = cmf_period
     tester.df_results['evm_period'] = evm_period
     ichimoku_params_df = pd.DataFrame(ichimoku_params, index=[0])
-    tester.df_results = tester.df_results.append(
-        ichimoku_params_df, ignore_index=True)
+
+    if isinstance(tester.df_results, pd.DataFrame):
+        tester.df_results = tester.df_results.append(
+            ichimoku_params_df, ignore_index=True)
+    else:
+        print("tester.df_results is not a DataFrame")
 
     tester.df_results['pair'] = pair
 
