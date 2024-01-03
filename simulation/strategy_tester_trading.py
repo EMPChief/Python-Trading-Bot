@@ -86,24 +86,27 @@ def simulate_with_parameters(pair, hourly_data, five_min_data, slow, fast, signa
                         five_min_data, use_spread=True, time_d=timeframe)
     tester.run_test()
 
-    tester.df_results['slow'] = slow
-    tester.df_results['fast'] = fast
-    tester.df_results['signal'] = signal
-    tester.df_results['ema'] = ema
-    tester.df_results['rsi_period'] = rsi_period
-    tester.df_results['cmf_period'] = cmf_period
-    tester.df_results['evm_period'] = evm_period
+    results_df = pd.DataFrame()
+
+    results_df['slow'] = slow
+    results_df['fast'] = fast
+    results_df['signal'] = signal
+    results_df['ema'] = ema
+    results_df['rsi_period'] = rsi_period
+    results_df['cmf_period'] = cmf_period
+    results_df['evm_period'] = evm_period
     ichimoku_params_df = pd.DataFrame(ichimoku_params, index=[0])
 
     if isinstance(tester.df_results, pd.DataFrame):
-        tester.df_results = tester.df_results.append(
+        # Append the data to the results DataFrame
+        results_df = results_df.append(
             ichimoku_params_df, ignore_index=True)
     else:
-        print("tester.df_results is not a DataFrame")
+        results_df = ichimoku_params_df
 
-    tester.df_results['pair'] = pair
+    results_df['pair'] = pair
 
-    return tester.df_results
+    return results_df
 
 
 def run_simulation_for_pair(pair):
@@ -125,9 +128,6 @@ def run_simulation_for_pair(pair):
                                     sim_results = simulate_with_parameters(
                                         pair, hourly_data, five_min_data, slow, fast, signal, ema, rsi_period, cmf_period, evm_period, ichimoku_params, timeframe)
                                     total_result = sim_results.result.sum()
-                                    trades.append(sim_results)
-                                    print(
-                                        f"--> {pair} {slow} {fast} {ema} {signal} {rsi_period} {cmf_period} {evm_period} {ichimoku_params} {total_result}")
                                     results.append({
                                         'pair': pair,
                                         'slow': slow,
@@ -140,6 +140,8 @@ def run_simulation_for_pair(pair):
                                         'ichimoku_params': ichimoku_params,
                                         'result': total_result,
                                     })
+                                    print(
+                                        f"--> {pair} {slow} {fast} {ema} {signal} {rsi_period} {cmf_period} {evm_period} {ichimoku_params} {total_result}")
 
     pd.concat(trades).to_csv(
         f"./data/result/trades/macd_ema_trades_{pair}.csv")
