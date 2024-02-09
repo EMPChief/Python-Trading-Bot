@@ -6,3 +6,4 @@ jupyter
 plotly
 flask
 dask
+beautifulsoup4
