@@ -7,17 +7,9 @@ class DailyFXScraper:
         self.url = url
 
     def load_page(self):
-        resp = requests.get(self.url)
-        soup = bs(resp.content, "html.parser")
+        response = requests.get(self.url)
+        soup = bs(response.content, "html.parser")
         return soup
-
-    def extract_sentiment_data(self):
-        soup = self.load_page()
-        rows = self.extract_rows(soup)
-        pair_data = self.extract_pair_data(rows)
-        dataframe = pd.DataFrame(pair_data)
-        dataframe = self.clean_dataframe(dataframe)
-        return dataframe
 
     def extract_rows(self, soup):
         return soup.select(".dfx-technicalSentimentCard")
@@ -42,4 +34,12 @@ class DailyFXScraper:
         dataframe.columns = dataframe.columns.str.lower()
         dataframe.replace({'%': ''}, regex=True, inplace=True)
         dataframe = dataframe.apply(pd.to_numeric, errors='ignore')
+        return dataframe
+
+    def extract_sentiment_data(self):
+        soup = self.load_page()
+        rows = self.extract_rows(soup)
+        pair_data = self.extract_pair_data(rows)
+        dataframe = pd.DataFrame(pair_data)
+        dataframe = self.clean_dataframe(dataframe)
         return dataframe
