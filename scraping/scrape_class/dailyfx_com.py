@@ -12,7 +12,14 @@ class DailyFXScraper:
         self.url = url
 
     def load_page(self):
-        response = requests.get(self.url)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+            "Referer": "https://www.google.com/",
+            "Accept": "*/*",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Pragma": "no-cache",
+        }
+        response = requests.get(self.url, headers=headers)
         soup = bs(response.content, "html.parser")
         return soup
 

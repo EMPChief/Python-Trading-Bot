@@ -544,3 +544,731 @@
         "scraping_time": "2024-02-10 16:28:34"
     }
 ]
+[
+    {
+        "pair": "EUR_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 2,
+        "longs_weekly": -8,
+        "shorts_weekly": 34,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "EUR_GBP",
+        "sentiment": "Bearish",
+        "longs_daily": -3,
+        "shorts_daily": -7,
+        "longs_weekly": 7,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "NZD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 7,
+        "longs_weekly": -15,
+        "shorts_weekly": 110,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "AUD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -22,
+        "shorts_daily": -2,
+        "longs_weekly": -3,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "EUR_CHF",
+        "sentiment": "Mixed",
+        "longs_daily": -2,
+        "shorts_daily": -9,
+        "longs_weekly": -12,
+        "shorts_weekly": 15,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "EUR_JPY",
+        "sentiment": "Mixed",
+        "longs_daily": -5,
+        "shorts_daily": 4,
+        "longs_weekly": 27,
+        "shorts_weekly": 6,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "USD_CHF",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": 0,
+        "longs_weekly": -1,
+        "shorts_weekly": 25,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "GBP_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -7,
+        "shorts_daily": 10,
+        "longs_weekly": 16,
+        "shorts_weekly": 17,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "USD_CAD",
+        "sentiment": "Mixed",
+        "longs_daily": -15,
+        "shorts_daily": -2,
+        "longs_weekly": 11,
+        "shorts_weekly": -1,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "GBP_USD",
+        "sentiment": "Mixed",
+        "longs_daily": -1,
+        "shorts_daily": -2,
+        "longs_weekly": -11,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "AUD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -13,
+        "shorts_daily": 9,
+        "longs_weekly": -2,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "USD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -14,
+        "shorts_daily": 0,
+        "longs_weekly": 7,
+        "shorts_weekly": 8,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "Oil - US Crude",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 3,
+        "longs_weekly": -25,
+        "shorts_weekly": 111,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "Silver",
+        "sentiment": "Mixed",
+        "longs_daily": -4,
+        "shorts_daily": -6,
+        "longs_weekly": -12,
+        "shorts_weekly": -2,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "Gold",
+        "sentiment": "Bearish",
+        "longs_daily": 13,
+        "shorts_daily": -15,
+        "longs_weekly": 6,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "US 500",
+        "sentiment": "Bearish",
+        "longs_daily": 3,
+        "shorts_daily": -2,
+        "longs_weekly": 15,
+        "shorts_weekly": 11,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "Wall Street",
+        "sentiment": "Bearish",
+        "longs_daily": 30,
+        "shorts_daily": -7,
+        "longs_weekly": 45,
+        "shorts_weekly": -8,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "Germany 40",
+        "sentiment": "Bearish",
+        "longs_daily": 7,
+        "shorts_daily": -8,
+        "longs_weekly": 18,
+        "shorts_weekly": -4,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "FTSE 100",
+        "sentiment": "Bearish",
+        "longs_daily": 1,
+        "shorts_daily": -9,
+        "longs_weekly": 26,
+        "shorts_weekly": -18,
+        "scraping_time": "2024-02-10 17:16:50"
+    },
+    {
+        "pair": "France 40",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": -1,
+        "longs_weekly": -4,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 17:16:50"
+    }
+]
+[
+    {
+        "pair": "EUR_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 2,
+        "longs_weekly": -8,
+        "shorts_weekly": 34,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "EUR_GBP",
+        "sentiment": "Bearish",
+        "longs_daily": -3,
+        "shorts_daily": -7,
+        "longs_weekly": 7,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "NZD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 7,
+        "longs_weekly": -15,
+        "shorts_weekly": 110,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "AUD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -22,
+        "shorts_daily": -2,
+        "longs_weekly": -3,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "EUR_CHF",
+        "sentiment": "Mixed",
+        "longs_daily": -2,
+        "shorts_daily": -9,
+        "longs_weekly": -12,
+        "shorts_weekly": 15,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "EUR_JPY",
+        "sentiment": "Mixed",
+        "longs_daily": -5,
+        "shorts_daily": 4,
+        "longs_weekly": 27,
+        "shorts_weekly": 6,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "USD_CHF",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": 0,
+        "longs_weekly": -1,
+        "shorts_weekly": 25,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "GBP_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -7,
+        "shorts_daily": 10,
+        "longs_weekly": 16,
+        "shorts_weekly": 17,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "USD_CAD",
+        "sentiment": "Mixed",
+        "longs_daily": -15,
+        "shorts_daily": -2,
+        "longs_weekly": 11,
+        "shorts_weekly": -1,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "GBP_USD",
+        "sentiment": "Mixed",
+        "longs_daily": -1,
+        "shorts_daily": -2,
+        "longs_weekly": -11,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "AUD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -13,
+        "shorts_daily": 9,
+        "longs_weekly": -2,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "USD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -14,
+        "shorts_daily": 0,
+        "longs_weekly": 7,
+        "shorts_weekly": 8,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "Oil - US Crude",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 3,
+        "longs_weekly": -25,
+        "shorts_weekly": 111,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "Silver",
+        "sentiment": "Mixed",
+        "longs_daily": -4,
+        "shorts_daily": -6,
+        "longs_weekly": -12,
+        "shorts_weekly": -2,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "Gold",
+        "sentiment": "Bearish",
+        "longs_daily": 13,
+        "shorts_daily": -15,
+        "longs_weekly": 6,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "US 500",
+        "sentiment": "Bearish",
+        "longs_daily": 3,
+        "shorts_daily": -2,
+        "longs_weekly": 15,
+        "shorts_weekly": 11,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "Wall Street",
+        "sentiment": "Bearish",
+        "longs_daily": 30,
+        "shorts_daily": -7,
+        "longs_weekly": 45,
+        "shorts_weekly": -8,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "Germany 40",
+        "sentiment": "Bearish",
+        "longs_daily": 7,
+        "shorts_daily": -8,
+        "longs_weekly": 18,
+        "shorts_weekly": -4,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "FTSE 100",
+        "sentiment": "Bearish",
+        "longs_daily": 1,
+        "shorts_daily": -9,
+        "longs_weekly": 26,
+        "shorts_weekly": -18,
+        "scraping_time": "2024-02-10 19:27:23"
+    },
+    {
+        "pair": "France 40",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": -1,
+        "longs_weekly": -4,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:27:23"
+    }
+]
+[
+    {
+        "pair": "EUR_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 2,
+        "longs_weekly": -8,
+        "shorts_weekly": 34,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "EUR_GBP",
+        "sentiment": "Bearish",
+        "longs_daily": -3,
+        "shorts_daily": -7,
+        "longs_weekly": 7,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "NZD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 7,
+        "longs_weekly": -15,
+        "shorts_weekly": 110,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "AUD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -22,
+        "shorts_daily": -2,
+        "longs_weekly": -3,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "EUR_CHF",
+        "sentiment": "Mixed",
+        "longs_daily": -2,
+        "shorts_daily": -9,
+        "longs_weekly": -12,
+        "shorts_weekly": 15,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "EUR_JPY",
+        "sentiment": "Mixed",
+        "longs_daily": -5,
+        "shorts_daily": 4,
+        "longs_weekly": 27,
+        "shorts_weekly": 6,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "USD_CHF",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": 0,
+        "longs_weekly": -1,
+        "shorts_weekly": 25,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "GBP_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -7,
+        "shorts_daily": 10,
+        "longs_weekly": 16,
+        "shorts_weekly": 17,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "USD_CAD",
+        "sentiment": "Mixed",
+        "longs_daily": -15,
+        "shorts_daily": -2,
+        "longs_weekly": 11,
+        "shorts_weekly": -1,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "GBP_USD",
+        "sentiment": "Mixed",
+        "longs_daily": -1,
+        "shorts_daily": -2,
+        "longs_weekly": -11,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "AUD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -13,
+        "shorts_daily": 9,
+        "longs_weekly": -2,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "USD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -14,
+        "shorts_daily": 0,
+        "longs_weekly": 7,
+        "shorts_weekly": 8,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "Oil - US Crude",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 3,
+        "longs_weekly": -25,
+        "shorts_weekly": 111,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "Silver",
+        "sentiment": "Mixed",
+        "longs_daily": -4,
+        "shorts_daily": -6,
+        "longs_weekly": -12,
+        "shorts_weekly": -2,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "Gold",
+        "sentiment": "Bearish",
+        "longs_daily": 13,
+        "shorts_daily": -15,
+        "longs_weekly": 6,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "US 500",
+        "sentiment": "Bearish",
+        "longs_daily": 3,
+        "shorts_daily": -2,
+        "longs_weekly": 15,
+        "shorts_weekly": 11,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "Wall Street",
+        "sentiment": "Bearish",
+        "longs_daily": 30,
+        "shorts_daily": -7,
+        "longs_weekly": 45,
+        "shorts_weekly": -8,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "Germany 40",
+        "sentiment": "Bearish",
+        "longs_daily": 7,
+        "shorts_daily": -8,
+        "longs_weekly": 18,
+        "shorts_weekly": -4,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "FTSE 100",
+        "sentiment": "Bearish",
+        "longs_daily": 1,
+        "shorts_daily": -9,
+        "longs_weekly": 26,
+        "shorts_weekly": -18,
+        "scraping_time": "2024-02-10 19:29:48"
+    },
+    {
+        "pair": "France 40",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": -1,
+        "longs_weekly": -4,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:29:48"
+    }
+]
+[
+    {
+        "pair": "EUR_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 2,
+        "longs_weekly": -8,
+        "shorts_weekly": 34,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "EUR_GBP",
+        "sentiment": "Bearish",
+        "longs_daily": -3,
+        "shorts_daily": -7,
+        "longs_weekly": 7,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "NZD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 7,
+        "longs_weekly": -15,
+        "shorts_weekly": 110,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "AUD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -22,
+        "shorts_daily": -2,
+        "longs_weekly": -3,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "EUR_CHF",
+        "sentiment": "Mixed",
+        "longs_daily": -2,
+        "shorts_daily": -9,
+        "longs_weekly": -12,
+        "shorts_weekly": 15,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "EUR_JPY",
+        "sentiment": "Mixed",
+        "longs_daily": -5,
+        "shorts_daily": 4,
+        "longs_weekly": 27,
+        "shorts_weekly": 6,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "USD_CHF",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": 0,
+        "longs_weekly": -1,
+        "shorts_weekly": 25,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "GBP_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -7,
+        "shorts_daily": 10,
+        "longs_weekly": 16,
+        "shorts_weekly": 17,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "USD_CAD",
+        "sentiment": "Mixed",
+        "longs_daily": -15,
+        "shorts_daily": -2,
+        "longs_weekly": 11,
+        "shorts_weekly": -1,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "GBP_USD",
+        "sentiment": "Mixed",
+        "longs_daily": -1,
+        "shorts_daily": -2,
+        "longs_weekly": -11,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "AUD_USD",
+        "sentiment": "Bullish",
+        "longs_daily": -13,
+        "shorts_daily": 9,
+        "longs_weekly": -2,
+        "shorts_weekly": 40,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "USD_JPY",
+        "sentiment": "Bullish",
+        "longs_daily": -14,
+        "shorts_daily": 0,
+        "longs_weekly": 7,
+        "shorts_weekly": 8,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "Oil - US Crude",
+        "sentiment": "Bullish",
+        "longs_daily": -6,
+        "shorts_daily": 3,
+        "longs_weekly": -25,
+        "shorts_weekly": 111,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "Silver",
+        "sentiment": "Mixed",
+        "longs_daily": -4,
+        "shorts_daily": -6,
+        "longs_weekly": -12,
+        "shorts_weekly": -2,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "Gold",
+        "sentiment": "Bearish",
+        "longs_daily": 13,
+        "shorts_daily": -15,
+        "longs_weekly": 6,
+        "shorts_weekly": -7,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "US 500",
+        "sentiment": "Bearish",
+        "longs_daily": 3,
+        "shorts_daily": -2,
+        "longs_weekly": 15,
+        "shorts_weekly": 11,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "Wall Street",
+        "sentiment": "Bearish",
+        "longs_daily": 30,
+        "shorts_daily": -7,
+        "longs_weekly": 45,
+        "shorts_weekly": -8,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "Germany 40",
+        "sentiment": "Bearish",
+        "longs_daily": 7,
+        "shorts_daily": -8,
+        "longs_weekly": 18,
+        "shorts_weekly": -4,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "FTSE 100",
+        "sentiment": "Bearish",
+        "longs_daily": 1,
+        "shorts_daily": -9,
+        "longs_weekly": 26,
+        "shorts_weekly": -18,
+        "scraping_time": "2024-02-10 19:31:25"
+    },
+    {
+        "pair": "France 40",
+        "sentiment": "Bullish",
+        "longs_daily": -5,
+        "shorts_daily": -1,
+        "longs_weekly": -4,
+        "shorts_weekly": 4,
+        "scraping_time": "2024-02-10 19:31:25"
+    }
+]

@@ -19,7 +19,6 @@ Wall Street,Bearish,30,-7,45,-8,2024-02-10 16:21:44
 Germany 40,Bearish,7,-8,18,-4,2024-02-10 16:21:44
 FTSE 100,Bearish,1,-9,26,-18,2024-02-10 16:21:44
 France 40,Bullish,-5,-1,-4,4,2024-02-10 16:21:44
-pair,sentiment,longs_daily,shorts_daily,longs_weekly,shorts_weekly,scraping_time
 EUR_USD,Bullish,-6,2,-8,34,2024-02-10 16:25:09
 EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 16:25:09
 NZD_USD,Bullish,-6,7,-15,110,2024-02-10 16:25:09
@@ -40,7 +39,6 @@ Wall Street,Bearish,30,-7,45,-8,2024-02-10 16:25:09
 Germany 40,Bearish,7,-8,18,-4,2024-02-10 16:25:09
 FTSE 100,Bearish,1,-9,26,-18,2024-02-10 16:25:09
 France 40,Bullish,-5,-1,-4,4,2024-02-10 16:25:09
-pair,sentiment,longs_daily,shorts_daily,longs_weekly,shorts_weekly,scraping_time
 EUR_USD,Bullish,-6,2,-8,34,2024-02-10 16:28:34
 EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 16:28:34
 NZD_USD,Bullish,-6,7,-15,110,2024-02-10 16:28:34
@@ -61,3 +59,84 @@ Wall Street,Bearish,30,-7,45,-8,2024-02-10 16:28:34
 Germany 40,Bearish,7,-8,18,-4,2024-02-10 16:28:34
 FTSE 100,Bearish,1,-9,26,-18,2024-02-10 16:28:34
 France 40,Bullish,-5,-1,-4,4,2024-02-10 16:28:34
+EUR_USD,Bullish,-6,2,-8,34,2024-02-10 17:16:50
+EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 17:16:50
+NZD_USD,Bullish,-6,7,-15,110,2024-02-10 17:16:50
+AUD_JPY,Bullish,-22,-2,-3,4,2024-02-10 17:16:50
+EUR_CHF,Mixed,-2,-9,-12,15,2024-02-10 17:16:50
+EUR_JPY,Mixed,-5,4,27,6,2024-02-10 17:16:50
+USD_CHF,Bullish,-5,0,-1,25,2024-02-10 17:16:50
+GBP_JPY,Bullish,-7,10,16,17,2024-02-10 17:16:50
+USD_CAD,Mixed,-15,-2,11,-1,2024-02-10 17:16:50
+GBP_USD,Mixed,-1,-2,-11,40,2024-02-10 17:16:50
+AUD_USD,Bullish,-13,9,-2,40,2024-02-10 17:16:50
+USD_JPY,Bullish,-14,0,7,8,2024-02-10 17:16:50
+Oil - US Crude,Bullish,-6,3,-25,111,2024-02-10 17:16:50
+Silver,Mixed,-4,-6,-12,-2,2024-02-10 17:16:50
+Gold,Bearish,13,-15,6,-7,2024-02-10 17:16:50
+US 500,Bearish,3,-2,15,11,2024-02-10 17:16:50
+Wall Street,Bearish,30,-7,45,-8,2024-02-10 17:16:50
+Germany 40,Bearish,7,-8,18,-4,2024-02-10 17:16:50
+FTSE 100,Bearish,1,-9,26,-18,2024-02-10 17:16:50
+France 40,Bullish,-5,-1,-4,4,2024-02-10 17:16:50
+EUR_USD,Bullish,-6,2,-8,34,2024-02-10 19:27:23
+EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 19:27:23
+NZD_USD,Bullish,-6,7,-15,110,2024-02-10 19:27:23
+AUD_JPY,Bullish,-22,-2,-3,4,2024-02-10 19:27:23
+EUR_CHF,Mixed,-2,-9,-12,15,2024-02-10 19:27:23
+EUR_JPY,Mixed,-5,4,27,6,2024-02-10 19:27:23
+USD_CHF,Bullish,-5,0,-1,25,2024-02-10 19:27:23
+GBP_JPY,Bullish,-7,10,16,17,2024-02-10 19:27:23
+USD_CAD,Mixed,-15,-2,11,-1,2024-02-10 19:27:23
+GBP_USD,Mixed,-1,-2,-11,40,2024-02-10 19:27:23
+AUD_USD,Bullish,-13,9,-2,40,2024-02-10 19:27:23
+USD_JPY,Bullish,-14,0,7,8,2024-02-10 19:27:23
+Oil - US Crude,Bullish,-6,3,-25,111,2024-02-10 19:27:23
+Silver,Mixed,-4,-6,-12,-2,2024-02-10 19:27:23
+Gold,Bearish,13,-15,6,-7,2024-02-10 19:27:23
+US 500,Bearish,3,-2,15,11,2024-02-10 19:27:23
+Wall Street,Bearish,30,-7,45,-8,2024-02-10 19:27:23
+Germany 40,Bearish,7,-8,18,-4,2024-02-10 19:27:23
+FTSE 100,Bearish,1,-9,26,-18,2024-02-10 19:27:23
+France 40,Bullish,-5,-1,-4,4,2024-02-10 19:27:23
+EUR_USD,Bullish,-6,2,-8,34,2024-02-10 19:29:48
+EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 19:29:48
+NZD_USD,Bullish,-6,7,-15,110,2024-02-10 19:29:48
+AUD_JPY,Bullish,-22,-2,-3,4,2024-02-10 19:29:48
+EUR_CHF,Mixed,-2,-9,-12,15,2024-02-10 19:29:48
+EUR_JPY,Mixed,-5,4,27,6,2024-02-10 19:29:48
+USD_CHF,Bullish,-5,0,-1,25,2024-02-10 19:29:48
+GBP_JPY,Bullish,-7,10,16,17,2024-02-10 19:29:48
+USD_CAD,Mixed,-15,-2,11,-1,2024-02-10 19:29:48
+GBP_USD,Mixed,-1,-2,-11,40,2024-02-10 19:29:48
+AUD_USD,Bullish,-13,9,-2,40,2024-02-10 19:29:48
+USD_JPY,Bullish,-14,0,7,8,2024-02-10 19:29:48
+Oil - US Crude,Bullish,-6,3,-25,111,2024-02-10 19:29:48
+Silver,Mixed,-4,-6,-12,-2,2024-02-10 19:29:48
+Gold,Bearish,13,-15,6,-7,2024-02-10 19:29:48
+US 500,Bearish,3,-2,15,11,2024-02-10 19:29:48
+Wall Street,Bearish,30,-7,45,-8,2024-02-10 19:29:48
+Germany 40,Bearish,7,-8,18,-4,2024-02-10 19:29:48
+FTSE 100,Bearish,1,-9,26,-18,2024-02-10 19:29:48
+France 40,Bullish,-5,-1,-4,4,2024-02-10 19:29:48
+pair,sentiment,longs_daily,shorts_daily,longs_weekly,shorts_weekly,scraping_time
+EUR_USD,Bullish,-6,2,-8,34,2024-02-10 19:31:25
+EUR_GBP,Bearish,-3,-7,7,-7,2024-02-10 19:31:25
+NZD_USD,Bullish,-6,7,-15,110,2024-02-10 19:31:25
+AUD_JPY,Bullish,-22,-2,-3,4,2024-02-10 19:31:25
+EUR_CHF,Mixed,-2,-9,-12,15,2024-02-10 19:31:25
+EUR_JPY,Mixed,-5,4,27,6,2024-02-10 19:31:25
+USD_CHF,Bullish,-5,0,-1,25,2024-02-10 19:31:25
+GBP_JPY,Bullish,-7,10,16,17,2024-02-10 19:31:25
+USD_CAD,Mixed,-15,-2,11,-1,2024-02-10 19:31:25
+GBP_USD,Mixed,-1,-2,-11,40,2024-02-10 19:31:25
+AUD_USD,Bullish,-13,9,-2,40,2024-02-10 19:31:25
+USD_JPY,Bullish,-14,0,7,8,2024-02-10 19:31:25
+Oil - US Crude,Bullish,-6,3,-25,111,2024-02-10 19:31:25
+Silver,Mixed,-4,-6,-12,-2,2024-02-10 19:31:25
+Gold,Bearish,13,-15,6,-7,2024-02-10 19:31:25
+US 500,Bearish,3,-2,15,11,2024-02-10 19:31:25
+Wall Street,Bearish,30,-7,45,-8,2024-02-10 19:31:25
+Germany 40,Bearish,7,-8,18,-4,2024-02-10 19:31:25
+FTSE 100,Bearish,1,-9,26,-18,2024-02-10 19:31:25
+France 40,Bullish,-5,-1,-4,4,2024-02-10 19:31:25
