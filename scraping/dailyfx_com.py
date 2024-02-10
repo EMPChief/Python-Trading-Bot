@@ -14,11 +14,11 @@ class DailyFXScraper:
     def extract_rows(self, soup):
         return soup.select(".dfx-technicalSentimentCard")
 
-    def extract_pair_data(self, rows):
+    def extract_pair_data(self, row):
         pair_data = []
-        for row in rows:
-            card = row.select_one(".dfx-technicalSentimentCard__pairAndSignal")
-            change_values = row.select(".dfx-technicalSentimentCard__changeValue")
+        for rows in row:
+            card = rows.select_one(".dfx-technicalSentimentCard__pairAndSignal")
+            change_values = rows.select(".dfx-technicalSentimentCard__changeValue")
             pair_data.append(dict(
                 pair=card.select_one("a").get_text().replace("/", "_").strip(),
                 sentiment=card.select_one("span").get_text().strip(),
@@ -38,8 +38,8 @@ class DailyFXScraper:
 
     def extract_sentiment_data(self):
         soup = self.load_page()
-        rows = self.extract_rows(soup)
-        pair_data = self.extract_pair_data(rows)
+        row = self.extract_rows(soup)
+        pair_data = self.extract_pair_data(row)
         dataframe = pd.DataFrame(pair_data)
         dataframe = self.clean_dataframe(dataframe)
         return dataframe
