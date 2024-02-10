@@ -43,6 +43,4 @@ if __name__ == "__main__":
             f.write("\n")
         
         print("Done scraping data.")
-        
-        # Wait for the scraping interval before the next iteration
         time.sleep(scraping_interval)
