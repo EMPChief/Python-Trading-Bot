@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 from scrapy.crawler import CrawlerProcess
 
+
 class DailyFXScraper(scrapy.Spider):
     name = 'dailyfx'
     start_urls = ['https://www.dailyfx.com/sentiment']
@@ -48,8 +49,6 @@ class DailyFXScraper(scrapy.Spider):
         dataframe = dataframe.apply(pd.to_numeric, errors='ignore')
         return dataframe
 
-
-
     def parse_sentiment_data(self, response):
         dataframe = pd.DataFrame(response)
         dataframe = self.clean_dataframe(dataframe)
@@ -59,10 +58,12 @@ class DailyFXScraper(scrapy.Spider):
         self.log("Spider closed. Data saved to CSV file.")
         df = self.parse_sentiment_data(response=None)
         try:
-            df.to_csv("/run/media/empchief/Extra/programming/Linux/github/trading-bot/sentiment_data.csv", index=False)
+            df.to_csv(
+                "/run/media/empchief/Extra/programming/Linux/github/trading-bot/sentiment_data.csv", index=False)
             self.log("CSV file saved successfully.")
         except Exception as e:
             self.log(f"Error saving CSV file: {e}")
+
 
 if __name__ == "__main__":
 

@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as bs
 import pandas as pd
 from datetime import datetime
 
+
 class DailyFXScraper:
     def __init__(self, url="https://www.dailyfx.com/sentiment"):
         self.url = url
@@ -18,8 +19,10 @@ class DailyFXScraper:
     def extract_pair_data(self, row):
         pair_data = []
         for rows in row:
-            card = rows.select_one(".dfx-technicalSentimentCard__pairAndSignal")
-            change_values = rows.select(".dfx-technicalSentimentCard__changeValue")
+            card = rows.select_one(
+                ".dfx-technicalSentimentCard__pairAndSignal")
+            change_values = rows.select(
+                ".dfx-technicalSentimentCard__changeValue")
             pair_data.append(dict(
                 pair=card.select_one("a").get_text().replace("/", "_").strip(),
                 sentiment=card.select_one("span").get_text().strip(),
