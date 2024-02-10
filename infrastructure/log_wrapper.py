@@ -7,7 +7,7 @@ DEFAULT_LEVEL = logging.DEBUG
 
 class LogWrapper:
 
-    PATH = './logs'
+    PATH = './data/logs'
 
     def __init__(self, name, mode="w"):
         self.create_directory()

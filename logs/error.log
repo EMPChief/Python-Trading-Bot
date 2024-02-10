@@ -1,3 +1,0 @@
-2023-12-22 06:20:31 LogWrapper init() ./logs/error.log
-2023-12-22 06:20:38 Bot started
-2023-12-22 07:03:05 Failed to place TradeDecision(pair=USD_CAD, direction=1, gain=0.7340, sl=1.3290, tp=1.3292)
