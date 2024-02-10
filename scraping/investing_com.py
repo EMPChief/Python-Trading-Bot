@@ -7,26 +7,24 @@ import pandas as pd
 class InvestingComScraper:
     def __init__(self):
         self.data_keys = [
-                        'pair_name',
-                        'ti_buy', 
-                        'ti_sell', 
-                        'ma_buy', 
-                        'ma_sell', 
-                        'S1', 
-                        'S2', 
-                        'S3', 
-                        'pivot', 
-                        'R1', 
-                        'R2', 
-                        'R3', 
-                        'percent_bullish', 
-                        'percent_bearish'
-                    ]
-
+            'pair_name',
+            'ti_buy', 
+            'ti_sell', 
+            'ma_buy', 
+            'ma_sell', 
+            'S1', 
+            'S2', 
+            'S3', 
+            'pivot', 
+            'R1', 
+            'R2', 
+            'R3', 
+            'percent_bullish', 
+            'percent_bearish'
+        ]
 
     def fetch_data(self, pair_id, time_frame):
-        print(f"Fetching data for pair_id={
-              pair_id}, time_frame={time_frame}...")
+        print(f"Fetching data for pair_id={pair_id}, time_frame={time_frame}...")
         url = "https://www.investing.com/common/technical_studies/technical_studies_data.php"
         session = cloudscraper.create_scraper()
         headers = {
@@ -53,8 +51,7 @@ class InvestingComScraper:
 
             return self.process_data(data_str.split('*;*'), pair_id, time_frame)
         except Exception as e:
-            print(f"Error fetching data for pair_id={
-                  pair_id}, time_frame={time_frame}: {e}")
+            print(f"Error fetching data for pair_id={pair_id}, time_frame={time_frame}: {e}")
             return None
 
     def process_data(self, text_list, pair_id, time_frame):
@@ -74,28 +71,22 @@ class InvestingComScraper:
 
         return data
 
-
-
-
     def scrape_all_data(self):
         data = []
         for pair_id in range(1, 3):
             for time_frame in [3600, 86400]:
-                print(f"Scraping data for pair_id={
-                      pair_id}, time_frame={time_frame}...")
+                print(f"Scraping data for pair_id={pair_id}, time_frame={time_frame}...")
                 fetched_data = self.fetch_data(pair_id, time_frame)
                 if fetched_data:
                     data.append(fetched_data)
                 time.sleep(0.5)
 
-        df = pd.DataFrame(data)
-        df['updated'] = df['updated'].astype(str)
-        numeric_columns = ['ti_buy', 'ti_sell', 'ma_buy', 'ma_sell', 'S1', 'S2', 'S3',
-                           'pivot', 'R1', 'R2', 'R3']
-        df[numeric_columns] = df[numeric_columns].apply(
-            pd.to_numeric, errors='coerce')
+        dataframe = pd.DataFrame(data)
+        dataframe['updated'] = dataframe['updated'].astype(str)
+        numeric_columns = ['ti_buy', 'ti_sell', 'ma_buy', 'ma_sell', 'S1', 'S2', 'S3', 'pivot', 'R1', 'R2', 'R3']
+        dataframe[numeric_columns] = dataframe[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-        return df
+        return dataframe
 
 
 if __name__ == "__main__":
