@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
+from datetime import datetime
 
 class DailyFXScraper:
     def __init__(self, url="https://www.dailyfx.com/sentiment"):
@@ -25,7 +26,8 @@ class DailyFXScraper:
                 longs_daily=change_values[0].get_text().strip(),
                 shorts_daily=change_values[1].get_text().strip(),
                 longs_weekly=change_values[3].get_text().strip(),
-                shorts_weekly=change_values[4].get_text().strip()
+                shorts_weekly=change_values[4].get_text().strip(),
+                time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             ))
         return pair_data
 
