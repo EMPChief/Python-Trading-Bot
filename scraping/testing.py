@@ -2,6 +2,7 @@ import scrapy
 import pandas as pd
 from datetime import datetime
 from scrapy.crawler import CrawlerProcess
+
 class DailyFXScraper(scrapy.Spider):
     name = 'dailyfx'
     start_urls = ['https://www.dailyfx.com/sentiment']
