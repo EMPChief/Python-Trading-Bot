@@ -1,8 +1,9 @@
 from dailyfx_com import DailyFXScraper
+from investing_com import InvestingComScraper
 import time
 import json
 scraping_interval = 3600
-
+data_path = "data/scraping"
 if __name__ == "__main__":
 #    scraper = DailyFXScraper()
 #    while True:
@@ -18,4 +19,11 @@ if __name__ == "__main__":
 #            json.dump(data, f, indent=4)
 #            f.write("\n")
 #        time.sleep(scraping_interval)
-    pass
+    investing_scraper = InvestingComScraper()
+    investor_response = investing_scraper.scrape_all_data()
+    investor_response.to_csv(f"{data_path}/investor_data.csv", mode='a', index=False, header=True)
+    data = investor_response.to_dict(orient='records')
+    with open(f"{data_path}/investor_data.json", "a") as f:
+        json.dump(data, f, indent=4)
+        f.write("\n")
+    time.sleep(scraping_interval)
