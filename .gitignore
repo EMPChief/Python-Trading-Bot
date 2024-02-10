@@ -6,10 +6,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 .env
-data/
 data/candles/*
-.csv
-*.csv
 
 node_modules
 dist

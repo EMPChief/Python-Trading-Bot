@@ -1,0 +1,19 @@
+2023-12-21 23:13:03 LogWrapper init() ./logs/AUD_USD.log
+2023-12-21 23:13:03 TradeSettings(pair=AUD_USD, bollinger_bands={'n_ma': 12.0, 'n_std': 2.5, 'maxspread': 0.0003, 'mingain': 0.0005, 'riskreward': 2.0}, ichimoku_cloud={'n1': 9.0, 'n2': 26.0, 'n3': 52.0}, cmf={'n_cmf': 20.0})
+2023-12-21 23:13:11 CandleManager() init last_candle:last_candle:23-12-21 22:12 is_ready:False
+2023-12-21 23:14:10 CandleManager() new candle:last_candle:23-12-21 22:13 is_ready:True
+2023-12-21 23:14:12 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:13:00+00:00 granularity:M1
+2023-12-21 23:15:08 CandleManager() new candle:last_candle:23-12-21 22:14 is_ready:True
+2023-12-21 23:15:14 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:14:00+00:00 granularity:M1
+2023-12-21 23:16:14 CandleManager() new candle:last_candle:23-12-21 22:15 is_ready:True
+2023-12-21 23:16:15 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:15:00+00:00 granularity:M1
+2023-12-21 23:17:15 CandleManager() new candle:last_candle:23-12-21 22:16 is_ready:True
+2023-12-21 23:17:17 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:16:00+00:00 granularity:M1
+2023-12-21 23:18:13 CandleManager() new candle:last_candle:23-12-21 22:17 is_ready:True
+2023-12-21 23:18:18 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:17:00+00:00 granularity:M1
+2023-12-21 23:19:14 CandleManager() new candle:last_candle:23-12-21 22:18 is_ready:True
+2023-12-21 23:19:20 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:18:00+00:00 granularity:M1
+2023-12-21 23:20:16 CandleManager() new candle:last_candle:23-12-21 22:19 is_ready:True
+2023-12-21 23:20:21 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:19:00+00:00 granularity:M1
+2023-12-21 23:21:21 CandleManager() new candle:last_candle:23-12-21 22:20 is_ready:True
+2023-12-21 23:21:23 tech_manager: max_rows:113.0 candle_time:2023-12-21 22:20:00+00:00 granularity:M1

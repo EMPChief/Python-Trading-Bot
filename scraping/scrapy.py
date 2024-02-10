@@ -1,7 +1,7 @@
 from dailyfx_com import DailyFXScraper
 import time
 import json
-scraping_interval = 60
+scraping_interval = 3600
 
 if __name__ == "__main__":
 #    scraper = DailyFXScraper()
