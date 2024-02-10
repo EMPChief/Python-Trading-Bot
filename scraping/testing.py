@@ -1,7 +1,7 @@
 import scrapy
 import pandas as pd
 from datetime import datetime
-
+from scrapy.crawler import CrawlerProcess
 class DailyFXScraper(scrapy.Spider):
     name = 'dailyfx'
     start_urls = ['https://www.dailyfx.com/sentiment']
@@ -64,7 +64,6 @@ class DailyFXScraper(scrapy.Spider):
             self.log(f"Error saving CSV file: {e}")
 
 if __name__ == "__main__":
-    from scrapy.crawler import CrawlerProcess
 
     process = CrawlerProcess()
     process.crawl(DailyFXScraper)
