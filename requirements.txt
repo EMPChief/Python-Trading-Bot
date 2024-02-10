@@ -8,3 +8,5 @@ flask
 dask
 beautifulsoup4
 scrapy
+cloudscraper
+Pyarrow
