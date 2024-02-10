@@ -27,7 +27,7 @@ class DailyFXScraper:
                 shorts_daily=change_values[1].get_text().strip(),
                 longs_weekly=change_values[3].get_text().strip(),
                 shorts_weekly=change_values[4].get_text().strip(),
-                time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                scraping_time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             ))
         return pair_data
 

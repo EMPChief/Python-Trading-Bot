@@ -1,6 +1,5 @@
 from dailyfx_com import DailyFXScraper
 import time
-import pandas as pd
 
 scraping_interval = 3600
 
