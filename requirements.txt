@@ -7,3 +7,4 @@ plotly
 flask
 dask
 beautifulsoup4
+scrapy
