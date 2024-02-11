@@ -49,12 +49,12 @@ class ReutersComScraper:
 
     def create_dataframe(self):
         data = self.scrape_reuters()
-        df = pd.DataFrame(data)
-        df['scraping_time'] = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        return df
+        dataframe = pd.DataFrame(data)
+        dataframe['scraping_time'] = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return dataframe
 
 
 if __name__ == "__main__":
     scraper = ReutersComScraper()
-    df = scraper.create_dataframe()
-    print(df)
+    dataframe = scraper.create_dataframe()
+    print(dataframe)
