@@ -5,7 +5,7 @@ from scrape_class.tradingeconomics_com import TradingEconomicsCalendar
 from scrape_def.scraper_defs import scrape_dailyfx_data, scrape_investor_data, scrape_reuters_data, scrape_tradingeconomics_data
 import time
 
-scraping_interval = 180
+scraping_interval = 3600
 data_path = "data/scraping"
 
 if __name__ == "__main__":

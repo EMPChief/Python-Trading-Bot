@@ -7,7 +7,7 @@ import datetime as dt
 from backoff import on_exception, expo
 
 class TradingEconomicsCalendar:
-    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2022-03-07T00:00:00Z", to_date_str="2022-03-25T00:00:00Z"):
+    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2019-03-07T00:00:00Z", to_date_str="2024-01-25T00:00:00Z"):
         self.url = url
         self.from_date = parser.parse(from_date_str)
         self.to_date = parser.parse(to_date_str)
@@ -90,9 +90,9 @@ class TradingEconomicsCalendar:
                 final_data += self.extract_data_dict(item_date, table_rows)
 
             start_date += dt.timedelta(days=7)
-            time.sleep(1)
+            time.sleep(3)
 
-        return final_data  # Returning raw data instead of DataFrame
+        return final_data
 
     def create_dataframe(self):
         data = self.fetch_calendar_data(self.from_date)
