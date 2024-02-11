@@ -5,10 +5,12 @@ from dateutil import parser
 import time
 import datetime as dt
 from backoff import on_exception, expo
+import random
+from db.db import DataBaseMongo
 
 
 class TradingEconomicsCalendar:
-    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2020-01-01T00:00:00Z", to_date_str="2023-01-01T00:00:00Z"):
+    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2020-01-01T00:00:00Z", to_date_str="2023-12-31T00:00:00Z"):
         self.url = url
         self.from_date = parser.parse(from_date_str)
         self.to_date = parser.parse(to_date_str)
@@ -20,6 +22,7 @@ class TradingEconomicsCalendar:
             "Accept-Language": "en-US,en;q=0.5",
             "Pragma": "no-cache",
         }
+        self.database = DataBaseMongo()
 
     def extract_date_from_header(self, header):
         tr = header.select_one("tr")
@@ -59,7 +62,6 @@ class TradingEconomicsCalendar:
 
     @on_exception(expo, requests.exceptions.RequestException, max_tries=3)
     def fetch_calendar_data(self, start_date):
-        final_data = []
         while start_date < self.to_date:
             formatted_start_date = dt.datetime.strftime(
                 start_date, "%Y-%m-%d 00:00:00")
@@ -78,6 +80,10 @@ class TradingEconomicsCalendar:
             soup = BeautifulSoup(response.content, 'html.parser')
             table = soup.select_one("table#calendar")
 
+            if table is None:
+                print("Error: Unable to find table with ID 'calendar'. Skipping.")
+                continue
+
             last_header_date = None
             rows_by_date = {}
             for child in table.children:
@@ -89,13 +95,16 @@ class TradingEconomicsCalendar:
                 elif child.name == "tr":
                     rows_by_date[last_header_date].append(child)
 
+            final_data = []
             for item_date, table_rows in rows_by_date.items():
-                final_data += self.extract_data_dict(item_date, table_rows)
+                data = self.extract_data_dict(item_date, table_rows)
+                final_data.extend(data)
+                self.database.add_many(DataBaseMongo.FOREX_CALANDER, data)
 
             start_date += dt.timedelta(days=7)
-            time.sleep(3)
+        
+            time.sleep(random.randint(1, 5))
 
-        return final_data
 
     def create_dataframe(self):
         data = self.fetch_calendar_data(self.from_date)
@@ -104,7 +113,10 @@ class TradingEconomicsCalendar:
     def get_fx_calendar(self):
         return self.create_dataframe()
 
+    def fetch_and_save_to_database(self):
+        self.fetch_calendar_data(self.from_date)
+
 
 if __name__ == "__main__":
     calendar = TradingEconomicsCalendar()
-    print(calendar.get_fx_calendar())
+    calendar.fetch_and_save_to_database()
