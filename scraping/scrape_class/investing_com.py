@@ -8,28 +8,30 @@ import requests
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
+
 class InvestingComScraper:
     def __init__(self):
         self.data_keys = [
             'pair_name',
-            'ti_buy', 
-            'ti_sell', 
-            'ma_buy', 
-            'ma_sell', 
-            'S1', 
-            'S2', 
-            'S3', 
-            'pivot', 
-            'R1', 
-            'R2', 
-            'R3', 
-            'percent_bullish', 
+            'ti_buy',
+            'ti_sell',
+            'ma_buy',
+            'ma_sell',
+            'S1',
+            'S2',
+            'S3',
+            'pivot',
+            'R1',
+            'R2',
+            'R3',
+            'percent_bullish',
             'percent_bearish'
         ]
 
     @on_exception(expo, requests.exceptions.RequestException, max_tries=3)
     def fetch_data(self, pair_id, time_frame):
-        logging.info(f"Fetching data for pair_id={pair_id}, time_frame={time_frame}...")
+        logging.info(f"Fetching data for pair_id={
+                     pair_id}, time_frame={time_frame}...")
         url = "https://www.investing.com/common/technical_studies/technical_studies_data.php"
         session = cloudscraper.create_scraper()
         headers = {
@@ -56,11 +58,13 @@ class InvestingComScraper:
 
             return self.process_data(data_str.split('*;*'), pair_id, time_frame)
         except requests.exceptions.RequestException as e:
-            logging.error(f"Error fetching data for pair_id={pair_id}, time_frame={time_frame}: {e}")
+            logging.error(f"Error fetching data for pair_id={
+                          pair_id}, time_frame={time_frame}: {e}")
             raise
 
     def process_data(self, text_list, pair_id, time_frame):
-        logging.info(f"Processing data for pair_id={pair_id}, time_frame={time_frame}...")
+        logging.info(f"Processing data for pair_id={
+                     pair_id}, time_frame={time_frame}...")
         data = {}
         data['pair_id'] = pair_id
         data['time_frame'] = time_frame
@@ -80,7 +84,8 @@ class InvestingComScraper:
         data = []
         for pair_id in range(1, 17):
             for time_frame in [3600, 86400]:
-                logging.info(f"Scraping data for pair_id={pair_id}, time_frame={time_frame}...")
+                logging.info(f"Scraping data for pair_id={
+                             pair_id}, time_frame={time_frame}...")
                 fetched_data = self.fetch_data(pair_id, time_frame)
                 if fetched_data:
                     data.append(fetched_data)
@@ -88,7 +93,9 @@ class InvestingComScraper:
 
         dataframe = pd.DataFrame(data)
         dataframe['updated'] = dataframe['updated'].astype(str)
-        numeric_columns = ['ti_buy', 'ti_sell', 'ma_buy', 'ma_sell', 'S1', 'S2', 'S3', 'pivot', 'R1', 'R2', 'R3']
-        dataframe[numeric_columns] = dataframe[numeric_columns].apply(pd.to_numeric, errors='coerce')
+        numeric_columns = ['ti_buy', 'ti_sell', 'ma_buy',
+                           'ma_sell', 'S1', 'S2', 'S3', 'pivot', 'R1', 'R2', 'R3']
+        dataframe[numeric_columns] = dataframe[numeric_columns].apply(
+            pd.to_numeric, errors='coerce')
 
         return dataframe

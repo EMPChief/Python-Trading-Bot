@@ -6,6 +6,7 @@ import time
 import datetime as dt
 from backoff import on_exception, expo
 
+
 class TradingEconomicsCalendar:
     def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2020-01-01T00:00:00Z", to_date_str="2023-01-01T00:00:00Z"):
         self.url = url
@@ -60,9 +61,11 @@ class TradingEconomicsCalendar:
     def fetch_calendar_data(self, start_date):
         final_data = []
         while start_date < self.to_date:
-            formatted_start_date = dt.datetime.strftime(start_date, "%Y-%m-%d 00:00:00")
+            formatted_start_date = dt.datetime.strftime(
+                start_date, "%Y-%m-%d 00:00:00")
             end_date = start_date + dt.timedelta(days=6)
-            formatted_end_date = dt.datetime.strftime(end_date, "%Y-%m-%d 00:00:00")
+            formatted_end_date = dt.datetime.strftime(
+                end_date, "%Y-%m-%d 00:00:00")
 
             headers = dict(self.default_headers)
             headers.update({

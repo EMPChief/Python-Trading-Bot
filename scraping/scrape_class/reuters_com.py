@@ -50,7 +50,8 @@ class ReutersComScraper:
     def create_dataframe(self):
         data = self.scrape_reuters()
         dataframe = pd.DataFrame(data)
-        dataframe['scraping_time'] = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        dataframe['scraping_time'] = dt.datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S")
         return dataframe
 
 

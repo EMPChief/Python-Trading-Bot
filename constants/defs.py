@@ -10,3 +10,4 @@ SECURE_HEADER = {
 SELL = -1
 BUY = 1
 NONE = 0
+MONGO_CONNECTION_STRING="mongodb+srv://bjornmagnekristensen1999:MsmzgP2mfwg8ANFm@empcluster0.vrrztvt.mongodb.net/?retryWrites=true&w=majority"
