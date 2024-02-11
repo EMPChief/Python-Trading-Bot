@@ -1,0 +1,322 @@
+[
+    {
+        "date": "2022-03-07",
+        "country": "china",
+        "category": "balance of trade",
+        "event": "balance of trade",
+        "symbol": "CNFRBALD",
+        "actual": "$115.95B",
+        "previous": "$94.46B",
+        "forecast": "$120B"
+    },
+    {
+        "date": "2022-03-08",
+        "country": "australia",
+        "category": "business confidence",
+        "event": "nab business confidence",
+        "symbol": "NABSCONF",
+        "actual": "13",
+        "previous": "4",
+        "forecast": "1"
+    },
+    {
+        "date": "2022-03-08",
+        "country": "canada",
+        "category": "balance of trade",
+        "event": "balance of trade",
+        "symbol": "CATBTOTB",
+        "actual": "C$2.62B",
+        "previous": "C$-1.58B",
+        "forecast": "C$1.3B"
+    },
+    {
+        "date": "2022-03-08",
+        "country": "united states",
+        "category": "balance of trade",
+        "event": "balance of trade",
+        "symbol": "USTBTOT",
+        "actual": "$-89.7B",
+        "previous": "$-82B",
+        "forecast": "$-84B"
+    },
+    {
+        "date": "2022-03-08",
+        "country": "australia",
+        "category": "consumer confidence mom",
+        "event": "westpac consumer confidence change",
+        "symbol": "AUSCCM",
+        "actual": "-4.2%",
+        "previous": "-1.3%",
+        "forecast": "-1.6%"
+    },
+    {
+        "date": "2022-03-08",
+        "country": "australia",
+        "category": "consumer confidence",
+        "event": "westpac consumer confidence index",
+        "symbol": "WMCCCONPCT",
+        "actual": "96.6",
+        "previous": "100.8",
+        "forecast": "99.2"
+    },
+    {
+        "date": "2022-03-09",
+        "country": "china",
+        "category": "inflation rate",
+        "event": "inflation rate yoy",
+        "symbol": "CNCPIYOY",
+        "actual": "0.9%",
+        "previous": "0.9%",
+        "forecast": "0.9%"
+    },
+    {
+        "date": "2022-03-09",
+        "country": "united states",
+        "category": "job offers",
+        "event": "jolts job openings",
+        "symbol": "UNITEDSTAJOBOFF",
+        "actual": "11.263M",
+        "previous": "11.448M",
+        "forecast": "10.8M"
+    },
+    {
+        "date": "2022-03-10",
+        "country": "united states",
+        "category": "core inflation rate",
+        "event": "core inflation rate yoy",
+        "symbol": "USACORECPIRATE",
+        "actual": "6.4%",
+        "previous": "6%",
+        "forecast": "6.4%"
+    },
+    {
+        "date": "2022-03-10",
+        "country": "united states",
+        "category": "inflation rate",
+        "event": "inflation rate yoy",
+        "symbol": "CPI YOY",
+        "actual": "7.9%",
+        "previous": "7.5%",
+        "forecast": "7.9%"
+    },
+    {
+        "date": "2022-03-11",
+        "country": "united kingdom",
+        "category": "monthly gdp mom",
+        "event": "gdp mom",
+        "symbol": "GBRMGM",
+        "actual": "0.8%",
+        "previous": "-0.2%",
+        "forecast": "0.3%"
+    },
+    {
+        "date": "2022-03-11",
+        "country": "united states",
+        "category": "consumer confidence",
+        "event": "michigan consumer sentiment prel",
+        "symbol": "CONCCONF",
+        "actual": "59.7",
+        "previous": "62.8",
+        "forecast": "62"
+    },
+    {
+        "date": "2022-03-15",
+        "country": "australia",
+        "category": "interest rate",
+        "event": "rba meeting minutes",
+        "symbol": "",
+        "actual": "",
+        "previous": "",
+        "forecast": ""
+    },
+    {
+        "date": "2022-03-15",
+        "country": "china",
+        "category": "industrial production",
+        "event": "industrial production yoy",
+        "symbol": "CHVAIOY",
+        "actual": "7.5%",
+        "previous": "4.3%",
+        "forecast": "3.8%"
+    },
+    {
+        "date": "2022-03-15",
+        "country": "united kingdom",
+        "category": "claimant count change",
+        "event": "claimant count change",
+        "symbol": "UNITEDKINCLACOUCHA",
+        "actual": "-48.1K",
+        "previous": "-67.3K",
+        "forecast": "-25K"
+    },
+    {
+        "date": "2022-03-15",
+        "country": "germany",
+        "category": "zew economic sentiment index",
+        "event": "zew economic sentiment index",
+        "symbol": "GERMANYZEWECOSENIND",
+        "actual": "-39.3",
+        "previous": "54.3",
+        "forecast": "24.6"
+    },
+    {
+        "date": "2022-03-15",
+        "country": "united states",
+        "category": "producer price inflation mom",
+        "event": "ppi mom",
+        "symbol": "USAPPIM",
+        "actual": "0.8%",
+        "previous": "1.2%",
+        "forecast": "1.1%"
+    },
+    {
+        "date": "2022-03-15",
+        "country": "japan",
+        "category": "balance of trade",
+        "event": "balance of trade",
+        "symbol": "JNTBAL",
+        "actual": "\u00a5-668.3B",
+        "previous": "\u00a5-2193.5B",
+        "forecast": "\u00a5-150B\t"
+    },
+    {
+        "date": "2022-03-16",
+        "country": "canada",
+        "category": "inflation rate",
+        "event": "inflation rate yoy",
+        "symbol": "CACPIYOY",
+        "actual": "5.7%",
+        "previous": "5.1%",
+        "forecast": "5.4%"
+    },
+    {
+        "date": "2022-03-16",
+        "country": "united states",
+        "category": "retail sales mom",
+        "event": "retail sales mom",
+        "symbol": "RSTAMOM",
+        "actual": "0.3%",
+        "previous": "4.9%",
+        "forecast": "0.7%"
+    },
+    {
+        "date": "2022-03-16",
+        "country": "united states",
+        "category": "interest rate",
+        "event": "fed press conference",
+        "symbol": "",
+        "actual": "",
+        "previous": "",
+        "forecast": ""
+    },
+    {
+        "date": "2022-03-17",
+        "country": "australia",
+        "category": "interest rate",
+        "event": "rba bulletin",
+        "symbol": "",
+        "actual": "",
+        "previous": "",
+        "forecast": ""
+    },
+    {
+        "date": "2022-03-17",
+        "country": "united states",
+        "category": "building permits",
+        "event": "building permits",
+        "symbol": "UNITEDSTABUIPER",
+        "actual": "1.859M",
+        "previous": "1.895M",
+        "forecast": "1.86M"
+    },
+    {
+        "date": "2022-03-17",
+        "country": "japan",
+        "category": "inflation rate",
+        "event": "inflation rate yoy",
+        "symbol": "JNCPIYOY",
+        "actual": "0.9%",
+        "previous": "0.5%",
+        "forecast": "0.7%"
+    },
+    {
+        "date": "2022-03-23",
+        "country": "united kingdom",
+        "category": "inflation rate",
+        "event": "inflation rate yoy",
+        "symbol": "UKRPCJYR",
+        "actual": "6.2%",
+        "previous": "5.5%",
+        "forecast": "6.1%"
+    },
+    {
+        "date": "2022-03-24",
+        "country": "germany",
+        "category": "manufacturing pmi",
+        "event": "markit manufacturing pmi flash",
+        "symbol": "GERMANYMANPMI",
+        "actual": "57.6",
+        "previous": "58.4",
+        "forecast": "56.2"
+    },
+    {
+        "date": "2022-03-24",
+        "country": "united kingdom",
+        "category": "manufacturing pmi",
+        "event": "markit/cips manufacturing pmi flash",
+        "symbol": "UNITEDKINMANPMI",
+        "actual": "55.5",
+        "previous": "58",
+        "forecast": "57.1"
+    },
+    {
+        "date": "2022-03-24",
+        "country": "united kingdom",
+        "category": "services pmi",
+        "event": "markit/cips uk services pmi flash",
+        "symbol": "UNITEDKINSERPMI",
+        "actual": "61",
+        "previous": "60.5",
+        "forecast": "58.8"
+    },
+    {
+        "date": "2022-03-24",
+        "country": "united states",
+        "category": "durable goods orders",
+        "event": "durable goods orders mom",
+        "symbol": "UNITEDSTADURGOOORD",
+        "actual": "-2.2%",
+        "previous": "1.6%",
+        "forecast": "-0.5%"
+    },
+    {
+        "date": "2022-03-25",
+        "country": "united kingdom",
+        "category": "consumer confidence",
+        "event": "gfk consumer confidence",
+        "symbol": "UKCCI",
+        "actual": "-31",
+        "previous": "-26",
+        "forecast": "-35"
+    },
+    {
+        "date": "2022-03-25",
+        "country": "united kingdom",
+        "category": "retail sales mom",
+        "event": "retail sales mom",
+        "symbol": "GBRRetailSalesMoM",
+        "actual": "-0.3%",
+        "previous": "1.9%",
+        "forecast": "0.7%"
+    },
+    {
+        "date": "2022-03-25",
+        "country": "germany",
+        "category": "business confidence",
+        "event": "ifo business climate",
+        "symbol": "GRIFPBUS",
+        "actual": "90.8",
+        "previous": "98.5",
+        "forecast": "92.2"
+    }
+]

@@ -92,11 +92,14 @@ class TradingEconomicsCalendar:
             start_date += dt.timedelta(days=7)
             time.sleep(1)
 
-        return pd.DataFrame.from_dict(final_data)
+        return final_data  # Returning raw data instead of DataFrame
+
+    def create_dataframe(self):
+        data = self.fetch_calendar_data(self.from_date)
+        return pd.DataFrame(data)
 
     def get_fx_calendar(self):
-        start_date = self.from_date
-        return self.fetch_calendar_data(start_date)
+        return self.create_dataframe()
 
 
 if __name__ == "__main__":
