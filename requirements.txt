@@ -10,3 +10,4 @@ beautifulsoup4
 scrapy
 cloudscraper
 Pyarrow
+pymongo[srv]

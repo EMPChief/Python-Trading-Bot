@@ -1,0 +1,1502 @@
+2020-01-02,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.5,51.8,52.2
+2020-01-03,united states,interest rate,fomc minutes,,,,
+2020-01-07,canada,balance of trade,balance of trade,CATBTOTB,C$-1.09B,C$-1.61B,C$ -0.9B
+2020-01-07,united states,balance of trade,balance of trade,USTBTOT,$-43.1B,$-46.9B,$ -43B
+2020-01-07,canada,business confidence,ivey pmi s.a,IVEY,51.9,60,56
+2020-01-08,japan,consumer confidence,consumer confidence,JCOMACF,39.1,38.7,39
+2020-01-08,euro area,business confidence,business confidence,EUESEMU,-0.25,-0.21,-0.10
+2020-01-09,australia,balance of trade,balance of trade,AUITGSB,A$5.8B,A$4.075B,A$4B
+2020-01-09,china,inflation rate,inflation rate yoy,CNCPIYOY,4.5%,4.5%,4.7%
+2020-01-09,germany,balance of trade,balance of trade,GRTBALE,€18.3B,€21.3B,€19.9B
+2020-01-10,united states,non farm payrolls,non farm payrolls,NFP TCH,145K,256K,165K
+2020-01-13,united kingdom,balance of trade,balance of trade,UKTBTTBA,£4.03B,£-1.34B,£-3.2B
+2020-01-14,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,2.3%,2.3%,2.2%
+2020-01-14,united states,inflation rate,inflation rate yoy,CPI YOY,2.3%,2.1%,2.3%
+2020-01-15,germany,full year gdp growth,full year gdp growth,DEUFYGG,0.6%,1.5%,0.5%
+2020-01-15,germany,government budget,government budget,WCSDDEU,1.5%,1.9%,1.1%
+2020-01-15,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1.3%,1.5%,1.5%
+2020-01-15,united states,calendar,us-china phase 1 trade deal signature,USD CALENDAR,,,
+2020-01-16,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,0.3%,0.3%
+2020-01-20,china,interest rate,loan prime rate 1y,CHLR12M,4.15%,4.15%,4.05%
+2020-01-21,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,14.9K,14.9K,26K
+2020-01-21,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,26.7,10.7,15
+2020-01-21,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-1.8%,-1.9%,-0.4%
+2020-01-21,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,93.4,95.1,94.7
+2020-01-22,canada,inflation rate,inflation rate yoy,CACPIYOY,2.2%,2.2%,2.2%
+2020-01-22,japan,balance of trade,balance of trade,JNTBAL,¥-152.5B,¥-85.2B,¥-124B
+2020-01-23,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.8%,0.5%,0.5%
+2020-01-27,germany,business confidence,ifo business climate,GRIFPBUS,95.9,96.3,97.3
+2020-01-28,australia,business confidence,nab business confidence,NABSCONF,-2,0,1
+2020-01-28,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,2.4%,-3.1%,0.6%
+2020-01-29,japan,consumer confidence,consumer confidence,JCOMACF,39.1,39.1,40.5
+2020-01-29,germany,consumer confidence,gfk consumer confidence,GRCCI,9.9,9.7,9.7
+2020-01-29,united states,calendar,usmca trade deal signature,USD CALENDAR,,,
+2020-01-30,euro area,business confidence,business confidence,EUESEMU,-0.23,-0.32,-0.18
+2020-01-31,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-9,-11,-10
+2020-01-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50,50.2,50
+2020-01-31,united states,personal income,personal income mom,UNITEDSTAPERINC,0.2%,0.4%,0.4%
+2020-01-31,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.3%,0.4%,0.5%
+2020-01-31,united kingdom,calendar,brexit deadline,,,,
+2020-02-03,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.1,51.5,50.5
+2020-02-03,russia,full year gdp growth,full year gdp growth,RUSFYGG,1.3%,2.5%,
+2020-02-05,canada,balance of trade,balance of trade,CATBTOTB,C$-0.4B,C$-1.2B,C$ -0.8B
+2020-02-05,united states,balance of trade,balance of trade,USTBTOT,$-48.9B,$-43.7B,$-49B
+2020-02-06,australia,balance of trade,balance of trade,AUITGSB,A$5.22B,A$5.51B,A$5.9B
+2020-02-07,germany,balance of trade,balance of trade,GRTBALE,€15.2B,€18.6B,€ 14B
+2020-02-07,united states,non farm payrolls,non farm payrolls,NFP TCH,225K,147K,148K
+2020-02-07,canada,business confidence,ivey pmi s.a,IVEY,57.3,51.9,52.3
+2020-02-10,china,inflation rate,inflation rate yoy,CNCPIYOY,5.4%,4.5%,5.1%
+2020-02-11,australia,business confidence,nab business confidence,NABSCONF,-1,-2,-1
+2020-02-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£7.715B,£1.821B,£-2.6B
+2020-02-11,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,2.3%,-1.8%,1%
+2020-02-11,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,95.5,93.4,94.3
+2020-02-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,2.3%,2.3%,2.3%
+2020-02-13,united states,inflation rate,inflation rate yoy,CPI YOY,2.5%,2.3%,2.4%
+2020-02-14,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,0.2%,0.3%
+2020-02-18,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,5.5K,2.6K,15K
+2020-02-18,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,8.7,26.7,19
+2020-02-18,japan,balance of trade,balance of trade,JNTBAL,¥-1312.6B,¥-154.6B,¥-1723B
+2020-02-19,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1.8%,1.3%,1.4%
+2020-02-19,canada,inflation rate,inflation rate yoy,CACPIYOY,2.4%,2.2%,2.3%
+2020-02-20,china,interest rate,loan prime rate 1y,CHLR12M,4.05%,4.15%,3.95%
+2020-02-20,germany,consumer confidence,gfk consumer confidence,GRCCI,9.8,9.9,9.7
+2020-02-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.7%,0.8%,0.7%
+2020-02-24,germany,business confidence,ifo business climate,GRIFPBUS,96.1,96.0,95.1
+2020-02-24,china,calendar,npc committee meeting,,,,
+2020-02-26,united states,calendar,president trump speech,,,,
+2020-02-27,euro area,business confidence,business confidence,EUESEMU,-0.04,-0.19,-0.27
+2020-02-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.2%,2.9%,-2%
+2020-02-28,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-7,-9,-8
+2020-02-28,united states,personal income,personal income mom,UNITEDSTAPERINC,0.6%,0.1%,0.3%
+2020-02-28,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.2%,0.4%,0.2%
+2020-02-29,china,business confidence,nbs manufacturing pmi,CHBUBCIN,35.7,50,45
+2020-03-02,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,40.3,51.1,46
+2020-03-02,italy,full year gdp growth,full year gdp growth,ITAFYGG,0.3%,0.8%,0.2%
+2020-03-02,italy,government budget,government budget,WCSDITA,-1.6%,-2.2%,-2.6%
+2020-03-03,japan,consumer confidence,consumer confidence,JCOMACF,38.4,39.1,37.7
+2020-03-03,g7,calendar,g7 conference call,,,,
+2020-03-03,united states,interest rate,fed press conference,,,,
+2020-03-05,australia,balance of trade,balance of trade,AUITGSB,A$5.21B,A$5.38B,A$4.9B
+2020-03-06,canada,balance of trade,balance of trade,CATBTOTB,C$-1.47B,C$-0.73B,C$ -0.7B
+2020-03-06,united states,balance of trade,balance of trade,USTBTOT,$-45.3B,$-48.6B,$ -45.8B
+2020-03-06,united states,non farm payrolls,non farm payrolls,NFP TCH,273K,273K,165K
+2020-03-06,canada,business confidence,ivey pmi s.a,IVEY,54.1,57.3,56
+2020-03-09,germany,balance of trade,balance of trade,GRTBALE,€13.9B,€15.2B,€13.4B
+2020-03-10,australia,business confidence,nab business confidence,NABSCONF,-4,-1,-2
+2020-03-10,china,inflation rate,inflation rate yoy,CNCPIYOY,5.2%,5.4%,5.1%
+2020-03-10,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-3.8%,2.3%,-0.8%
+2020-03-10,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,91.9,95.5,94.7
+2020-03-11,united kingdom,interest rate,boe press conference,,,,
+2020-03-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£4.2B,£6.3B,£-3.7B
+2020-03-11,united kingdom,calendar,spring budget 2020,GBP CALENDAR,,,
+2020-03-11,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,2.4%,2.3%,2.3%
+2020-03-11,united states,inflation rate,inflation rate yoy,CPI YOY,2.3%,2.5%,2.3%
+2020-03-12,united states,calendar,president trump statement on coronavirus,,,,
+2020-03-12,australia,calendar,pm morrison television address on coronavirus,AUD CALENDAR,,,
+2020-03-13,united states,calendar,president trump statement on coronavirus,,,,
+2020-03-15,united states,interest rate,fed press conference,,,,
+2020-03-16,india,interest rate,rbi press conference,,,,
+2020-03-17,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,17.3K,-0.2K,24K
+2020-03-17,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-49.5,8.7,-26
+2020-03-17,united states,retail sales mom,retail sales mom,RSTAMOM,-0.5%,0.6%,0.1%
+2020-03-17,japan,balance of trade,balance of trade,JNTBAL,¥1109.8B,¥-1313.2B,¥915B
+2020-03-17,g7,calendar,g7 conference call,,,,
+2020-03-18,canada,inflation rate,inflation rate yoy,CACPIYOY,2.2%,2.4%,2.2%
+2020-03-18,canada,calendar,prime minister trudeau speech,,,,
+2020-03-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.4%,0.7%,0.5%
+2020-03-19,australia,interest rate,monetary policy announcement,RBATCTR,,,
+2020-03-19,germany,business confidence,ifo business climate prel,GRIFPBUS,87.7,96,88
+2020-03-20,china,interest rate,loan prime rate 1y,CHLR12M,4.05%,4.05%,3.95%
+2020-03-24,canada,calendar,parliamentary debate & vote on coronavirus aid package,,,,
+2020-03-25,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1.7%,1.8%,1.5%
+2020-03-25,germany,business confidence,ifo business climate final,GRIFPBUS,86.1,96,87.7
+2020-03-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.2%,0.1%,-0.7%
+2020-03-26,germany,consumer confidence,gfk consumer confidence,GRCCI,2.7,8.3,7.1
+2020-03-26,g20,calendar,g20 video conference summit,,,,
+2020-03-27,united states,personal income,personal income mom,UNITEDSTAPERINC,0.6%,0.6%,0.3%
+2020-03-27,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.2%,0.2%,0.3%
+2020-03-30,euro area,business confidence,business confidence,EUESEMU,-0.28,-0.06,-0.6
+2020-03-30,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-9,-7,-16
+2020-03-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,52,35.7,44.2
+2020-03-31,japan,business confidence,tankan large manufacturers index,JNSBALLI,-8,0,-12
+2020-04-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.1,40.3,45.7
+2020-04-02,canada,balance of trade,balance of trade,CATBTOTB,C$-0.98B,C$-1.66B,C$ -2B
+2020-04-02,united states,balance of trade,balance of trade,USTBTOT,$-39.9B,$-45.5B,$ -39B
+2020-04-03,united states,non farm payrolls,non farm payrolls,NFP TCH,-701K,275K,-150K
+2020-04-05,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-34,-9,-30
+2020-04-06,japan,consumer confidence,consumer confidence,JCOMACF,30.9,38.4,36.8
+2020-04-07,australia,balance of trade,balance of trade,AUITGSB,A$4.36B,A$4.74B,A$3.8B
+2020-04-07,canada,business confidence,ivey pmi s.a,IVEY,26,54.1,43
+2020-04-07,euro area,calendar,eurogroup meeting,,,,
+2020-04-09,germany,balance of trade,balance of trade,GRTBALE,€20.8B,€13.8B,€18.2B
+2020-04-09,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2.8B,£2.4B,£2.2B
+2020-04-09,opec,calendar,opec+ meeting,,,,
+2020-04-09,euro area,calendar,eurogroup meeting,,,,
+2020-04-10,china,inflation rate,inflation rate yoy,CNCPIYOY,4.3%,5.2%,5.0%
+2020-04-10,g20,calendar,g20 energy ministers meeting,,,,
+2020-04-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,2.1%,2.4%,2.3%
+2020-04-10,united states,inflation rate,inflation rate yoy,CPI YOY,1.5%,2.3%,1.5%
+2020-04-14,australia,business confidence,nab business confidence,NABSCONF,-66,-4,-15
+2020-04-14,g7,calendar,g7 video conference meeting,,,,
+2020-04-15,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-17.7%,-3.8%,-15%
+2020-04-15,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,75.6,91.9,78
+2020-04-15,united states,retail sales mom,retail sales mom,RSTAMOM,-8.7%,-0.4%,-6.5%
+2020-04-15,g20,calendar,g20 video conference meeting,,,,
+2020-04-19,japan,balance of trade,balance of trade,JNTBAL,¥4.9B,¥1108.8B,¥ 400B
+2020-04-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,4.05%,3.85%
+2020-04-21,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,12.2K,5.9K,272K
+2020-04-21,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,28.2,-49.5,-42.8
+2020-04-22,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1.5%,1.7%,1.3%
+2020-04-22,canada,inflation rate,inflation rate yoy,CACPIYOY,0.9%,2.2%,1.5%
+2020-04-23,germany,consumer confidence,gfk consumer confidence,GRCCI,-23.4,2.3,-3
+2020-04-23,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-34,-34,-46
+2020-04-23,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.4%,0.4%,0.2%
+2020-04-24,germany,business confidence,ifo business climate,GRIFPBUS,74.3,85.9,80
+2020-04-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-14.4%,1.1%,-12%
+2020-04-29,euro area,business confidence,business confidence,EUESEMU,-1.81,-0.28,-1.24
+2020-04-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.8,52,47.6
+2020-04-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.4,50.1,47.8
+2020-04-30,japan,consumer confidence,consumer confidence,JCOMACF,21.6,30.9,22.3
+2020-04-30,united states,personal income,personal income mom,UNITEDSTAPERINC,-2%,0.6%,-1%
+2020-04-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-7.5%,0.2%,-6.3%
+2020-05-05,canada,balance of trade,balance of trade,CATBTOTB,C$-1.41B,C$-0.89B,C$ -1.5B
+2020-05-05,united states,balance of trade,balance of trade,USTBTOT,$-44.4B,$-39.8B,$-44.2B
+2020-05-07,australia,balance of trade,balance of trade,AUITGSB,A$10.60B,A$3.87B,A$6B
+2020-05-07,canada,business confidence,ivey pmi s.a,IVEY,22.8,26,20
+2020-05-08,germany,balance of trade,balance of trade,GRTBALE,€17.4B,€20.6B,€17B
+2020-05-08,united states,non farm payrolls,non farm payrolls,NFP TCH,-20500K,-870K,-21780K
+2020-05-12,australia,business confidence,nab business confidence,NABSCONF,-46,-66,-75
+2020-05-12,china,inflation rate,inflation rate yoy,CNCPIYOY,3.3%,4.3%,3.6%
+2020-05-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.4%,2.1%,1.6%
+2020-05-12,united states,inflation rate,inflation rate yoy,CPI YOY,0.3%,1.5%,0.5%
+2020-05-13,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,16.4%,-17.7%,-14%
+2020-05-13,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,88.1,75.6,65
+2020-05-13,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-6.7B,£-1.5B,£-1.7B
+2020-05-15,united states,retail sales mom,retail sales mom,RSTAMOM,-16.4%,-8.3%,-11.8%
+2020-05-19,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,856.5K,12.1K,650K
+2020-05-19,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,51,28.2,32
+2020-05-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-05-20,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.8%,1.5%,0.8%
+2020-05-20,canada,inflation rate,inflation rate yoy,CACPIYOY,-0.2%,0.9%,-0.1%
+2020-05-20,japan,balance of trade,balance of trade,JNTBAL,¥-930B,¥5.4B,¥-480B
+2020-05-21,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-34,-33,-42
+2020-05-21,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.1%,0.4%,0.2%
+2020-05-22,china,calendar,national people’s congress,CHN CALENDAR,,,
+2020-05-25,germany,business confidence,ifo business climate,GRIFPBUS,79.5,74.2,79.1
+2020-05-26,germany,consumer confidence,gfk consumer confidence,GRCCI,-18.9,-23.1,-18
+2020-05-27,european union,calendar,european commission recovery fund proposal,EUROPEANUCAL,,,
+2020-05-28,euro area,business confidence,business confidence,EUESEMU,-2.43,-1.99,-3
+2020-05-28,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-17.2%,-16.6%,-19%
+2020-05-29,japan,consumer confidence,consumer confidence,JCOMACF,24.0,21.6,25.1
+2020-05-29,united states,personal income,personal income mom,UNITEDSTAPERINC,10.5%,-2.2%,-6.6%
+2020-05-29,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-13.6%,-6.9%,-11.4%
+2020-05-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.6,50.8,50.5
+2020-06-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.7,49.4,49.5
+2020-06-04,australia,balance of trade,balance of trade,AUITGSB,A$8.8B,A$10.44B,A$8.4B
+2020-06-04,canada,balance of trade,balance of trade,CATBTOTB,C$-3.25B,C$-1.53B,C$ 0.5B
+2020-06-04,united states,balance of trade,balance of trade,USTBTOT,$-49.4B,$-42.3B,$ -54.3B
+2020-06-04,united kingdom,consumer confidence,gfk consumer confidence final,UKCCI,-36,-33,-34
+2020-06-05,united states,non farm payrolls,non farm payrolls,NFP TCH,2509K,-20687K,-8870K
+2020-06-05,canada,business confidence,ivey pmi s.a,IVEY,39.1,22.8,25
+2020-06-06,opec,calendar,opec meeting,,,,
+2020-06-09,australia,business confidence,nab business confidence,NABSCONF,-20,-45,-38
+2020-06-09,germany,balance of trade,balance of trade,GRTBALE,€3.5B,€17.4B,€15.9B
+2020-06-10,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,6.3%,16.4%,2.2%
+2020-06-10,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,93.7,88.1,90
+2020-06-10,china,inflation rate,inflation rate yoy,CNCPIYOY,2.4%,3.3%,2.7%
+2020-06-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.2%,1.4%,1.2%
+2020-06-10,united states,inflation rate,inflation rate yoy,CPI YOY,0.1%,0.3%,0.2%
+2020-06-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£0.31B,£-3.96B,£-6.2B
+2020-06-16,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,528.9K,1032.7K,330K
+2020-06-16,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,63.4,51,55
+2020-06-16,united states,retail sales mom,retail sales mom,RSTAMOM,17.7%,-14.7%,7.5%
+2020-06-16,japan,balance of trade,balance of trade,JNTBAL,¥-833.4B,¥-931.9B,¥-880B
+2020-06-17,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.5%,0.8%,0.5%
+2020-06-17,canada,inflation rate,inflation rate yoy,CACPIYOY,-0.4%,-0.2%,0%
+2020-06-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.1%,0.1%,0.1%
+2020-06-18,opec,calendar,opec+ meeting,,,,
+2020-06-22,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.7%
+2020-06-24,germany,business confidence,ifo business climate,GRIFPBUS,86.2,79.7,85.1
+2020-06-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-9.6,-18.6,-13
+2020-06-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,15.8%,-18.1%,8.5%
+2020-06-26,united states,personal income,personal income mom,UNITEDSTAPERINC,-4.2%,10.8%,-5.6%
+2020-06-26,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,8.2%,-12.6%,9.5%
+2020-06-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.9,50.6,50.2
+2020-06-30,japan,business confidence,tankan large manufacturers index,JNSBALLI,-34,-8,-34
+2020-07-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.2,50.7,50.3
+2020-07-01,japan,consumer confidence,consumer confidence,JCOMACF,28.4,24.0,30
+2020-07-02,australia,balance of trade,balance of trade,AUITGSB,A$8.025B,A$7.83B,A$9.1B
+2020-07-02,canada,balance of trade,balance of trade,CATBTOTB,C$-0.68B,C$-4.27B,C$ -2.8B
+2020-07-02,united states,balance of trade,balance of trade,USTBTOT,$-54.6B,$-49.8B,$ -53B
+2020-07-02,united states,non farm payrolls,non farm payrolls,NFP TCH,4800K,2699K,2900K
+2020-07-02,united kingdom,consumer confidence,gfk consumer confidence final,UKCCI,-27,-30,-32
+2020-07-07,canada,business confidence,ivey pmi s.a,IVEY,58.2,39.1,43
+2020-07-08,united kingdom,calendar,supplementary budget,GBP CALENDAR,,,
+2020-07-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.5%,2.4%,2.5%
+2020-07-09,germany,balance of trade,balance of trade,GRTBALE,€7.1B,€3.6B,€21.1B
+2020-07-09,euro area,calendar,eurogroup meeting,,,,
+2020-07-14,australia,business confidence,nab business confidence,NABSCONF,1,-20,-15
+2020-07-14,united kingdom,balance of trade,balance of trade,UKTBTTBA,£4.3B,£2.3B,£-0.8B
+2020-07-14,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,59.3,63.4,61
+2020-07-14,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.2%,1.2%,1.2%
+2020-07-14,united states,inflation rate,inflation rate yoy,CPI YOY,0.6%,0.1%,0.5%
+2020-07-15,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-6.1%,6.3%,2.5%
+2020-07-15,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,87.9,93.7,96
+2020-07-15,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.6%,0.5%,0.6%
+2020-07-16,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-28.1K,566.4K,210K
+2020-07-16,united states,retail sales mom,retail sales mom,RSTAMOM,7.5%,18.2%,4.5%
+2020-07-17,european union,calendar,eu meeting on common recovery plan,,,,
+2020-07-18,european union,calendar,eu meeting on common recovery plan,,,,
+2020-07-19,japan,balance of trade,balance of trade,JNTBAL,¥-268.8B,¥-838.2B,¥-40B
+2020-07-19,european union,calendar,eu meeting on common recovery plan,,,,
+2020-07-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-07-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.1%,0.1%,0.1%
+2020-07-20,european union,calendar,eu meeting on common recovery plan,,,,
+2020-07-22,canada,inflation rate,inflation rate yoy,CACPIYOY,0.7%,-0.4%,0.3%
+2020-07-23,germany,consumer confidence,gfk consumer confidence,GRCCI,-0.3,-9.4,-4
+2020-07-23,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-27,-30,-26
+2020-07-27,germany,business confidence,ifo business climate,GRIFPBUS,90.5,86.3,88.5
+2020-07-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,7.3%,15.1%,5%
+2020-07-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.1,50.9,51
+2020-07-31,japan,consumer confidence,consumer confidence,JCOMACF,29.5,28.4,26
+2020-07-31,united states,personal income,personal income mom,UNITEDSTAPERINC,-1.1%,-4.4%,-0.3%
+2020-07-31,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,5.6%,8.5%,5.3%
+2020-08-03,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,52.8,51.2,51.6
+2020-08-04,australia,balance of trade,balance of trade,AUITGSB,A$8.202B,A$7.341B,A$8.5B
+2020-08-05,canada,balance of trade,balance of trade,CATBTOTB,C$-3.19B,C$-1.33B,C$ -1B
+2020-08-05,united states,balance of trade,balance of trade,USTBTOT,$-50.7B,$-54.8B,$-50.7B
+2020-08-07,germany,balance of trade,balance of trade,GRTBALE,€15.6B,€7.0B,€ 1.4B
+2020-08-07,united states,non farm payrolls,non farm payrolls,NFP TCH,1763K,4800K,1620K
+2020-08-07,canada,business confidence,ivey pmi s.a,IVEY,68.5,58.2,57.9
+2020-08-10,china,inflation rate,inflation rate yoy,CNCPIYOY,2.7%,2.5%,2.7%
+2020-08-11,australia,business confidence,nab business confidence,NABSCONF,-14,0,-1
+2020-08-11,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,94.4K,-28.1K,5K
+2020-08-11,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,71.5,59.3,62
+2020-08-12,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-9.5%,-6.1%,-1%
+2020-08-12,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,79.5,87.9,87
+2020-08-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£5.3B,£7.7B,£2.8B
+2020-08-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.6%,1.2%,1.0%
+2020-08-12,united states,inflation rate,inflation rate yoy,CPI YOY,1%,0.6%,0.7%
+2020-08-14,united states,retail sales mom,retail sales mom,RSTAMOM,1.2%,8.4%,2%
+2020-08-18,japan,balance of trade,balance of trade,JNTBAL,¥11.6B,¥-269.3B,¥-120B
+2020-08-19,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1%,0.6%,0.7%
+2020-08-19,canada,inflation rate,inflation rate yoy,CACPIYOY,0.1%,0.7%,0.5%
+2020-08-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-08-20,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-27,-27,-24
+2020-08-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.3%,0.1%,0.1%
+2020-08-25,germany,business confidence,ifo business climate,GRIFPBUS,92.6,90.4,92.5
+2020-08-26,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,11.2%,7.7%,3.9%
+2020-08-28,germany,consumer confidence,gfk consumer confidence,GRCCI,-1.8,-0.2,2.5
+2020-08-28,united states,personal income,personal income mom,UNITEDSTAPERINC,0.4%,-1%,-0.4%
+2020-08-28,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1.9%,6.2%,1.2%
+2020-08-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51,51.1,51.3
+2020-08-31,japan,consumer confidence,consumer confidence,JCOMACF,29.3,29.5,29
+2020-09-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,53.1,52.8,52.4
+2024-02-12,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,,-1.3%,-0.8%
+2024-02-13,australia,business confidence,nab business confidence,NABSCONF,,-1,1
+2024-02-13,united kingdom,unemployment rate,unemployment rate,UKUEILOR,,3.9%,4.0%
+2024-02-13,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,,15.2,18
+2024-02-13,united states,core inflation rate mom,core inflation rate mom,USACIRM,,0.3%,0.3%
+2024-02-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,,3.9%,3.7%
+2024-02-13,united states,inflation rate mom,inflation rate mom,UNITEDSTAINFRATMOM,,0.2%,0.2%
+2024-02-13,united states,inflation rate,inflation rate yoy,CPI YOY,,3.4%,3.1%
+2024-02-14,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,,4%,4.1%
+2024-02-14,japan,gdp growth rate,gdp growth rate qoq prel,JGDPAGDP,,-0.7%,0.4%
+2024-02-15,united kingdom,gdp growth rate,gdp growth rate qoq prel,UKGRYBZQ,,-0.1%,0.0%
+2024-02-15,united kingdom,gdp annual growth rate,gdp growth rate yoy prel,UKGRYBZY,,0.3%,0.5%
+2024-02-15,united kingdom,monthly gdp mom,gdp mom,GBRMGM,,0.3%,0.0%
+2024-02-15,united states,retail sales mom,retail sales mom,RSTAMOM,,0.6%,0.3%
+2024-02-16,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,,-3.2%,1.2%
+2024-02-16,united states,building permits,building permits prel,UNITEDSTABUIPER,,1.493M,1.50M
+2024-02-16,united states,producer price inflation mom,ppi mom,USAPPIM,,-0.1%,0.1%
+2024-02-16,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,,79,79.5
+2020-09-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,18%,-9.5%,-3.1%
+2020-09-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,93.8,79.5,77
+2020-09-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.4%,2.7%,2.5%
+2020-09-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£1.1B,£3.9B,£1.2B
+2020-09-11,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.7%,1.6%,1.5%
+2020-09-11,united states,inflation rate,inflation rate yoy,CPI YOY,1.3%,1%,1.1%
+2020-09-11,euro area,calendar,eurogroup meeting,,,,
+2020-09-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,73.7K,69.9K,51K
+2020-09-15,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,77.4,71.5,69
+2020-09-15,japan,balance of trade,balance of trade,JNTBAL,¥248.3B,¥10.9B,¥-50B
+2020-09-16,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.2%,1%,0.1%
+2020-09-16,canada,inflation rate,inflation rate yoy,CACPIYOY,0.1%,0.1%,0.3%
+2020-09-16,united states,retail sales mom,retail sales mom,RSTAMOM,0.6%,0.9%,1%
+2020-09-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.2%,0.3%,0.1%
+2020-09-21,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-09-23,germany,consumer confidence,gfk consumer confidence,GRCCI,-1.6,-1.7,-3
+2020-09-24,germany,business confidence,ifo business climate,GRIFPBUS,93.4,92.5,93
+2020-09-24,united kingdom,calendar,winter economy plan,GBP CALENDAR,,,
+2020-09-24,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-25,-27,-26
+2020-09-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.4%,11.7%,2%
+2020-09-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.5,51,51.4
+2020-09-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,53.0,53.1,53.4
+2020-09-30,japan,business confidence,tankan large manufacturers index,JNSBALLI,-27,-34,-26
+2020-10-01,united states,personal income,personal income mom,UNITEDSTAPERINC,-2.7%,0.5%,-2%
+2020-10-01,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1%,1.5%,0.8%
+2020-10-02,japan,consumer confidence,consumer confidence,JCOMACF,32.7,29.3,32
+2020-10-02,united states,non farm payrolls,non farm payrolls,NFP TCH,661K,1489K,915K
+2020-10-05,australia,business confidence,nab business confidence,NABSCONF,-4,-8,-10
+2020-10-05,euro area,calendar,eurogroup video conference,,,,
+2020-10-06,australia,balance of trade,balance of trade,AUITGSB,A$2.643B,A$4.652B,A$5B
+2020-10-06,canada,balance of trade,balance of trade,CATBTOTB,C$-2.45B,C$-2.53B,C$ -2.1B
+2020-10-06,united states,balance of trade,balance of trade,USTBTOT,$-67.1B,$-63.4B,$ -66.5B
+2020-10-07,canada,business confidence,ivey pmi s.a,IVEY,54.3,67.8,68
+2020-10-08,germany,balance of trade,balance of trade,GRTBALE,€12.8B,€19.2B,€17.4B
+2020-10-09,united kingdom,balance of trade,balance of trade,UKTBTTBA,£1.4B,£1.7B,£0.6B
+2020-10-13,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,28K,39.5K,72K
+2020-10-13,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,56.1,77.4,70
+2020-10-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.7%,1.7%,1.7%
+2020-10-13,united states,inflation rate,inflation rate yoy,CPI YOY,1.4%,1.3%,1.5%
+2020-10-13,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,11.9%,18%,0.7%
+2020-10-13,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,105,93.8,94.5
+2020-10-15,china,inflation rate,inflation rate yoy,CNCPIYOY,1.7%,2.4%,2%
+2020-10-16,united states,retail sales mom,retail sales mom,RSTAMOM,1.9%,0.6%,0.5%
+2020-10-18,japan,balance of trade,balance of trade,JNTBAL,¥675B,¥248.6B,¥ 900B
+2020-10-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-10-21,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.5%,0.2%,0.4%
+2020-10-21,canada,inflation rate,inflation rate yoy,CACPIYOY,0.5%,0.1%,0.3%
+2020-10-22,germany,consumer confidence,gfk consumer confidence,GRCCI,-3.1,-1.7,-3
+2020-10-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-31,-30,-26
+2020-10-22,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.0%,0.2%,0.1%
+2020-10-26,germany,business confidence,ifo business climate,GRIFPBUS,92.7,93.2,91.1
+2020-10-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.9%,0.4%,0.4%
+2020-10-29,japan,consumer confidence,consumer confidence,JCOMACF,33.6,32.7,34.8
+2020-10-30,united states,personal income,personal income mom,UNITEDSTAPERINC,0.9%,-2.5%,0.4%
+2020-10-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1.4%,1%,0.8%
+2020-10-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.4,51.5,51.4
+2020-11-02,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,53.6,53.0,52.8
+2020-11-03,united states,calendar,presidential election,,,,
+2020-11-03,euro area,calendar,eurogroup video conference,,,,
+2020-11-04,canada,balance of trade,balance of trade,CATBTOTB,C$-3.25B,C$-3.21B,C$ -2.6B
+2020-11-04,united states,balance of trade,balance of trade,USTBTOT,$-63.9B,$-67B,$ -63.1B
+2020-11-05,australia,balance of trade,balance of trade,AUITGSB,A$5.630B,A$2.618B,A$2.1B
+2020-11-06,united states,non farm payrolls,non farm payrolls,NFP TCH,638K,672K,510K
+2020-11-06,canada,business confidence,ivey pmi s.a,IVEY,54.5,54.3,52
+2020-11-09,germany,balance of trade,balance of trade,GRTBALE,€20.8B,€11.9B,€19.9B
+2020-11-10,australia,business confidence,nab business confidence,NABSCONF,5,-4,-3
+2020-11-10,china,inflation rate,inflation rate yoy,CNCPIYOY,0.5%,1.7%,1%
+2020-11-10,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-29.8K,-40.2K,36K
+2020-11-10,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,39,56.1,42
+2020-11-10,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,2.5%,11.9%,2.9%
+2020-11-10,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,107.7,105,108
+2020-11-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£0.6B,£2.9B,£-1.0B
+2020-11-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.6%,1.7%,1.8%
+2020-11-12,united states,inflation rate,inflation rate yoy,CPI YOY,1.2%,1.4%,1.5%
+2020-11-17,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,1.6%,0.4%
+2020-11-17,japan,balance of trade,balance of trade,JNTBAL,¥872.9B,¥687.8B,¥210B
+2020-11-18,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.7%,0.5%,0.7%
+2020-11-18,canada,inflation rate,inflation rate yoy,CACPIYOY,0.7%,0.5%,0.3%
+2020-11-19,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.4%,0%,-0.2%
+2020-11-20,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-33,-31,-33
+2020-11-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-11-24,germany,business confidence,ifo business climate,GRIFPBUS,90.7,92.5,90.1
+2020-11-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.3%,2.1%,0.8%
+2020-11-25,united states,personal income,personal income mom,UNITEDSTAPERINC,-0.7%,0.7%,0.2%
+2020-11-25,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.5%,1.2%,0.5%
+2020-11-26,germany,consumer confidence,gfk consumer confidence,GRCCI,-6.7,-3.2,-2
+2020-11-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,52.1,51.4,51
+2020-11-30,euro area,calendar,eurogroup video conference,,,,
+2020-12-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,54.9,53.6,53.2
+2020-12-02,japan,consumer confidence,consumer confidence,JCOMACF,33.7,33.6,33
+2020-12-03,australia,balance of trade,balance of trade,AUITGSB,A$7.456B,A$5.815B,A$5.2B
+2020-12-04,canada,balance of trade,balance of trade,CATBTOTB,C$-3.76B,C$-3.8B,C$-3.5B
+2020-12-04,united states,balance of trade,balance of trade,USTBTOT,$-63.1B,$-62.1B,$-65B
+2020-12-04,united states,non farm payrolls,non farm payrolls,NFP TCH,245K,610K,500K
+2020-12-07,canada,business confidence,ivey pmi s.a,IVEY,52.7,54.5,54
+2020-12-08,australia,business confidence,nab business confidence,NABSCONF,12,3,6
+2020-12-08,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,55.0,39,40
+2020-12-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,4.1%,2.5%,
+2020-12-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,112,107.7,105
+2020-12-09,china,inflation rate,inflation rate yoy,CNCPIYOY,-0.5%,0.5%,0.1%
+2020-12-09,germany,balance of trade,balance of trade,GRTBALE,€19.4B,€20.6B,€23.2B
+2020-12-10,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-1.7B,£0.6B,£0.5B
+2020-12-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.6%,1.6%,1.6%
+2020-12-10,united states,inflation rate,inflation rate yoy,CPI YOY,1.2%,1.2%,1.2%
+2020-12-13,japan,business confidence,tankan large manufacturers index,JNSBALLI,-10,-27,-17
+2020-12-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,64.3K,-29.8K,30K
+2020-12-15,japan,balance of trade,balance of trade,JNTBAL,¥366.8B,¥871.7B,¥510B
+2020-12-16,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.3%,0.7%,0.8%
+2020-12-16,canada,inflation rate,inflation rate yoy,CACPIYOY,1%,0.7%,0.8%
+2020-12-16,united states,retail sales mom,retail sales mom,RSTAMOM,-1.1%,-0.1%,-0.3%
+2020-12-16,euro area,calendar,eurogroup video conference,,,,
+2020-12-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.9%,-0.4%,-0.5%
+2020-12-18,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-26,-33,-30
+2020-12-18,germany,business confidence,ifo business climate,GRIFPBUS,92.1,90.9,90
+2020-12-20,australia,calendar,mid-year economic and fiscal outlook,AUD CALENDAR,,,
+2020-12-21,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2020-12-22,germany,consumer confidence,gfk consumer confidence,GRCCI,-7.3,-6.8,-9.2
+2020-12-23,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.9%,1.8%,0.6%
+2020-12-23,united states,personal income,personal income mom,UNITEDSTAPERINC,-1.1%,-0.6%,-0.4%
+2020-12-23,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-0.4%,0.3%,-0.4%
+2020-12-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.9,52.1,51.5
+2021-01-04,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,53.0,54.9,54.6
+2021-01-06,japan,consumer confidence,consumer confidence,JCOMACF,31.8,33.7,35
+2021-01-07,australia,balance of trade,balance of trade,AUITGSB,A$5.022B,A$6.583B,A$6.5B
+2021-01-07,canada,balance of trade,balance of trade,CATBTOTB,C$-3.34B,C$-3.73B,C$-3.2B
+2021-01-07,united states,balance of trade,balance of trade,USTBTOT,$-68.1B,$-63.1B,$-67.6B
+2021-01-07,canada,business confidence,ivey pmi s.a,IVEY,46.7,52.7,53.2
+2021-01-08,germany,balance of trade,balance of trade,GRTBALE,€17.2B,€19.4B,€17.6B
+2021-01-08,united states,non farm payrolls,non farm payrolls,NFP TCH,-140K,336K,112K
+2021-01-11,china,inflation rate,inflation rate yoy,CNCPIYOY,0.2%,-0.5%,0.0%
+2021-01-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.6%,1.6%,1.6%
+2021-01-13,united states,inflation rate,inflation rate yoy,CPI YOY,1.4%,1.2%,1.2%
+2021-01-15,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-5B,£-2.3B,£-1.2B
+2021-01-15,united states,retail sales mom,retail sales mom,RSTAMOM,-0.7%,-1.4%,-0.2%
+2021-01-19,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,61.8,55.0,60
+2021-01-19,united states,calendar,treasury secretary yellen senate confirmation hearing,USD CALENDAR,,,
+2021-01-19,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-4.5%,4.1%,-1.8%
+2021-01-19,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,107,112,110
+2021-01-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-01-20,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.6%,0.3%,0.6%
+2021-01-20,canada,inflation rate,inflation rate yoy,CACPIYOY,0.7%,1%,1%
+2021-01-20,japan,balance of trade,balance of trade,JNTBAL,¥751B,¥366.8B,¥800B
+2021-01-21,japan,inflation rate,inflation rate yoy,JNCPIYOY,-1.2%,-0.9%,-1%
+2021-01-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-28,-26,-28
+2021-01-25,germany,business confidence,ifo business climate,GRIFPBUS,90.1,92.2,91.6
+2021-01-26,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,7K,38.1K,40K
+2021-01-27,australia,business confidence,nab business confidence,NABSCONF,4,13,10
+2021-01-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-15.6,-7.5,-7.1
+2021-01-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.2%,1.2%,0.8%
+2021-01-27,united states,interest rate,fed press conference,,,,
+2021-01-29,japan,consumer confidence,consumer confidence,JCOMACF,29.6,31.8,31.2
+2021-01-29,united states,personal income,personal income mom,UNITEDSTAPERINC,0.6%,-1.3%,0.1%
+2021-01-29,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-0.2%,-0.7%,-0.6%
+2021-01-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.3,51.9,51.5
+2021-02-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.5,53.0,52.5
+2021-02-04,australia,balance of trade,balance of trade,AUITGSB,A$6.785B,A$5.014B,A$ 4.4B
+2021-02-05,canada,balance of trade,balance of trade,CATBTOTB,C$-1.67B,C$-3.56B,C$ -3.2B
+2021-02-05,united states,balance of trade,balance of trade,USTBTOT,$-66.6B,$-69B,$-70B
+2021-02-05,united states,non farm payrolls,non farm payrolls,NFP TCH,49K,-227K,45K
+2021-02-05,canada,business confidence,ivey pmi s.a,IVEY,48.4,46.7,47
+2021-02-09,australia,business confidence,nab business confidence,NABSCONF,10,5,5
+2021-02-09,germany,balance of trade,balance of trade,GRTBALE,€14.8B,€16.7B,€16.2B
+2021-02-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,1.9%,-4.5%,1%
+2021-02-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,109.1,107,108
+2021-02-10,china,inflation rate,inflation rate yoy,CNCPIYOY,-0.3%,0.2%,-0.2%
+2021-02-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.4%,1.6%,1.6%
+2021-02-10,united states,inflation rate,inflation rate yoy,CPI YOY,1.4%,1.4%,1.4%
+2021-02-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-6.2B,£-6.6B,£-4.2B
+2021-02-16,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,71.2,61.8,60.5
+2021-02-16,japan,balance of trade,balance of trade,JNTBAL,¥-323.9B,¥749.6B,¥-430B
+2021-02-17,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.7%,0.6%,0.4%
+2021-02-17,canada,inflation rate,inflation rate yoy,CACPIYOY,1%,0.7%,0.8%
+2021-02-17,united states,retail sales mom,retail sales mom,RSTAMOM,5.3%,-1%,0.9%
+2021-02-17,united states,interest rate,fomc minutes,,,,
+2021-02-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.6%,-1.2%,-1%
+2021-02-19,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-23,-28,-26
+2021-02-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-02-22,germany,business confidence,ifo business climate,GRIFPBUS,92.4,90.3,91
+2021-02-23,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-20K,-20.4K,25K
+2021-02-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-12.9,-15.5,-12
+2021-02-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,3.4%,1.2%,1.2%
+2021-02-26,united states,personal income,personal income mom,UNITEDSTAPERINC,10%,0.6%,8.5%
+2021-02-26,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,2.4%,-0.4%,1.9%
+2021-02-28,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.6,51.3,51
+2021-03-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.9,51.5,51.2
+2021-03-01,italy,government budget,government budget,WCSDITA,-9.5%,-1.6%,-10%
+2021-03-04,australia,balance of trade,balance of trade,AUITGSB,A$10.142B,A$7.133B,A$6.2B
+2021-03-04,japan,consumer confidence,consumer confidence,JCOMACF,33.8,29.6,30.8
+2021-03-05,canada,balance of trade,balance of trade,CATBTOTB,C$1.41B,C$-1.98B,C$ -1.6B
+2021-03-05,united states,balance of trade,balance of trade,USTBTOT,$-68.2B,$-67B,$-67.5B
+2021-03-05,united states,non farm payrolls,non farm payrolls,NFP TCH,379K,166K,170K
+2021-03-05,canada,business confidence,ivey pmi s.a,IVEY,60,48.4,49
+2021-03-05,china,calendar,national people's congress,CHN CALENDAR,,,
+2021-03-05,china,calendar,premier li keqiang speech,,,,
+2021-03-09,australia,business confidence,nab business confidence,NABSCONF,16,12,11
+2021-03-09,germany,balance of trade,balance of trade,GRTBALE,€14.3B,€15.2B,€12.4B
+2021-03-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,2.6%,1.9%,1.3%
+2021-03-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,111.8,109.1,110
+2021-03-10,china,inflation rate,inflation rate yoy,CNCPIYOY,-0.2%,-0.3%,-0.3%
+2021-03-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.3%,1.4%,1.4%
+2021-03-10,united states,inflation rate,inflation rate yoy,CPI YOY,1.7%,1.4%,1.6%
+2021-03-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-1.6B,£-6.2B,£-4.8B
+2021-03-16,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,76.6,71.2,75
+2021-03-16,united states,retail sales mom,retail sales mom,RSTAMOM,-3%,7.6%,-0.6%
+2021-03-16,japan,balance of trade,balance of trade,JNTBAL,¥217.4B,¥-325.4B,¥450B
+2021-03-17,canada,inflation rate,inflation rate yoy,CACPIYOY,1.1%,1%,1.1%
+2021-03-17,united states,interest rate,fed press conference,,,,
+2021-03-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.4%,-0.6%,-0.4%
+2021-03-19,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-16,-23,-20
+2021-03-23,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,86.6K,-20.8K,-17K
+2021-03-24,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.4%,0.7%,0.8%
+2021-03-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-1.1%,3.5%,1.1%
+2021-03-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-6.2,-12.7,-10.2
+2021-03-26,germany,business confidence,ifo business climate,GRIFPBUS,96.6,92.7,94
+2021-03-26,united states,personal income,personal income mom,UNITEDSTAPERINC,-7.1%,10.1%,-8%
+2021-03-26,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-1.0%,3.4%,-0.7%
+2021-03-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.9,50.6,51.1
+2021-03-31,japan,business confidence,tankan large manufacturers index,JNSBALLI,5,-10,-2
+2021-03-31,united states,calendar,president biden speech on recovery package,,,,
+2021-04-01,australia,balance of trade,balance of trade,AUITGSB,A$7.529B,A$9.616B,A$9B
+2021-04-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.6,50.9,51.2
+2021-04-02,united states,non farm payrolls,non farm payrolls,NFP TCH,916K,468K,680K
+2021-04-07,canada,balance of trade,balance of trade,CATBTOTB,C$1.04B,C$1.21B,C$1.5B
+2021-04-07,united states,balance of trade,balance of trade,USTBTOT,$-71.1B,$-67.8B,$-69.8B
+2021-04-07,canada,business confidence,ivey pmi s.a,IVEY,72.9,60,62
+2021-04-07,united states,interest rate,fomc minutes,,,,
+2021-04-08,japan,consumer confidence,consumer confidence,JCOMACF,36.1,33.8,36
+2021-04-09,china,inflation rate,inflation rate yoy,CNCPIYOY,0.4%,-0.2%,0.2%
+2021-04-09,germany,balance of trade,balance of trade,GRTBALE,€18.1B,€13.8B,€21.5B
+2021-04-13,australia,business confidence,nab business confidence,NABSCONF,15,18,18
+2021-04-13,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-7.1B,£-3.4B,£-2.2B
+2021-04-13,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,70.7,76.6,78
+2021-04-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,1.6%,1.3%,1.6%
+2021-04-13,united states,inflation rate,inflation rate yoy,CPI YOY,2.6%,1.7%,2.6%
+2021-04-14,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,6.2%,2.6%,1%
+2021-04-14,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,118.8,111.8,113
+2021-04-15,united states,retail sales mom,retail sales mom,RSTAMOM,9.8%,-2.7%,4.5%
+2021-04-18,japan,balance of trade,balance of trade,JNTBAL,¥663.7B,¥215.9B,¥ 300B
+2021-04-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-04-20,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,10.1K,86.6K,150K
+2021-04-21,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,0.7%,0.4%,0.8%
+2021-04-21,canada,inflation rate,inflation rate yoy,CACPIYOY,2.2%,1.1%,2.1%
+2021-04-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-15,-16,-12
+2021-04-22,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.2%,-0.4%,-0.1%
+2021-04-26,germany,business confidence,ifo business climate,GRIFPBUS,96.8,96.6,97.5
+2021-04-26,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.5%,-0.9%,1.7%
+2021-04-28,germany,consumer confidence,gfk consumer confidence,GRCCI,-8.8,-6.1,-3.8
+2021-04-28,united states,interest rate,fed press conference,,,,
+2021-04-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51.1,51.9,52.1
+2021-04-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.9,50.6,50.9
+2021-04-30,japan,consumer confidence,consumer confidence,JCOMACF,34.7,36.1,35.5
+2021-04-30,united states,personal income,personal income mom,UNITEDSTAPERINC,21.1%,-7%,20.5%
+2021-04-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,4.2%,-1%,4.6%
+2021-05-04,australia,balance of trade,balance of trade,AUITGSB,A$5.574B,A$7.595B,A$7B
+2021-05-04,canada,balance of trade,balance of trade,CATBTOTB,C$-1.14B,C$1.42B,C$0.5B
+2021-05-04,united states,balance of trade,balance of trade,USTBTOT,$-74.4B,$-70.5B,$-73.4B
+2021-05-07,germany,balance of trade,balance of trade,GRTBALE,€20.5B,€18.2B,€17.6B
+2021-05-07,united states,non farm payrolls,non farm payrolls,NFP TCH,266K,770K,950K
+2021-05-07,canada,business confidence,ivey pmi s.a,IVEY,60.6,72.9,67
+2021-05-10,australia,business confidence,nab business confidence,NABSCONF,26,17,18
+2021-05-11,china,inflation rate,inflation rate yoy,CNCPIYOY,0.9%,0.4%,1.1%
+2021-05-11,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,84.4,70.7,69
+2021-05-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2B,£-0.9B,£-6.1B
+2021-05-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,3%,1.6%,2.2%
+2021-05-12,united states,inflation rate,inflation rate yoy,CPI YOY,4.2%,2.6%,3.8%
+2021-05-14,united states,retail sales mom,retail sales mom,RSTAMOM,0.0%,10.7%,0.3%
+2021-05-18,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-15.1K,-19.4K,25K
+2021-05-19,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-4.8%,6.2%,-1.5%
+2021-05-19,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,113.1,118.8,117
+2021-05-19,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,1.5%,0.7%,1.4%
+2021-05-19,canada,inflation rate,inflation rate yoy,CACPIYOY,3.4%,2.2%,3.2%
+2021-05-19,united states,interest rate,fomc minutes,,,,
+2021-05-19,japan,balance of trade,balance of trade,JNTBAL,¥255.3B,¥662.2B,¥150B
+2021-05-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-05-20,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-9,-15,-14
+2021-05-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.4%,-0.2%,0.1%
+2021-05-25,germany,business confidence,ifo business climate,GRIFPBUS,99.2,96.6,98.5
+2021-05-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-7,-8.6,-3
+2021-05-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-1.3%,1.3%,0.7%
+2021-05-28,united states,personal income,personal income mom,UNITEDSTAPERINC,-13.1%,20.9%,-14%
+2021-05-28,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.5%,4.7%,0.5%
+2021-05-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,51,51.1,51.2
+2021-05-31,japan,consumer confidence,consumer confidence,JCOMACF,34.1,34.7,34
+2021-06-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,52,51.9,51.7
+2021-06-03,australia,balance of trade,balance of trade,AUITGSB,A$8.028B,A$5.794B,A$6B
+2021-06-04,united states,non farm payrolls,non farm payrolls,NFP TCH,559K,278K,610K
+2021-06-04,canada,business confidence,ivey pmi s.a,IVEY,64.7,60.6,65
+2021-06-08,australia,business confidence,nab business confidence,NABSCONF,20,23,24
+2021-06-08,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,79.8,84.4,85.1
+2021-06-08,canada,balance of trade,balance of trade,CATBTOTB,C$0.59B,C$-1.35B,C$-0.9B
+2021-06-08,united states,balance of trade,balance of trade,USTBTOT,$-68.9B,$-75B,$-69B
+2021-06-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-5.2%,-4.8%,0.8%
+2021-06-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,107.2,113.1,114
+2021-06-09,china,inflation rate,inflation rate yoy,CNCPIYOY,1.3%,0.9%,1.5%
+2021-06-09,germany,balance of trade,balance of trade,GRTBALE,€15.5B,€20.2B,€12.5B
+2021-06-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,3.8%,3%,3.2%
+2021-06-10,united states,inflation rate,inflation rate yoy,CPI YOY,5%,4.2%,4.7%
+2021-06-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-0.9B,£-2B,£-3.2B
+2021-06-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-92.6K,-55.8K,-62K
+2021-06-15,united states,retail sales mom,retail sales mom,RSTAMOM,-1.3%,0.9%,-0.3%
+2021-06-15,japan,balance of trade,balance of trade,JNTBAL,¥-187.1B,¥253.1B,¥-78B
+2021-06-16,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,2.1%,1.5%,1.8%
+2021-06-16,canada,inflation rate,inflation rate yoy,CACPIYOY,3.6%,3.4%,3.6%
+2021-06-16,united states,interest rate,fed press conference,,,,
+2021-06-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.1%,-0.4%,-0.3%
+2021-06-21,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-06-24,germany,business confidence,ifo business climate,GRIFPBUS,101.8,99.2,100.1
+2021-06-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,2.3%,-0.8%,2%
+2021-06-24,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-9,-9,-7
+2021-06-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-0.3,-6.9,-3
+2021-06-25,united states,personal income,personal income mom,UNITEDSTAPERINC,-2%,-13.1%,-3%
+2021-06-25,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.0%,0.9%,0.4%
+2021-06-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.9,51.0,50.9
+2021-06-30,japan,consumer confidence,consumer confidence,JCOMACF,37.4,34.1,33
+2021-06-30,japan,business confidence,tankan large manufacturers index,JNSBALLI,14,5,15
+2021-07-01,australia,balance of trade,balance of trade,AUITGSB,A$9.681B,A$8.157B,A$9.5B
+2021-07-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.3,52,51.9
+2021-07-02,canada,balance of trade,balance of trade,CATBTOTB,C$-1.39B,C$0.46B,C$-0.3B
+2021-07-02,united states,balance of trade,balance of trade,USTBTOT,$-71.2B,$-69.1B,$-71.6B
+2021-07-02,united states,non farm payrolls,non farm payrolls,NFP TCH,850K,583K,650K
+2021-07-06,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,63.3,79.8,75.1
+2021-07-07,canada,business confidence,ivey pmi s.a,IVEY,71.9,64.7,65
+2021-07-07,united states,interest rate,fomc minutes,,,,
+2021-07-08,germany,balance of trade,balance of trade,GRTBALE,€12.3B,€15.2B,€17.4B
+2021-07-09,china,inflation rate,inflation rate yoy,CNCPIYOY,1.1%,1.3%,1.5%
+2021-07-09,united kingdom,balance of trade,balance of trade,UKTBTTBA,£0.9B,£-1.6B,£-1.4B
+2021-07-13,australia,business confidence,nab business confidence,NABSCONF,11,20,19
+2021-07-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4.5%,3.8%,3.9%
+2021-07-13,united states,inflation rate,inflation rate yoy,CPI YOY,5.4%,5%,4.9%
+2021-07-14,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,1.5%,-5.2%,-2.5%
+2021-07-14,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,108.8,107.2,105
+2021-07-14,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,2.5%,2.1%,2.3%
+2021-07-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-114.8K,-92.6K,-120K
+2021-07-16,united states,retail sales mom,retail sales mom,RSTAMOM,0.6%,-1.7%,-0.5%
+2021-07-19,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.2%,-0.1%,0%
+2021-07-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-07-20,japan,balance of trade,balance of trade,JNTBAL,¥383.2B,¥-189.4B,¥ 400B
+2021-07-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-7,-9,-7
+2021-07-26,germany,business confidence,ifo business climate,GRIFPBUS,100.8,101.7,102.5
+2021-07-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.8%,3.2%,1.9%
+2021-07-28,germany,consumer confidence,gfk consumer confidence,GRCCI,-0.3,-0.3,-2
+2021-07-28,canada,inflation rate,inflation rate yoy,CACPIYOY,3.1%,3.6%,3.1%
+2021-07-28,united states,interest rate,fed press conference,,,,
+2021-07-30,united states,personal income,personal income mom,UNITEDSTAPERINC,0.1%,-2.2%,-0.3%
+2021-07-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1%,-0.1%,0.5%
+2021-07-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.4,50.9,50.8
+2021-08-02,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.3,51.3,51
+2021-08-02,japan,consumer confidence,consumer confidence,JCOMACF,37.5,37.4,37
+2021-08-05,australia,balance of trade,balance of trade,AUITGSB,A$10.496B,A$9.269B,A$10.1B
+2021-08-05,canada,balance of trade,balance of trade,CATBTOTB,C$3.23B,C$-1.58B,C$ -0.7B
+2021-08-05,united states,balance of trade,balance of trade,USTBTOT,$-75.7B,$-71B,$-74.3B
+2021-08-06,united states,non farm payrolls,non farm payrolls,NFP TCH,943K,938K,900K
+2021-08-06,canada,business confidence,ivey pmi s.a,IVEY,56.4,71.9,70
+2021-08-09,china,inflation rate,inflation rate yoy,CNCPIYOY,1.0%,1.1%,0.9%
+2021-08-09,germany,balance of trade,balance of trade,GRTBALE,€16.3B,€12.5B,€16.8B
+2021-08-10,australia,business confidence,nab business confidence,NABSCONF,-8,11,14
+2021-08-10,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,40.4,63.3,55.1
+2021-08-11,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-4.4%,1.5%,0.2%
+2021-08-11,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,104.1,108.8,109
+2021-08-11,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4.3%,4.5%,4.4%
+2021-08-11,united states,inflation rate,inflation rate yoy,CPI YOY,5.4%,5.4%,5.4%
+2021-08-12,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2.5B,£-0.2B,£-2.2B
+2021-08-17,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-7.8K,-114.8K,-180K
+2021-08-17,united states,retail sales mom,retail sales mom,RSTAMOM,-1.1%,0.7%,-0.3%
+2021-08-17,japan,balance of trade,balance of trade,JNTBAL,¥441B,¥384B,¥300B
+2021-08-18,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,2%,2.5%,2.4%
+2021-08-18,canada,inflation rate,inflation rate yoy,CACPIYOY,3.7%,3.1%,3.3%
+2021-08-18,united states,interest rate,fomc minutes,,,,
+2021-08-19,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-8,-7,-6
+2021-08-19,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.3%,-0.5%,-0.1%
+2021-08-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-08-25,germany,business confidence,ifo business climate,GRIFPBUS,99.4,100.7,100.5
+2021-08-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.1%,0.8%,-0.2%
+2021-08-26,germany,consumer confidence,gfk consumer confidence,GRCCI,-1.2,-0.4,-1.6
+2021-08-27,united states,personal income,personal income mom,UNITEDSTAPERINC,1.1%,0.2%,0.2%
+2021-08-27,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.3%,1.1%,0.5%
+2021-08-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.1,50.4,50.3
+2021-08-31,japan,consumer confidence,consumer confidence,JCOMACF,36.7,37.5,37
+2021-09-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.2,50.3,50.2
+2021-09-02,australia,balance of trade,balance of trade,AUITGSB,A$12.117B,A$11.114B,A$10B
+2021-09-02,canada,balance of trade,balance of trade,CATBTOTB,C$0.78B,C$2.56B,C$2.5B
+2021-09-02,united states,balance of trade,balance of trade,USTBTOT,$-70B,$-73.2B,$-70B
+2021-09-03,united states,non farm payrolls,non farm payrolls,NFP TCH,235K,1053K,750K
+2021-09-07,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,26.5,40.4,29
+2021-09-08,canada,business confidence,ivey pmi s.a,IVEY,66.0,56.4,56
+2021-09-09,china,inflation rate,inflation rate yoy,CNCPIYOY,0.8%,1.0%,1%
+2021-09-09,germany,balance of trade,balance of trade,GRTBALE,€18.1B,€16.2B,€21.1B
+2021-09-10,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-3.1B,£-2.5B,£-2B
+2021-09-14,australia,business confidence,nab business confidence,NABSCONF,-5,-7,-13
+2021-09-14,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-58.6K,-7.8K,-26K
+2021-09-14,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4%,4.3%,4.3%
+2021-09-14,united states,inflation rate,inflation rate yoy,CPI YOY,5.3%,5.4%,5.3%
+2021-09-15,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,2%,-4.4%,-2%
+2021-09-15,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,106.2,104.1,102
+2021-09-15,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,3.2%,2%,2.9%
+2021-09-15,canada,inflation rate,inflation rate yoy,CACPIYOY,4.1%,3.7%,3.7%
+2021-09-15,japan,balance of trade,balance of trade,JNTBAL,¥-635.4B,¥439.4B,¥-60B
+2021-09-16,united states,retail sales mom,retail sales mom,RSTAMOM,0.7%,-1.8%,-0.7%
+2021-09-22,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-09-22,united states,interest rate,fed press conference,,,,
+2021-09-23,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-13,-8,-8
+2021-09-23,japan,inflation rate,inflation rate yoy,JNCPIYOY,-0.4%,-0.3%,-0.1%
+2021-09-24,germany,business confidence,ifo business climate,GRIFPBUS,98.8,99.6,98.5
+2021-09-26,germany,calendar,federal election,,,,
+2021-09-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.8%,0.5%,0.4%
+2021-09-28,germany,consumer confidence,gfk consumer confidence,GRCCI,0.3,-1.1,-1.5
+2021-09-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.6,50.1,50.4
+2021-09-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50,49.2,49.9
+2021-09-30,germany,inflation rate,inflation rate yoy prel,GRBC20YY,4.1%,3.9%,4.1%
+2021-09-30,japan,business confidence,tankan large manufacturers index,JNSBALLI,18,14,12
+2021-10-01,japan,consumer confidence,consumer confidence,JCOMACF,37.8,36.7,37
+2021-10-01,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,3.4%,3%,3.1%
+2021-10-01,united states,personal income,personal income mom,UNITEDSTAPERINC,0.2%,1.1%,0.2%
+2021-10-01,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.8%,-0.1%,0.3%
+2021-10-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,61.1,59.9,59
+2021-10-05,australia,balance of trade,balance of trade,AUITGSB,A$15.077B,A$12.650B,A$9.9B
+2021-10-05,canada,balance of trade,balance of trade,CATBTOTB,C$1.94B,C$0.74B,C$0.6B
+2021-10-05,united states,balance of trade,balance of trade,USTBTOT,$-73.3B,$-70.3B,$-70.8B
+2021-10-07,canada,business confidence,ivey pmi s.a,IVEY,70.4,66.0,64.2
+2021-10-08,germany,balance of trade,balance of trade,GRTBALE,€10.7B,€17.9B,€14.4B
+2021-10-08,united states,non farm payrolls,non farm payrolls,NFP TCH,194K,366K,475K
+2021-10-12,australia,business confidence,nab business confidence,NABSCONF,13,-6,-2
+2021-10-12,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-51.1K,-58.6K,-46K
+2021-10-12,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,22.3,26.5,22.6
+2021-10-12,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.439M,11.098M,10.8M
+2021-10-13,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-1.5%,2%,1.5%
+2021-10-13,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,104.6,106.2,108
+2021-10-13,china,exports yoy,exports yoy,CHNEXPYOY,28.1%,25.6%,21%
+2021-10-13,china,imports yoy,imports yoy,CHNIMPYOY,17.6%,33.1%,21%
+2021-10-13,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-3.7B,£-2.9B,£-2.8B
+2021-10-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4%,4%,4%
+2021-10-13,united states,inflation rate,inflation rate yoy,CPI YOY,5.4%,5.3%,5.3%
+2021-10-13,united states,interest rate,fomc minutes,,,,
+2021-10-14,china,inflation rate,inflation rate yoy,CNCPIYOY,0.7%,0.8%,0.8%
+2021-10-15,united states,retail sales mom,retail sales mom,RSTAMOM,0.7%,0.9%,-0.1%
+2021-10-15,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,71.4,72.8,75
+2021-10-18,china,industrial production,industrial production yoy,CHVAIOY,3.1%,5.3%,4.4%
+2021-10-18,china,retail sales yoy,retail sales yoy,CHNRetailSalesYoY,4.4%,2.5%,2.3%
+2021-10-19,united states,building permits,building permits,,1.589M,1.721M,1.69M
+2021-10-19,japan,balance of trade,balance of trade,JNTBAL,¥-622.8B,¥-637.2B,¥ -500B
+2021-10-20,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-10-20,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,3.1%,3.2%,3.2%
+2021-10-20,canada,inflation rate,inflation rate yoy,CACPIYOY,4.4%,4.1%,4.4%
+2021-10-21,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-17,-13,-14
+2021-10-21,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.2%,-0.4%,-0.3%
+2021-10-22,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-0.2%,-0.6%,0.5%
+2021-10-22,france,composite pmi,markit composite pmi flash,FRANCECOMPMI,54.7,55.3,54.9
+2021-10-22,germany,composite pmi,markit composite pmi flash,GERMANYCOMPMI,52,55.5,54.7
+2021-10-22,euro area,composite pmi,markit composite pmi flash,EUROAREACOMPMI,54.3,56.2,55.4
+2021-10-22,united kingdom,composite pmi,markit/cips composite pmi flash,UNITEDKINCOMPMI,56.8,54.9,54.2
+2021-10-25,germany,business confidence,ifo business climate,GRIFPBUS,97.7,98.9,98.4
+2021-10-27,germany,consumer confidence,gfk consumer confidence,GRCCI,0.9,0.4,-1
+2021-10-27,united kingdom,calendar,autumn budget,GBP CALENDAR,,,
+2021-10-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.4%,1.3%,-0.8%
+2021-10-28,germany,inflation rate,inflation rate yoy prel,GRBC20YY,4.5%,4.1%,4.4%
+2021-10-29,japan,consumer confidence,consumer confidence,JCOMACF,39.2,37.8,39
+2021-10-29,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,4.1%,3.4%,3.6%
+2021-10-29,united states,personal income,personal income mom,UNITEDSTAPERINC,-1%,0.2%,0.2%
+2021-10-29,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.6%,1%,0.6%
+2021-10-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.2,49.6,50
+2021-11-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.6,50,50
+2021-11-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,60.8,61.1,60.3
+2021-11-03,united states,interest rate,fed press conference,,,,
+2021-11-04,australia,balance of trade,balance of trade,AUITGSB,A$12.243B,A$14.739B,A$12.5B
+2021-11-04,canada,balance of trade,balance of trade,CATBTOTB,C$1.86B,C$1.51B,C$ 2.1B
+2021-11-04,united states,balance of trade,balance of trade,USTBTOT,$-80.9B	,$-72.8B,$ -75B
+2021-11-05,united states,non farm payrolls,non farm payrolls,NFP TCH,531K,312K,400K
+2021-11-05,canada,business confidence,ivey pmi s.a,IVEY,59.3,70.4,65
+2021-11-07,china,exports yoy,exports yoy,CHNEXPYOY,27.1%,28.1%,25%
+2021-11-07,china,imports yoy,imports yoy,CHNIMPYOY,20.6%,17.6%,26%
+2021-11-09,australia,business confidence,nab business confidence,NABSCONF,21,10,15
+2021-11-09,germany,balance of trade,balance of trade,GRTBALE,€16.2B,€11.7B,€ 17.7B
+2021-11-09,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,31.7,22.3,17
+2021-11-09,united states,producer price inflation mom,ppi mom,USAPPIM,0.6%,0.5%,0.6%
+2021-11-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,0.6%,-1.5%,-0.6%
+2021-11-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,105.3,104.6,104
+2021-11-10,china,inflation rate,inflation rate yoy,CNCPIYOY,1.5%,0.7%,1.2%
+2021-11-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4.6%,4%,4.1%
+2021-11-10,united states,inflation rate,inflation rate yoy,CPI YOY,6.2%,5.4%,5.7%
+2021-11-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2.8B,£-1.9B,£-3.4B
+2021-11-11,euro area,interest rate,ecb macroeconomic projections,,,,
+2021-11-12,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.438M,10.629M,10.1M
+2021-11-12,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,66.8,71.7,71
+2021-11-15,china,industrial production,industrial production yoy,CHVAIOY,3.5%,3.1%,2.9%
+2021-11-15,china,retail sales yoy,retail sales yoy,CHNRetailSalesYoY,4.9%,4.4%,3.6%
+2021-11-15,united states,calendar,president biden and president xi jinping virtual meeting,,,,
+2021-11-16,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-14.9K,-51.1K,-30K
+2021-11-16,united states,retail sales mom,retail sales mom,RSTAMOM,1.7%,0.8%,1.2%
+2021-11-16,japan,balance of trade,balance of trade,JNTBAL,¥-67.4B,¥-624.1B,¥-460B
+2021-11-17,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,4.2%,3.1%,3.7%
+2021-11-17,canada,inflation rate,inflation rate yoy,CACPIYOY,4.7%,4.4%,4.9%
+2021-11-17,united states,building permits,building permits,,1.65M,1.586M,1.661M
+2021-11-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.1%,0.2%,0.1%
+2021-11-19,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-14,-17,-16
+2021-11-19,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,0.8%,0%,0.7%
+2021-11-22,china,interest rate,loan prime rate 1y,CHLR12M,3.85%,3.85%,3.85%
+2021-11-23,france,composite pmi,markit composite pmi flash,FRANCECOMPMI,56.3,54.7,54
+2021-11-23,germany,composite pmi,markit composite pmi flash,GERMANYCOMPMI,52.8,52,51
+2021-11-23,euro area,composite pmi,markit composite pmi flash,EUROAREACOMPMI,55.8,54.2,53.7
+2021-11-23,united kingdom,composite pmi,markit/cips composite pmi flash,UNITEDKINCOMPMI,57.7,57.8,57.3
+2021-11-23,united states,manufacturing pmi,markit manufacturing pmi flash,UNITEDSTAMANPMI,59.1,58.4,58.8
+2021-11-23,united states,services pmi,markit services pmi flash,UNITEDSTASERPMI,57,58.7,59
+2021-11-24,germany,business confidence,ifo business climate,GRIFPBUS,96.5,97.7,96.5
+2021-11-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.5%,-0.4%,0.3%
+2021-11-24,united states,personal income,personal income mom,UNITEDSTAPERINC,0.5%,-1%,0.1%
+2021-11-24,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1.3%,0.6%,0.7%
+2021-11-24,united states,interest rate,fomc minutes,,,,
+2021-11-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-1.6,1,-0.2
+2021-11-29,germany,inflation rate,inflation rate yoy prel,GRBC20YY,5.2%,4.5%,5%
+2021-11-29,united states,interest rate,fed chair powell speech,,,,
+2021-11-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.1,49.2,49.8
+2021-11-30,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,4.9%,4.1%,4.5%
+2021-11-30,united states,interest rate,fed chair powell testimony,,,,
+2021-12-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.9,50.6,50.2
+2021-12-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,61.1,60.8,61.2
+2021-12-02,australia,balance of trade,balance of trade,AUITGSB,A$11.22B,A$11.824B,A$11B
+2021-12-02,japan,consumer confidence,consumer confidence,JCOMACF,39.2,39.2,40
+2021-12-03,united states,non farm payrolls,non farm payrolls,NFP TCH,210K,546K,550K
+2021-12-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,69.1,66.7,65
+2021-12-07,china,exports yoy,exports yoy,CHNEXPYOY,22%,27.1%,16%
+2021-12-07,china,imports yoy,imports yoy,CHNIMPYOY,31.7%,20.6%,21%
+2021-12-07,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,29.9,31.7,26.5
+2021-12-07,canada,balance of trade,balance of trade,CATBTOTB,C$2.1B,C$1.4B,C$3B
+2021-12-07,united states,balance of trade,balance of trade,USTBTOT,$-67.1B,$-81.4B,$-66B
+2021-12-07,canada,business confidence,ivey pmi s.a,IVEY,61.2,59.3,58.7
+2021-12-08,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11M,10.602M,10.4M
+2021-12-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.3%,1.5%,2.6%
+2021-12-09,germany,balance of trade,balance of trade,GRTBALE,€12.8B,€16B,€18.4B
+2021-12-10,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2.027B,£-2.8B,£-3.2B
+2021-12-10,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.1%,0.6%,0.4%
+2021-12-10,united kingdom,monthly gdp yoy,gdp yoy,GBRMGY,4.6%,5.3%,5.1%
+2021-12-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,4.9%,4.6%,4.9%
+2021-12-10,united states,inflation rate,inflation rate yoy,CPI YOY,6.8%,6.2%,6.9%
+2021-12-10,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,70.4,67.4,67
+2021-12-12,japan,business confidence,tankan large manufacturers index,JNSBALLI,18,18,20
+2021-12-14,australia,business confidence,nab business confidence,NABSCONF,12,20,23
+2021-12-14,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-49.8K,-14.9K,-20K
+2021-12-14,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-1%,0.6%,0.7%
+2021-12-14,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,104.3,105.3,106
+2021-12-15,china,industrial production,industrial production yoy,CHVAIOY,3.8%,3.5%,3.4%
+2021-12-15,china,retail sales yoy,retail sales yoy,CHNRetailSalesYoY,3.9%,4.9%,4.8%
+2021-12-15,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,5.1%,4.2%,5%
+2021-12-15,canada,inflation rate,inflation rate yoy,CACPIYOY,4.7%,4.7%,4.9%
+2021-12-15,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,1.8%,1%
+2021-12-15,united states,interest rate,fed press conference,,,,
+2021-12-15,japan,balance of trade,balance of trade,JNTBAL,¥-954.8B,¥-68.5B,¥-700B
+2021-12-16,france,composite pmi,markit composite pmi flash,FRANCECOMPMI,55.6,56.1,55.4
+2021-12-16,germany,composite pmi,markit composite pmi flash,GERMANYCOMPMI,50,52.2,51.2
+2021-12-16,euro area,composite pmi,markit composite pmi flash,EUROAREACOMPMI,53.4,55.4,54.2
+2021-12-16,united kingdom,composite pmi,markit/cips composite pmi flash,UNITEDKINCOMPMI,53.2,57.6,56.5
+2021-12-16,united kingdom,interest rate,boe quantitative easing,,£875B,£875B,£875B
+2021-12-16,united states,building permits,building permits,,1.712M,1.653M,1.63M
+2021-12-16,united states,manufacturing pmi,markit manufacturing pmi flash,UNITEDSTAMANPMI,57.8,58.3,58.5
+2021-12-16,united states,services pmi,markit services pmi flash,UNITEDSTASERPMI,57.5,58,58.2
+2021-12-17,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-15,-14,-16
+2021-12-17,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,1.4%,1.1%,1%
+2021-12-17,germany,business confidence,ifo business climate,GRIFPBUS,94.7,96.6,95.1
+2021-12-20,china,interest rate,loan prime rate 1y,CHLR12M,3.8%,3.85%,3.85%
+2021-12-21,germany,consumer confidence,gfk consumer confidence,GRCCI,-6.8,-1.8,-2.7
+2021-12-23,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,2.5%,0.1%,1.1%
+2021-12-23,united states,personal income,personal income mom,UNITEDSTAPERINC,0.4%,0.5%,0.3%
+2021-12-23,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.6%,1.4%,0.5%
+2021-12-23,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.6%,0.1%,0.4%
+2021-12-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.3,50.1,50.5
+2022-01-04,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.9,49.9,50.1
+2022-01-04,france,inflation rate,inflation rate yoy prel,FRCPIYOY,2.8%,2.8%,3.0%
+2022-01-04,united states,business confidence,ism manufacturing pmi,NAPMPMI,58.7,61.1,60.2
+2022-01-04,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.562M,11.033M,10.8M
+2022-01-05,australia,interest rate,rba chart pack,RBATCTR,,,
+2022-01-05,japan,consumer confidence,consumer confidence,JCOMACF,39.1,39.2,39.8
+2022-01-05,italy,inflation rate,inflation rate yoy prel,ITCPNICY,3.9%,3.7%,3.9%
+2022-01-05,united states,interest rate,fomc minutes,,,,
+2022-01-06,germany,inflation rate,inflation rate yoy prel,GRBC20YY,5.3%,5.2%,5.2%
+2022-01-06,canada,balance of trade,balance of trade,CATBTOTB,C$3.13B,C$2.26B,C$1.8B
+2022-01-06,united states,balance of trade,balance of trade,USTBTOT,$-80.2B,$-67.2B,$-81.8B
+2022-01-06,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,62,69.1,67.5
+2022-01-07,germany,balance of trade,balance of trade,GRTBALE,€12B,€12.7B,€14.2B
+2022-01-07,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,5%,4.9%,5.1%
+2022-01-07,united states,non farm payrolls,non farm payrolls,NFP TCH,199K,249K,425K
+2022-01-07,canada,business confidence,ivey pmi s.a,IVEY,45,61.2,61
+2022-01-11,australia,balance of trade,balance of trade,AUITGSB,A$9.423B,A$10.781B,A$10.5B
+2022-01-11,united states,interest rate,fed chair powell testimony,,,,
+2022-01-12,china,inflation rate,inflation rate yoy,CNCPIYOY,1.5%,2.3%,2%
+2022-01-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,5.5%,4.9%,5.4%
+2022-01-12,united states,inflation rate,inflation rate yoy,CPI YOY,7%,6.8%,7.1%
+2022-01-14,china,exports yoy,exports yoy,CHNEXPYOY,20.9%,22%,21%
+2022-01-14,china,imports yoy,imports yoy,CHNIMPYOY,19.5%,31.7%,27%
+2022-01-14,united kingdom,balance of trade,balance of trade,UKTBTTBA,£0.626B,£0.151B,£-2.7B
+2022-01-14,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.9%,0.2%,0.3%
+2022-01-14,germany,full year gdp growth,full year gdp growth,DEUFYGG,2.7%,-4.6%,3.0%
+2022-01-14,united states,retail sales mom,retail sales mom,RSTAMOM,-1.9%,0.2%,0.3%
+2022-01-14,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,68.8,70.6,70.4
+2022-01-17,china,industrial production,industrial production yoy,CHVAIOY,4.3%,3.8%,3.7%
+2022-01-17,china,retail sales yoy,retail sales yoy,CHNRetailSalesYoY,1.7%,3.9%,3.7%
+2022-01-18,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-43.3K,-95.1K,-36K
+2022-01-18,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,51.7,29.9,34
+2022-01-18,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-2%,-1%,-0.3%
+2022-01-18,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,102.2,104.3,104
+2022-01-19,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,5.4%,5.1%,5.2%
+2022-01-19,canada,inflation rate,inflation rate yoy,CACPIYOY,4.8%,4.7%,4.8%
+2022-01-19,united states,building permits,building permits,,1.873M,1.717M,1.72M
+2022-01-19,japan,balance of trade,balance of trade,JNTBAL,¥-582.4B,¥-955.6B,¥ -700B
+2022-01-20,china,interest rate,loan prime rate 1y,CHLR12M,3.7%,3.8%,3.8%
+2022-01-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.8%,0.6%,0.7%
+2022-01-21,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-19,-15,-18
+2022-01-21,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-3.7%,1%,-0.6%
+2022-01-23,australia,composite pmi,markit composite pmi flash,AUSTRALIACOMPMI,45.3,54.9,54.5
+2022-01-24,japan,composite pmi,jibun bank composite pmi flash,JAPANCOMPMI,48.8,52.5,52.1
+2022-01-24,france,composite pmi,markit composite pmi flash,FRANCECOMPMI,52.7,55.8,55.1
+2022-01-24,germany,composite pmi,markit composite pmi flash,GERMANYCOMPMI,54.3,49.9,49.5
+2022-01-24,euro area,composite pmi,markit composite pmi flash,EUROAREACOMPMI,52.4,53.3,52.6
+2022-01-24,united kingdom,composite pmi,markit/cips composite pmi flash,UNITEDKINCOMPMI,53.4,53.6,54
+2022-01-24,united states,composite pmi,markit composite pmi flash,UNITEDSTACOMPMI,50.8,57,56.7
+2022-01-25,australia,inflation rate,inflation rate yoy,AUCPIYOY,3.5%,3%,3.2%
+2022-01-25,australia,business confidence,nab business confidence,NABSCONF,-12,12,10
+2022-01-25,germany,business confidence,ifo business climate,GRIFPBUS,95.7,94.8,95.5
+2022-01-26,canada,interest rate,boc monetary policy report,,,,
+2022-01-26,united states,interest rate,fed press conference,,,,
+2022-01-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-6.7,-6.9,-7.8
+2022-01-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.9%,3.2%,-0.2%
+2022-01-28,united states,personal income,personal income mom,UNITEDSTAPERINC,0.3%,0.5%,0.5%
+2022-01-28,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,-0.6%,0.4%,-0.3%
+2022-01-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.1,50.9,50.6
+2022-01-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.1,50.3,50.1
+2022-01-31,japan,consumer confidence,consumer confidence,JCOMACF,36.7,39.1,39.5
+2022-01-31,germany,inflation rate,inflation rate yoy prel,GRBC20YY,4.9%,5.3%,4.4%
+2022-02-01,france,inflation rate,inflation rate yoy prel,FRCPIYOY,2.9%,2.8%,2.5%
+2022-02-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,57.6,58.8,58
+2022-02-01,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.925M,10.775M,10.52M
+2022-02-02,australia,interest rate,rba chart pack,RBATCTR,,,
+2022-02-02,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,5.1%,5%,4.5%
+2022-02-02,italy,inflation rate,inflation rate yoy prel,ITCPNICY,4.8%,3.9%,3.8%
+2022-02-03,australia,balance of trade,balance of trade,AUITGSB,A$8.356B,A$9.756B,A$ 13B
+2022-02-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,59.9,62.3,61
+2022-02-04,australia,interest rate,rba statement on monetary policy,,,,
+2022-02-04,united states,non farm payrolls,non farm payrolls,NFP TCH,467K,510K,30K
+2022-02-04,canada,business confidence,ivey pmi s.a,IVEY,50.7,45,50
+2022-02-08,australia,business confidence,nab business confidence,NABSCONF,3,-12,-14
+2022-02-08,canada,balance of trade,balance of trade,CATBTOTB,C$-0.14B,C$2.47B,C$ 1.5B
+2022-02-08,united states,balance of trade,balance of trade,USTBTOT,$-80.7B,$-79.3B,$-83.2B
+2022-02-08,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-1.3%,-2%,-0.2%
+2022-02-08,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,100.8,102.2,102
+2022-02-09,germany,balance of trade,balance of trade,GRTBALE,€7B,€12B,€ 10.8B
+2022-02-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6%,5.5%,5.7%
+2022-02-10,united states,inflation rate,inflation rate yoy,CPI YOY,7.5%,7%,7.1%
+2022-02-11,united kingdom,balance of trade,balance of trade,UKTBTTBA,£-2.34B,£-2.59B,£ -3.1B
+2022-02-11,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.2%,0.7%,-0.2%
+2022-02-11,united kingdom,monthly gdp yoy,gdp yoy,GBRMGY,6%,7.5%,6.7%
+2022-02-11,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,61.7,67.2,67.5
+2022-02-15,australia,interest rate,rba meeting minutes,,,,
+2022-02-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-31.9K,-43.3K,-27K
+2022-02-15,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,54.3,51.7,55.1
+2022-02-16,china,inflation rate,inflation rate yoy,CNCPIYOY,0.9%,1.5%,1.4%
+2022-02-16,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,5.5%,5.4%,5.5%
+2022-02-16,canada,inflation rate,inflation rate yoy,CACPIYOY,5.1%,4.8%,5%
+2022-02-16,united states,retail sales mom,retail sales mom,RSTAMOM,3.8%,-2.5%,1.5%
+2022-02-16,united states,interest rate,fomc minutes,,,,
+2022-02-16,japan,balance of trade,balance of trade,JNTBAL,¥-2191.1B,¥-583.3B,¥-1800B
+2022-02-17,united states,building permits,building permits,UNITEDSTABUIPER,1.899M,1.885M,1.79M
+2022-02-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.5%,0.8%,0.9%
+2022-02-18,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,1.9%,-4%,0.9%
+2022-02-21,china,interest rate,loan prime rate 1y,CHLR12M,3.7%,3.7%,3.7%
+2022-02-21,germany,manufacturing pmi,markit manufacturing pmi flash,GERMANYMANPMI,58.5,59.8,59.7
+2022-02-21,united kingdom,manufacturing pmi,markit/cips manufacturing pmi flash,UNITEDKINMANPMI,57.3,57.3,57.6
+2022-02-21,united kingdom,services pmi,markit/cips uk services pmi flash,UNITEDKINSERPMI,60.8,54.1,55
+2022-02-22,germany,business confidence,ifo business climate,GRIFPBUS,98.9,96,96.6
+2022-02-23,germany,consumer confidence,gfk consumer confidence,GRCCI,-8.1,-6.7,-6
+2022-02-25,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-26,-19,-16
+2022-02-25,france,inflation rate,inflation rate yoy prel,FRCPIYOY,3.6%,2.9%,3%
+2022-02-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.6%,1.2%,0.4%
+2022-02-25,united states,personal income,personal income mom,UNITEDSTAPERINC,0%,0.4%,0.1%
+2022-02-25,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,2.1%,-0.8%,0.7%
+2022-03-01,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.2,50.1,50.4
+2022-03-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.4,49.1,49.3
+2022-03-01,italy,inflation rate,inflation rate yoy prel,ITCPNICY,5.7%,4.8%,5.6%
+2022-03-01,italy,full year gdp growth,full year gdp growth,ITAFYGG,6.6%,-9%,6.3%
+2022-03-01,italy,government budget,government budget,WCSDITA,-7.2%,-9.6%,-5.5%
+2022-03-01,germany,inflation rate,inflation rate yoy prel,GRBC20YY,5.1%,4.9%,5%
+2022-03-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,58.6,57.6,58.1
+2022-03-02,australia,interest rate,rba chart pack,RBATCTR,,,
+2022-03-02,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,5.8%,5.1%,5.2%
+2022-03-03,australia,balance of trade,balance of trade,AUITGSB,A$12.891B,A$8.824B,A$8B
+2022-03-03,japan,consumer confidence,consumer confidence,JCOMACF,35.3,36.7,36
+2022-03-03,united states,interest rate,fed chair powell testimony,,,,
+2022-03-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,56.5,59.9,61
+2022-03-04,germany,balance of trade,balance of trade,GRTBALE,€3.5B,€6.6B,€9.2B
+2022-03-04,united states,non farm payrolls,non farm payrolls,NFP TCH,678K,481K,350K
+2022-03-04,canada,business confidence,ivey pmi s.a,IVEY,60.6,50.7,52
+2022-03-07,china,balance of trade,balance of trade,CNFRBALD,$115.95B,$94.46B,$120B
+2022-03-08,australia,business confidence,nab business confidence,NABSCONF,13,4,1
+2022-03-08,canada,balance of trade,balance of trade,CATBTOTB,C$2.62B,C$-1.58B,C$1.3B
+2022-03-08,united states,balance of trade,balance of trade,USTBTOT,$-89.7B,$-82B,$-84B
+2022-03-08,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-4.2%,-1.3%,-1.6%
+2022-03-08,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,96.6,100.8,99.2
+2022-03-09,china,inflation rate,inflation rate yoy,CNCPIYOY,0.9%,0.9%,0.9%
+2022-03-09,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.263M,11.448M,10.8M
+2022-03-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.4%,6%,6.4%
+2022-03-10,united states,inflation rate,inflation rate yoy,CPI YOY,7.9%,7.5%,7.9%
+2022-03-11,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.8%,-0.2%,0.3%
+2022-03-11,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,59.7,62.8,62
+2022-03-15,australia,interest rate,rba meeting minutes,,,,
+2022-03-15,china,industrial production,industrial production yoy,CHVAIOY,7.5%,4.3%,3.8%
+2022-03-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-48.1K,-67.3K,-25K
+2022-03-15,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-39.3,54.3,24.6
+2022-03-15,united states,producer price inflation mom,ppi mom,USAPPIM,0.8%,1.2%,1.1%
+2022-03-15,japan,balance of trade,balance of trade,JNTBAL,¥-668.3B,¥-2193.5B,¥-150B	
+2022-03-16,canada,inflation rate,inflation rate yoy,CACPIYOY,5.7%,5.1%,5.4%
+2022-03-16,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,4.9%,0.7%
+2022-03-16,united states,interest rate,fed press conference,,,,
+2022-03-17,australia,interest rate,rba bulletin,,,,
+2022-03-17,united states,building permits,building permits,UNITEDSTABUIPER,1.859M,1.895M,1.86M
+2022-03-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,0.9%,0.5%,0.7%
+2022-03-23,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,6.2%,5.5%,6.1%
+2022-03-24,germany,manufacturing pmi,markit manufacturing pmi flash,GERMANYMANPMI,57.6,58.4,56.2
+2022-03-24,united kingdom,manufacturing pmi,markit/cips manufacturing pmi flash,UNITEDKINMANPMI,55.5,58,57.1
+2022-03-24,united kingdom,services pmi,markit/cips uk services pmi flash,UNITEDKINSERPMI,61,60.5,58.8
+2022-03-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-2.2%,1.6%,-0.5%
+2022-03-25,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-31,-26,-35
+2022-03-25,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-0.3%,1.9%,0.7%
+2022-03-25,germany,business confidence,ifo business climate,GRIFPBUS,90.8,98.5,92.2
+2022-03-29,germany,consumer confidence,gfk consumer confidence,GRCCI,-15.5,-8.1,-14
+2022-03-29,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.266M,11.283M,11.1M
+2022-03-30,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.3%,5.1%,6.5%
+2022-03-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.5,50.2,49.1
+2022-03-31,france,inflation rate,inflation rate yoy prel,FRCPIYOY,4.5%,3.6%,4%
+2022-03-31,italy,inflation rate,inflation rate yoy prel,ITCPNICY,6.7%,5.7%,6.3%
+2022-03-31,united states,personal income,personal income mom,UNITEDSTAPERINC,0.5%,0.1%,0.6%
+2022-03-31,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.2%,2.7%,0.4%
+2022-03-31,japan,business confidence,tankan large manufacturers index,JNSBALLI,14,18,13
+2022-04-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,48.1,50.4,49.1
+2022-04-01,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,7.5%,5.9%,6.9%
+2022-04-01,united states,non farm payrolls,non farm payrolls,NFP TCH,431K,750K,460K
+2022-04-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,57.1,58.6,58.5
+2022-04-04,germany,balance of trade,balance of trade,GRTBALE,€11.4B,€3.2B,€7.1B
+2022-04-05,canada,balance of trade,balance of trade,CATBTOTB,C$2.66B,C$3.12B,C$2.4B
+2022-04-05,united states,balance of trade,balance of trade,USTBTOT,$-89.2B,$-89.2B,$-88B
+2022-04-05,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,58.3,56.5,58.1
+2022-04-06,australia,interest rate,rba chart pack,RBATCTR,,,
+2022-04-06,canada,business confidence,ivey pmi s.a,IVEY,74.2,60.6,61
+2022-04-06,united states,interest rate,fomc minutes,,,,
+2022-04-07,australia,balance of trade,balance of trade,AUITGSB,A$7.457B,A$11.786B,A$10B
+2022-04-08,australia,interest rate,rba financial stability review,,,,
+2022-04-08,japan,consumer confidence,consumer confidence,JCOMACF,32.8,35.3,34
+2022-04-11,china,inflation rate,inflation rate yoy,CNCPIYOY,1.5%,0.9%,1.2%
+2022-04-11,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.1%,0.8%,0.5%
+2022-04-12,australia,business confidence,nab business confidence,NABSCONF,16,13,2
+2022-04-12,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-46.9K,-58K,-31K
+2022-04-12,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-41,-39.3,-45
+2022-04-12,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.5%,6.4%,6.7%
+2022-04-12,united states,inflation rate,inflation rate yoy,CPI YOY,8.5%,7.9%,8.3%
+2022-04-13,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-0.9%,-4.2%,-1.7%
+2022-04-13,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,95.7,96.6,95
+2022-04-13,china,balance of trade,balance of trade,CNFRBALD,$47.38B,$115.95B,$25B
+2022-04-13,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,7%,6.2%,7%
+2022-04-13,united states,producer price inflation mom,ppi mom,USAPPIM,1.4%,0.9%,1%
+2022-04-13,canada,interest rate,boc monetary policy report,,,,
+2022-04-14,united states,retail sales mom,retail sales mom,RSTAMOM,0.5%,0.8%,0.4%
+2022-04-14,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,65.7,59.4,58.8
+2022-04-18,china,industrial production,industrial production yoy,CHVAIOY,5%,7.5%,4.2%
+2022-04-19,australia,interest rate,rba meeting minutes,,,,
+2022-04-19,united states,building permits,building permits,UNITEDSTABUIPER,1.873M,1.865M,1.81M
+2022-04-19,japan,balance of trade,balance of trade,JNTBAL,¥-412.4B,¥-669.7B,¥ -100B
+2022-04-20,canada,inflation rate,inflation rate yoy,CACPIYOY,6.7%,5.7%,6%
+2022-04-21,japan,inflation rate,inflation rate yoy,JNCPIYOY,1.2%,0.9%,1.1%
+2022-04-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-38,-31,-33
+2022-04-22,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-1.4%,-0.5%,-0.1%
+2022-04-22,germany,manufacturing pmi,s&p global manufacturing pmi flash,GERMANYMANPMI,54.1,56.9,54.8
+2022-04-22,united kingdom,manufacturing pmi,s&p global/cips manufacturing pmi flash,UNITEDKINMANPMI,55.3,55.2,54.8
+2022-04-22,united kingdom,services pmi,s&p global/cips uk services pmi flash,UNITEDKINSERPMI,58.3,62.6,58.9
+2022-04-25,germany,business confidence,ifo business climate,GRIFPBUS,91.8,90.8,88.2
+2022-04-26,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.8%,-1.7%,1.1%
+2022-04-27,australia,inflation rate,inflation rate yoy,AUCPIYOY,5.1%,3.5%,4.5%
+2022-04-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-26.5,-15.7,-15.1
+2022-04-28,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.4%,7.3%,7.4%
+2022-04-29,france,inflation rate,inflation rate yoy prel,FRCPIYOY,4.8%,4.5%,4.6%
+2022-04-29,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,7.5%,7.4%,7.4%
+2022-04-29,italy,inflation rate,inflation rate yoy prel,ITCPNICY,6.2%,6.5%,6.4%
+2022-04-29,united states,personal income,personal income mom,UNITEDSTAPERINC,0.5%,0.7%,0.4%
+2022-04-29,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1.1%,0.6%,0.5%
+2022-04-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,47.4,49.5,49.1
+2022-04-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,46.0,48.1,47.9
+2022-05-02,japan,consumer confidence,consumer confidence,JCOMACF,33.0,32.8,31.7
+2022-05-02,united states,business confidence,ism manufacturing pmi,NAPMPMI,55.4,57.1,57.5
+2022-05-03,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.549M,11.344M,11.27M
+2022-05-04,australia,interest rate,rba chart pack,RBATCTR,,,
+2022-05-04,germany,balance of trade,balance of trade,GRTBALE,€9.7B,€11B,€9.5B
+2022-05-04,canada,balance of trade,balance of trade,CATBTOTB,C$2.49B,C$3.08B,C$2.3B
+2022-05-04,united states,balance of trade,balance of trade,USTBTOT,$-109.8B,$-89.8B,$ -92B
+2022-05-04,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,57.1,58.3,58.5
+2022-05-04,united states,interest rate,fed press conference,,,,
+2022-05-05,australia,balance of trade,balance of trade,AUITGSB,A$9.314B,A$7.437B,A$ 12B
+2022-05-06,australia,interest rate,rba statement on monetary policy,,,,
+2022-05-06,united states,non farm payrolls,non farm payrolls,NFP TCH,428K,428K,415K
+2022-05-06,canada,business confidence,ivey pmi s.a,IVEY,66.3,74.2,73.8
+2022-05-09,china,balance of trade,balance of trade,CNFRBALD,$51.12B,$47.38B,$53B
+2022-05-10,australia,business confidence,nab business confidence,NABSCONF,10,16,12
+2022-05-10,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-34.3,-41,-43
+2022-05-11,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-5.6%,-0.9%,-1%
+2022-05-11,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,90.4,95.7,94.7
+2022-05-11,china,inflation rate,inflation rate yoy,CNCPIYOY,2.1%,1.5%,1.8%
+2022-05-11,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.2%,6.5%,6.2%
+2022-05-11,united states,inflation rate,inflation rate yoy,CPI YOY,8.3%,8.5%,8.2%
+2022-05-12,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.1%,0%,0.1%
+2022-05-12,united states,producer price inflation mom,ppi mom,USAPPIM,0.5%,1.6%,0.5%
+2022-05-13,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,59.1,65.2,63.5
+2022-05-16,china,industrial production,industrial production yoy,CHVAIOY,-2.9%,5%,0.4%
+2022-05-16,euro area,calendar,european commission spring forecasts,EUR CALENDAR,,,
+2022-05-17,australia,interest rate,rba meeting minutes,,,,
+2022-05-17,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-56.9K,-81.6K,-42K
+2022-05-17,united states,retail sales mom,retail sales mom,RSTAMOM,0.9%,1.4%,0.6%
+2022-05-17,united states,interest rate,fed chair powell speech,,,,
+2022-05-18,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,9%,7%,8.9%
+2022-05-18,canada,inflation rate,inflation rate yoy,CACPIYOY,6.8%,6.7%,6.6%
+2022-05-18,united states,building permits,building permits,UNITEDSTABUIPER,1.819M,1.879M,1.82M
+2022-05-18,japan,balance of trade,balance of trade,JNTBAL,¥-839.2B,¥-414.1B,¥-1000B
+2022-05-19,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-40,-38,-40
+2022-05-19,japan,inflation rate,inflation rate yoy,JNCPIYOY,2.5%,1.2%,1.5%
+2022-05-20,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,1.4%,-1.2%,-0.2%
+2022-05-23,germany,business confidence,ifo business climate,GRIFPBUS,93,91.9,92.1
+2022-05-24,germany,manufacturing pmi,s&p global manufacturing pmi flash,GERMANYMANPMI,54.7,54.6,54.1
+2022-05-24,united kingdom,manufacturing pmi,s&p global/cips manufacturing pmi flash,UNITEDKINMANPMI,54.6,55.8,55.2
+2022-05-24,united kingdom,services pmi,s&p global/cips uk services pmi flash,UNITEDKINSERPMI,51.8,58.9,58.5
+2022-05-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-26,-26.6,-25.2
+2022-05-25,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.4%,0.6%,0.4%
+2022-05-25,united states,interest rate,fomc minutes,,,,
+2022-05-27,united states,personal income,personal income mom,UNITEDSTAPERINC,0.4%,0.5%,0.6%
+2022-05-27,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.9%,1.4%,0.8%
+2022-05-30,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.9%,7.4%,7.7%
+2022-05-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.6,47.4,48.9
+2022-05-31,japan,consumer confidence,consumer confidence,JCOMACF,34.1,33.0,33.5
+2022-05-31,france,inflation rate,inflation rate yoy prel,FRCPIYOY,5.2%,4.8%,4.9%
+2022-05-31,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,8.1%,7.4%,7.6%
+2022-05-31,italy,inflation rate,inflation rate yoy prel,ITCPNICY,6.9%,6%,6.3%
+2022-06-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,48.1,46.0,48
+2022-06-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,56.1,55.4,54.8
+2022-06-01,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.4M,11.855M,11.4M
+2022-06-02,australia,balance of trade,balance of trade,AUITGSB,A$10.495B,A$9.738B,A$8.9B
+2022-06-03,germany,balance of trade,balance of trade,GRTBALE,€1.3B,€7.5B,€7.3B
+2022-06-03,united states,non farm payrolls,non farm payrolls,NFP TCH,390K,436K,320K
+2022-06-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,55.9,57.1,55
+2022-06-07,canada,balance of trade,balance of trade,CATBTOTB,C$1.5B,C$2.28B,C$2.8B
+2022-06-07,united states,balance of trade,balance of trade,USTBTOT,$-87.1B,$-107.7B,$-91B
+2022-06-07,canada,business confidence,ivey pmi s.a,IVEY,72,66.3,64
+2022-06-09,china,balance of trade,balance of trade,CNFRBALD,$78.76B,$51.12B,$50B
+2022-06-10,china,inflation rate,inflation rate yoy,CNCPIYOY,2.1%,2.1%,2%
+2022-06-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6%,6.2%,6%
+2022-06-10,united states,inflation rate,inflation rate yoy,CPI YOY,8.6%,8.3%,8.3%
+2022-06-10,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,50.2,58.4,59
+2022-06-13,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.3%,-0.1%,0%
+2022-06-14,australia,business confidence,nab business confidence,NABSCONF,6,10,12
+2022-06-14,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-19.7K,-65.5K,-29K
+2022-06-14,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-28,-34.3,-31.8
+2022-06-14,united states,producer price inflation mom,ppi mom,USAPPIM,0.8%,0.4%,0.7%
+2022-06-15,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-4.5%,-5.6%,-0.5%
+2022-06-15,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,86.4,90.4,90
+2022-06-15,china,industrial production,industrial production yoy,CHVAIOY,0.7%,-2.9%,-0.8%
+2022-06-15,united states,retail sales mom,retail sales mom,RSTAMOM,-0.3%,0.7%,0.3%
+2022-06-15,united states,interest rate,fed press conference,,,,
+2022-06-15,japan,balance of trade,balance of trade,JNTBAL,¥-2384.7B,¥-842.8B,¥-1750B
+2022-06-15,euro area,interest rate,ecb unscheduled meeting to discuss markets,,,,
+2022-06-16,australia,interest rate,rba bulletin,,,,
+2022-06-16,united states,building permits,building permits,UNITEDSTABUIPER,1.695M,1.823M,1.79M
+2022-06-21,australia,interest rate,rba meeting minutes,,,,
+2022-06-22,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,9.1%,9%,9.2%
+2022-06-22,canada,inflation rate,inflation rate yoy,CACPIYOY,7.7%,6.8%,7%
+2022-06-22,united states,interest rate,fed chair powell testimony,,,,
+2022-06-23,germany,manufacturing pmi,s&p global manufacturing pmi flash,GERMANYMANPMI,52,54.8,53.7
+2022-06-23,united kingdom,manufacturing pmi,s&p global/cips manufacturing pmi flash,UNITEDKINMANPMI,53.4,54.6,54.2
+2022-06-23,united states,interest rate,fed chair powell testimony,,,,
+2022-06-23,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-41,-40,-42
+2022-06-23,japan,inflation rate,inflation rate yoy,JNCPIYOY,2.5%,2.5%,2.3%
+2022-06-24,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-0.5%,0.4%,-0.3%
+2022-06-24,germany,business confidence,ifo business climate,GRIFPBUS,92.3,93,92.5
+2022-06-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.7%,0.4%,-0.3%
+2022-06-27,euro area,interest rate,ecb forum on central banking,EURR002W,,,
+2022-06-28,germany,consumer confidence,gfk consumer confidence,GRCCI,-27.4,-26.2,-27.9
+2022-06-28,euro area,interest rate,ecb forum on central banking,EURR002W,,,
+2022-06-29,japan,consumer confidence,consumer confidence,JCOMACF,32.1,34.1,33
+2022-06-29,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.6%,7.9%,7.9%
+2022-06-29,euro area,interest rate,ecb president lagarde speech,,,,
+2022-06-29,united kingdom,interest rate,boe gov bailey speech,,,,
+2022-06-29,united states,interest rate,fed chair powell speech,,,,
+2022-06-29,euro area,interest rate,ecb forum on central banking,EURR002W,,,
+2022-06-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.2,49.6,48.3
+2022-06-30,france,inflation rate,inflation rate yoy prel,FRCPIYOY,5.8%,5.2%,5.6%
+2022-06-30,united states,personal income,personal income mom,UNITEDSTAPERINC,0.5%,0.5%,0.3%
+2022-06-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.2%,0.6%,0.8%
+2022-06-30,euro area,interest rate,ecb president lagarde speech,,,,
+2022-06-30,japan,business confidence,tankan large manufacturers index,JNSBALLI,9,14,10
+2022-07-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,51.7,48.1,50.5
+2022-07-01,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,8.6%,8.1%,8.3%
+2022-07-01,italy,inflation rate,inflation rate yoy prel,ITCPNICY,8%,6.8%,7.8%
+2022-07-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,53,56.1,55
+2022-07-04,germany,balance of trade,balance of trade,GRTBALE,€0.5B,€0.9B,€1.2B
+2022-07-05,united kingdom,services pmi,s&p global/cips uk services pmi final,UNITEDKINSERPMI,54.3,53.4,53.4
+2022-07-06,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,55.3,55.9,55.2
+2022-07-06,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.254M,11.681M,11.3M
+2022-07-06,united states,interest rate,fomc minutes,,,,
+2022-07-07,australia,balance of trade,balance of trade,AUITGSB,A$15.965B,A$13.248B,A$10.7B
+2022-07-07,canada,balance of trade,balance of trade,CATBTOTB,C$5.32B,C$2.17B,C$1.9B
+2022-07-07,united states,balance of trade,balance of trade,USTBTOT,$-85.5B,$-86.7B,$-86B
+2022-07-07,canada,business confidence,ivey pmi s.a,IVEY,62.2,72,64
+2022-07-08,united states,non farm payrolls,non farm payrolls,NFP TCH,372K,384K,300K
+2022-07-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.5%,2.1%,2.3%
+2022-07-12,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-3%,-4.5%,-1.6%
+2022-07-12,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,83.8,86.4,85
+2022-07-12,australia,business confidence,nab business confidence,NABSCONF,1,6,5
+2022-07-12,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-53.8,-28,-39.2
+2022-07-13,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.5%,-0.2%,-0.1%
+2022-07-13,china,balance of trade,balance of trade,CNFRBALD,$97.94B,$78.76B,$76B
+2022-07-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,5.9%,6%,5.8%
+2022-07-13,united states,inflation rate,inflation rate yoy,CPI YOY,9.1%,8.6%,8.8%
+2022-07-13,canada,interest rate,boc monetary policy report,,,,
+2022-07-14,united states,producer price inflation mom,ppi mom,USAPPIM,1.1%,0.9%,0.9%
+2022-07-15,china,industrial production,industrial production yoy,CHVAIOY,3.9%,0.7%,3.1%
+2022-07-15,united states,retail sales mom,retail sales mom,RSTAMOM,1%,-0.1%,0.5%
+2022-07-15,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,51.1,50,49.3
+2022-07-19,australia,interest rate,rba meeting minutes,,,,
+2022-07-19,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-20.1K,-34.7K,-25K
+2022-07-19,united states,building permits,building permits,UNITEDSTABUIPER,1.685M,1.695M,1.68M
+2022-07-20,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,9.4%,9.1%,9.5%
+2022-07-20,canada,inflation rate,inflation rate yoy,CACPIYOY,8.1%,7.7%,8%
+2022-07-20,japan,balance of trade,balance of trade,JNTBAL,¥-1383.8B,¥-2385.8B,¥-2500B
+2022-07-21,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-41,-41,-44
+2022-07-21,japan,inflation rate,inflation rate yoy,JNCPIYOY,2.4%,2.5%,2.6%
+2022-07-22,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-0.1%,-0.8%,-0.2%
+2022-07-22,germany,manufacturing pmi,s&p global manufacturing pmi flash,GERMANYMANPMI,49.2,52,50.8
+2022-07-22,united kingdom,manufacturing pmi,s&p global/cips manufacturing pmi flash,UNITEDKINMANPMI,52.2,52.8,51.9
+2022-07-25,germany,business confidence,ifo business climate,GRIFPBUS,88.6,92.2,89.3
+2022-07-27,australia,inflation rate,inflation rate yoy,AUCPIYOY,6.1%,5.1%,6.2%
+2022-07-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-30.6,-27.7,-28.1
+2022-07-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1.9%,0.8%,-0.3%
+2022-07-27,united states,interest rate,fed press conference,,,,
+2022-07-28,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.5%,7.6%,7.2%
+2022-07-29,japan,consumer confidence,consumer confidence,JCOMACF,30.2,32.1,33
+2022-07-29,france,inflation rate,inflation rate yoy prel,FRCPIYOY,6.1%,5.8%,6.2%
+2022-07-29,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,8.9%,8.6%,9%
+2022-07-29,italy,inflation rate,inflation rate yoy prel,ITCPNICY,7.9%,8%,7%
+2022-07-29,united states,personal income,personal income mom,UNITEDSTAPERINC,0.6%,0.6%,0.5%
+2022-07-29,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,1.1%,0.3%,0.6%
+2022-07-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.0,50.2,50.9
+2022-08-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,50.4,51.7,52
+2022-08-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,52.8,53,52.2
+2022-08-02,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.698M,11.303M,11M
+2022-08-03,germany,balance of trade,balance of trade,GRTBALE,€7.7B,€2.6B,€ -13.6B
+2022-08-03,united kingdom,services pmi,s&p global/cips uk services pmi final,UNITEDKINSERPMI,52.6,54.3,53.3
+2022-08-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,56.7,55.3,52.5
+2022-08-04,australia,balance of trade,balance of trade,AUITGSB,A$17.67B,A$15.016B,A$ 11B
+2022-08-04,canada,balance of trade,balance of trade,CATBTOTB,C$5.05B,C$4.77B,C$6B
+2022-08-04,united states,balance of trade,balance of trade,USTBTOT,$-79.6B,$-84.9B,$ -83B
+2022-08-05,australia,interest rate,rba statement on monetary policy,,,,
+2022-08-05,united states,non farm payrolls,non farm payrolls,NFP TCH,528K,398K,290K
+2022-08-05,canada,business confidence,ivey pmi s.a,IVEY,49.6,62.2,61
+2022-08-07,china,balance of trade,balance of trade,CNFRBALD,$101.26B,$97.94B,$99B
+2022-08-09,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-3%,-3%,1.4%
+2022-08-09,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,81.2,83.8,85
+2022-08-09,australia,business confidence,nab business confidence,NABSCONF,7,2,2
+2022-08-10,china,inflation rate,inflation rate yoy,CNCPIYOY,2.7%,2.5%,2.5%
+2022-08-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,5.9%,5.9%,5.9%
+2022-08-10,united states,inflation rate,inflation rate yoy,CPI YOY,8.5%,9.1%,9.1%
+2022-08-11,united states,producer price inflation mom,ppi mom,USAPPIM,-0.5%,1%,0.4%
+2022-08-12,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.6%,0.4%,-1.3%
+2022-08-12,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,55.1,51.5,51.3
+2022-08-15,china,industrial production,industrial production yoy,CHVAIOY,3.8%,3.9%,5%
+2022-08-16,australia,interest rate,rba meeting minutes,,,,
+2022-08-16,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,-10.5K,-26.8K,-10K
+2022-08-16,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-55.3,-53.8,-61
+2022-08-16,canada,inflation rate,inflation rate yoy,CACPIYOY,7.6%,8.1%,7.6%
+2022-08-16,united states,building permits,building permits,UNITEDSTABUIPER,1.674M,1.696M,1.67M
+2022-08-16,japan,balance of trade,balance of trade,JNTBAL,¥-1436.8B,¥-1398.5B,¥-1300B
+2022-08-17,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,10.1%,9.4%,9.9%
+2022-08-17,united states,retail sales mom,retail sales mom,RSTAMOM,0%,0.8%,0.2%
+2022-08-17,united states,interest rate,fomc minutes,,,,
+2022-08-18,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-44,-41,-43
+2022-08-18,japan,inflation rate,inflation rate yoy,JNCPIYOY,2.6%,2.4%,2.2%
+2022-08-19,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,0.3%,-0.2%,-0.1%
+2022-08-23,germany,manufacturing pmi,s&p global manufacturing pmi flash,GERMANYMANPMI,49.8,49.3,47.8
+2022-08-23,united kingdom,manufacturing pmi,s&p global/cips manufacturing pmi flash,UNITEDKINMANPMI,46,52.1,51.3
+2022-08-24,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0%,2.2%,0.8%
+2022-08-25,germany,business confidence,ifo business climate,GRIFPBUS,88.5,88.7,86.2
+2022-08-26,germany,consumer confidence,gfk consumer confidence,GRCCI,-36.5,-30.9,-31.3
+2022-08-26,united states,personal income,personal income mom,UNITEDSTAPERINC,0.2%,0.7%,0.5%
+2022-08-26,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.1%,1%,0.2%
+2022-08-26,united states,interest rate,fed chair powell speech,,,,
+2022-08-30,germany,inflation rate,inflation rate yoy prel,GRBC20YY,7.9%,7.5%,8%
+2022-08-30,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,11.239M,11.040M,10.5M
+2022-08-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.4,49.0,48.5
+2022-08-31,japan,consumer confidence,consumer confidence,JCOMACF,32.5,30.2,31
+2022-08-31,france,inflation rate,inflation rate yoy prel,FRCPIYOY,5.8%,6.1%,6%
+2022-08-31,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,9.1%,8.9%,9.1%
+2022-08-31,italy,inflation rate,inflation rate yoy prel,ITCPNICY,8.4%,7.9%,8%
+2022-09-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.5,50.4,50
+2022-09-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,52.8,52.8,52
+2022-09-02,germany,balance of trade,balance of trade,GRTBALE,€4.9B,€7.7B,€6.2B
+2022-09-02,united states,non farm payrolls,non farm payrolls,NFP TCH,315K,526K,310K
+2022-09-05,united kingdom,services pmi,s&p global/cips uk services pmi final,UNITEDKINSERPMI,50.9,52.6,52.5
+2022-09-06,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,56.9,56.7,55
+2022-09-07,china,balance of trade,balance of trade,CNFRBALD,$79.39B,$101.26B,$90B
+2022-09-07,canada,balance of trade,balance of trade,CATBTOTB,C$4.05B,C$4.88B,C$4.7B
+2022-09-07,united states,balance of trade,balance of trade,USTBTOT,$-70.7B,$-80.9B,$-70B
+2022-09-07,canada,business confidence,ivey pmi s.a,IVEY,60.9,49.6,48.8
+2022-09-08,australia,balance of trade,balance of trade,AUITGSB,A$8.733B,A$17.13B,A$10B
+2022-09-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.5%,2.7%,2.9%
+2022-09-12,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.2%,-0.6%,0.1%
+2022-09-13,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,3.9%,-3%,-1%
+2022-09-13,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,84.4,81.2,80.5
+2022-09-13,australia,business confidence,nab business confidence,NABSCONF,10,8,6
+2022-09-13,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,6.3K,-10.5K,-4K
+2022-09-13,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-61.9,-55.3,-59
+2022-09-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.3%,5.9%,5.9%
+2022-09-13,united states,inflation rate,inflation rate yoy,CPI YOY,8.3%,8.5%,8.1%
+2022-09-14,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,9.9%,10.1%,10.6%
+2022-09-14,united states,producer price inflation mom,ppi mom,USAPPIM,-0.1%,-0.4%,0.1%
+2022-09-14,japan,balance of trade,balance of trade,JNTBAL,¥-2817.3B,¥-1436.8B,
+2022-09-15,australia,interest rate,rba bulletin,,,,
+2022-09-15,united states,retail sales mom,retail sales mom,RSTAMOM,0.3%,-0.4%,0.1%
+2022-09-16,china,industrial production,industrial production yoy,CHVAIOY,4.2%,3.8%,3.9%
+2022-09-16,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-1.6%,0.4%,-0.4%
+2022-09-16,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,59.5,58.2,58.6
+2022-09-19,japan,inflation rate,inflation rate yoy,JNCPIYOY,3.0%,2.6%,2.6%
+2022-09-20,australia,interest rate,rba meeting minutes,,,,
+2022-09-20,canada,inflation rate,inflation rate yoy,CACPIYOY,7%,7.6%,7.5%
+2022-09-20,united states,building permits,building permits,UNITEDSTABUIPER,1.517M,1.685M,1.63M
+2022-09-21,united states,interest rate,fed press conference,,,,
+2022-09-22,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-49,-44,-35
+2022-09-26,germany,business confidence,ifo business climate,GRIFPBUS,84.3,88.6,85.7
+2022-09-27,united kingdom,interest rate,boe pill speech,,,,
+2022-09-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-0.2%,-0.1%,-0.9%
+2022-09-28,germany,consumer confidence,gfk consumer confidence,GRCCI,-42.5,-36.8,-37.8
+2022-09-29,germany,inflation rate,inflation rate yoy prel,GRBC20YY,10%,7.9%,8.9%
+2022-09-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,50.1,49.4,49.8
+2022-09-30,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,48.1,49.5,49.8
+2022-09-30,japan,consumer confidence,consumer confidence,JCOMACF,30.8,32.5,34
+2022-09-30,france,inflation rate,inflation rate yoy prel,FRCPIYOY,5.6%,5.9%,6.1%
+2022-09-30,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,10%,9.1%,9.7%
+2022-09-30,italy,inflation rate,inflation rate yoy prel,ITCPNICY,8.9%,8.4%,9.2%
+2022-09-30,united states,personal income,personal income mom,UNITEDSTAPERINC,0.3%,0.3%,0.2%
+2022-09-30,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.4%,-0.2%,0.2%
+2022-10-02,japan,business confidence,tankan large manufacturers index,JNSBALLI,8,9,10
+2022-10-03,united states,business confidence,ism manufacturing pmi,NAPMPMI,50.9,52.8,52.9
+2022-10-04,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.053M,11.17M,11.1M
+2022-10-05,germany,balance of trade,balance of trade,GRTBALE,€0.6B,€4.9B,€7.3B
+2022-10-05,canada,balance of trade,balance of trade,CATBTOTB,C$1.52B,C$2.37B,C$3.9B
+2022-10-05,united states,balance of trade,balance of trade,USTBTOT,$-67.4B,$-70.5B,$-68B
+2022-10-05,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,56.7,56.9,56.4
+2022-10-06,australia,balance of trade,balance of trade,AUITGSB,A$8.324B,A$8.967B,A$9.9B
+2022-10-06,canada,business confidence,ivey pmi s.a,IVEY,59.5,60.9,55
+2022-10-07,australia,interest rate,rba financial stability review,,,,
+2022-10-07,united states,non farm payrolls,non farm payrolls,NFP TCH,263K,315K,290K
+2022-10-10,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-0.9%,3.9%,-2.8%
+2022-10-10,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,83.7,84.4,82
+2022-10-11,australia,business confidence,nab business confidence,NABSCONF,5,10,8
+2022-10-11,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,25.5K,6.3K,10K
+2022-10-12,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.3%,0.1%,0.1%
+2022-10-12,united states,producer price inflation mom,ppi mom,USAPPIM,0.4%,-0.2%,0%
+2022-10-12,united states,interest rate,fomc minutes,,,,
+2022-10-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.6%,6.3%,6.4%
+2022-10-13,united states,inflation rate,inflation rate yoy,CPI YOY,8.2%,8.3%,8.2%
+2022-10-14,china,inflation rate,inflation rate yoy,CNCPIYOY,2.8%,2.5%,2.7%
+2022-10-14,united states,retail sales mom,retail sales mom,RSTAMOM,0.0%,0.4%,0.2%
+2022-10-14,united kingdom,calendar,pm liz truss speech,,,,
+2022-10-14,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,59.8,58.6,58.3
+2022-10-16,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-17,united kingdom,calendar,chancellor jeremy hunt statement,,,,
+2022-10-17,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-18,australia,interest rate,rba meeting minutes,,,,
+2022-10-18,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-59.2,-61.9,-63.4
+2022-10-18,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-19,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,10.1%,9.9%,9.9%
+2022-10-19,canada,inflation rate,inflation rate yoy,CACPIYOY,6.9%,7%,6.8%
+2022-10-19,united states,building permits,building permits,UNITEDSTABUIPER,1.564M,1.542M,1.487M
+2022-10-19,japan,balance of trade,balance of trade,JNTBAL,¥-2094B,¥-2820B,¥-2100B
+2022-10-19,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-20,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-47,-49,-53
+2022-10-20,japan,inflation rate,inflation rate yoy,JNCPIYOY,3%,3%,3.2%
+2022-10-20,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-21,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-1.4%,-1.7%,-0.3%
+2022-10-21,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-22,china,calendar,20th national congress of the chinese communist party,CHN CALENDAR,,,
+2022-10-24,china,industrial production,industrial production yoy,CHVAIOY,6.3%,4.2%,4.4%
+2022-10-24,china,balance of trade,balance of trade,CNFRBALD,$84.74B,$79.39B,$80B
+2022-10-25,germany,business confidence,ifo business climate,GRIFPBUS,84.3,84.4,81.5
+2022-10-26,australia,inflation rate,inflation rate yoy,AUCPIYOY,7.3%,6.1%,6.5%
+2022-10-26,canada,interest rate,boc monetary policy report,,,,
+2022-10-27,germany,consumer confidence,gfk consumer confidence,GRCCI,-41.9,-42.8,-40
+2022-10-27,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,0.4%,0.2%,0.2%
+2022-10-28,france,inflation rate,inflation rate yoy prel,FRCPIYOY,6.2%,5.6%,5.5%
+2022-10-28,italy,inflation rate,inflation rate yoy prel,ITCPNICY,11.9%,8.9%,9.4%
+2022-10-28,germany,inflation rate,inflation rate yoy prel,GRBC20YY,10.4%,10%,10.6%
+2022-10-28,united states,personal income,personal income mom,UNITEDSTAPERINC,0.4%,0.4%,0.2%
+2022-10-28,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.6%,0.6%,0.3%
+2022-10-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,49.2,50.1,50
+2022-10-31,japan,consumer confidence,consumer confidence,JCOMACF,29.9,30.8,30
+2022-10-31,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,10.7%,9.9%,10.4%
+2022-11-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.2,48.1,48.4
+2022-11-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,50.2,50.9,50.1
+2022-11-01,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.717M,10.28M,10.2M
+2022-11-02,germany,balance of trade,balance of trade,GRTBALE,€9B,€0.3B,€1.4B
+2022-11-02,united states,interest rate,fed press conference,,,,
+2022-11-03,australia,balance of trade,balance of trade,AUITGSB,A$12.444B,A$8.664B,A$9.1B
+2022-11-03,canada,balance of trade,balance of trade,CATBTOTB,C$1.14B,C$0.55B,C$ 3.6B
+2022-11-03,united states,balance of trade,balance of trade,USTBTOT,$-73.3B,$-65.7B,$-72B
+2022-11-03,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,54.4,56.7,54.5
+2022-11-04,australia,interest rate,rba statement on monetary policy,,,,
+2022-11-04,united states,non farm payrolls,non farm payrolls,NFP TCH,261K,315K,240K
+2022-11-04,canada,business confidence,ivey pmi s.a,IVEY,50.1,59.5,57
+2022-11-07,china,balance of trade,balance of trade,CNFRBALD,$85.15B,$84.74B,$91B
+2022-11-07,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,-6.9%,-0.9%,-1.2%
+2022-11-07,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,78,83.7,82.7
+2022-11-08,australia,business confidence,nab business confidence,NABSCONF,0,5,1
+2022-11-09,china,inflation rate,inflation rate yoy,CNCPIYOY,2.1%,2.8%,2.6%
+2022-11-10,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6.3%,6.6%,6.7%
+2022-11-10,united states,inflation rate,inflation rate yoy,CPI YOY,7.7%,8.2%,8.1%
+2022-11-11,united kingdom,monthly gdp mom,gdp mom,GBRMGM,-0.6%,-0.1%,-0.5%
+2022-11-11,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,54.7,59.9,59.3
+2022-11-15,australia,interest rate,rba meeting minutes,,,,
+2022-11-15,china,industrial production,industrial production yoy,CHVAIOY,5%,6.3%,5.6%
+2022-11-15,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,3.3K,3.9K,27K
+2022-11-15,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-36.7,-59.2,-54
+2022-11-15,united states,producer price inflation mom,ppi mom,USAPPIM,0.2%,0.2%,0.3%
+2022-11-16,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,11.1%,10.1%,11%
+2022-11-16,canada,inflation rate,inflation rate yoy,CACPIYOY,6.9%,6.9%,7.0%
+2022-11-16,united states,retail sales mom,retail sales mom,RSTAMOM,1.3%,0%,0.9%
+2022-11-16,japan,balance of trade,balance of trade,JNTBAL,¥-2162.3B,¥-2094.3B,¥-1400B
+2022-11-17,united kingdom,calendar,uk autumn statement,,,,
+2022-11-17,united states,building permits,building permits prel,UNITEDSTABUIPER,1.526M,1.564M,1.465M
+2022-11-17,japan,inflation rate,inflation rate yoy,JNCPIYOY,3.7%,3%,3.2%
+2022-11-18,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-44,-47,-51
+2022-11-18,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,0.6%,-1.5%,-0.1%
+2022-11-23,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,1%,0.3%,0.3%
+2022-11-23,united states,interest rate,fomc minutes,,,,
+2022-11-24,germany,business confidence,ifo business climate,GRIFPBUS,86.3,84.5,83.7
+2022-11-25,germany,consumer confidence,gfk consumer confidence,GRCCI,-40.2,-41.9,-38
+2022-11-29,germany,inflation rate,inflation rate yoy prel,GRBC20YY,10%,10.4%,10.2%
+2022-11-30,china,business confidence,nbs manufacturing pmi,CHBUBCIN,48,49.2,49
+2022-11-30,france,inflation rate,inflation rate yoy prel,FRCPIYOY,6.2%,6.2%,6.3%
+2022-11-30,euro area,inflation rate,inflation rate yoy flash,ECCPEMUY,10%,10.6%,10.3%
+2022-11-30,italy,inflation rate,inflation rate yoy prel,ITCPNICY,11.8%,11.8%,11.5%
+2022-11-30,united states,job offers,jolts job openings,UNITEDSTAJOBOFF,10.334M,10.687M,10.4M
+2022-11-30,united states,interest rate,fed chair powell speech,,,,
+2022-12-01,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49.4,49.2,48.4
+2022-12-01,japan,consumer confidence,consumer confidence,JCOMACF,28.6,29.9,29.1
+2022-12-01,united states,personal income,personal income mom,UNITEDSTAPERINC,0.7%,0.4%,0.3%
+2022-12-01,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.8%,0.6%,0.6%
+2022-12-01,united states,business confidence,ism manufacturing pmi,NAPMPMI,49,50.2,50
+2022-12-02,germany,balance of trade,balance of trade,GRTBALE,€5.3B,€8.1B,€9.1B
+2022-12-02,united states,non farm payrolls,non farm payrolls,NFP TCH,263K,284K,210K
+2022-12-05,united states,non manufacturing pmi,ism non-manufacturing pmi,UNITEDSTANONMANPMI,56.5,54.4,53
+2022-12-06,canada,balance of trade,balance of trade,CATBTOTB,C$1.21B,C$0.61B,C$3.4B
+2022-12-06,united states,balance of trade,balance of trade,USTBTOT,$-78.2B,$-74.1B,$-73B
+2022-12-06,canada,business confidence,ivey pmi s.a,IVEY,51.4,50.1,49
+2022-12-07,china,balance of trade,balance of trade,CNFRBALD,$69.84B,$85.15B,$81B
+2022-12-08,australia,balance of trade,balance of trade,AUITGSB,A$12.217B,A$12.444B,A$11.9B
+2022-12-08,australia,interest rate,rba bulletin,,,,
+2022-12-09,china,inflation rate,inflation rate yoy,CNCPIYOY,1.6%,2.1%,1.8%
+2022-12-09,united states,producer price inflation mom,ppi mom,USAPPIM,0.3%,0.3%,0.3%
+2022-12-09,united states,consumer confidence,michigan consumer sentiment prel,CONCCONF,59.1,56.8,56.4
+2022-12-12,united kingdom,monthly gdp mom,gdp mom,GBRMGM,0.5%,-0.6%,0.4%
+2022-12-12,australia,consumer confidence mom,westpac consumer confidence change,AUSCCM,3%,-6.9%,2.5%
+2022-12-12,australia,consumer confidence,westpac consumer confidence index,WMCCCONPCT,80,78,80
+2022-12-13,australia,business confidence,nab business confidence,NABSCONF,-4,0,2
+2022-12-13,united kingdom,claimant count change,claimant count change,UNITEDKINCLACOUCHA,30.5K,-6.4K,8K
+2022-12-13,germany,zew economic sentiment index,zew economic sentiment index,GERMANYZEWECOSENIND,-23.3,-36.7,-27
+2022-12-13,united states,core inflation rate,core inflation rate yoy,USACORECPIRATE,6%,6.3%,6.2%
+2022-12-13,united states,inflation rate,inflation rate yoy,CPI YOY,7.1%,7.7%,7.6%
+2022-12-13,japan,business confidence,tankan large manufacturers index,JNSBALLI,7,8,6
+2022-12-14,united kingdom,inflation rate,inflation rate yoy,UKRPCJYR,10.7%,11.1%,11%
+2022-12-14,united states,interest rate,fed interest rate decision,FDTR,4.5%,4%,4.5%
+2022-12-14,united states,interest rate,fed press conference,,,,
+2022-12-14,japan,balance of trade,balance of trade,JNTBAL,¥-2027.4B,¥-2166.2B,¥-1800B
+2022-12-15,china,industrial production,industrial production yoy,CHVAIOY,2.2%,5%,4%
+2022-12-15,united kingdom,interest rate,boe interest rate decision,UKBRBASE,3.5%,3%,3.5%
+2022-12-15,euro area,deposit interest rate,deposit facility rate,EUROAREADEPINTRAT,2%,1.5%,2%
+2022-12-15,euro area,interest rate,ecb interest rate decision,EURR002W,2.5%,2%,2.5%
+2022-12-15,united states,retail sales mom,retail sales mom,RSTAMOM,-0.6%,1.3%,0.2%
+2022-12-16,united kingdom,consumer confidence,gfk consumer confidence,UKCCI,-42,-44,-43
+2022-12-16,united kingdom,retail sales mom,retail sales mom,GBRRetailSalesMoM,-0.4%,0.9%,0.3%
+2022-12-19,germany,business confidence,ifo business climate,GRIFPBUS,88.6,86.4,87
+2022-12-20,australia,interest rate,rba meeting minutes,,,,
+2022-12-20,japan,interest rate,boj interest rate decision,BOJDTR,-0.1%,-0.1%,-0.1%
+2022-12-20,united states,building permits,building permits prel,UNITEDSTABUIPER,1.342M,1.512M,1.48M
+2022-12-21,germany,consumer confidence,gfk consumer confidence,GRCCI,-37.8,-40.1,-36
+2022-12-21,canada,inflation rate,inflation rate yoy,CACPIYOY,6.8%,6.9%,6.7%
+2022-12-22,japan,inflation rate,inflation rate yoy,JNCPIYOY,3.8%,3.7%,3.9%
+2022-12-23,united states,durable goods orders,durable goods orders mom,UNITEDSTADURGOOORD,-2.1%,0.7%,-0.5%
+2022-12-23,united states,personal income,personal income mom,UNITEDSTAPERINC,0.4%,0.7%,0.3%
+2022-12-23,united states,personal spending,personal spending mom,UNITEDSTAPERSPE,0.1%,0.9%,0.3%
+2022-12-31,china,business confidence,nbs manufacturing pmi,CHBUBCIN,47.0,48,49.5
+2023-01-03,china,manufacturing pmi,caixin manufacturing pmi,CHINAMANPMI,49,49.4,48
+2023-01-03,germany,inflation rate,inflation rate yoy prel,GRBC20YY,8.6%,10%,9.1%

@@ -1,0 +1,3 @@
+bjornmagnekristensen1999
+MsmzgP2mfwg8ANFm
+mongodb+srv://bjornmagnekristensen1999:<password>@empcluster0.vrrztvt.mongodb.net/?retryWrites=true&w=majority

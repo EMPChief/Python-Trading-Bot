@@ -1,8 +1,8 @@
-from scrape_class.dailyfx_com import DailyFXScraper
-from scrape_class.investing_com import InvestingComScraper
-from scrape_class.reuters_com import ReutersComScraper
-from scrape_class.tradingeconomics_com import TradingEconomicsCalendar
-from scrape_def.scraper_defs import scrape_dailyfx_data, scrape_investor_data, scrape_reuters_data, scrape_tradingeconomics_data
+from scraping.scrape_class.dailyfx_com import DailyFXScraper
+from scraping.scrape_class.investing_com import InvestingComScraper
+from scraping.scrape_class.reuters_com import ReutersComScraper
+from scraping.scrape_class.tradingeconomics_com import TradingEconomicsCalendar
+from scraping.scrape_def.scraper_defs import scrape_dailyfx_data, scrape_investor_data, scrape_reuters_data, scrape_tradingeconomics_data
 import time
 
 scraping_interval = 3600

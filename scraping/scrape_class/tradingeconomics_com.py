@@ -7,7 +7,7 @@ import datetime as dt
 from backoff import on_exception, expo
 
 class TradingEconomicsCalendar:
-    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2019-03-07T00:00:00Z", to_date_str="2024-01-25T00:00:00Z"):
+    def __init__(self, url="https://tradingeconomics.com/calendar", from_date_str="2020-01-01T00:00:00Z", to_date_str="2023-01-01T00:00:00Z"):
         self.url = url
         self.from_date = parser.parse(from_date_str)
         self.to_date = parser.parse(to_date_str)
