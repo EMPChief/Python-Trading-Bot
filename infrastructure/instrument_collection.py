@@ -1,34 +1,16 @@
 from models.instruments import Instrument
 import json
-
+from db.db import DataBaseMongo
 
 class InstrumentCollection:
-    """
-    A class representing a collection of financial instruments.
-
-    Attributes:
-        FILENAME (str): The name of the JSON file used for storing instrument data.
-        API_KEYS (list): A list of keys expected in the API response for each instrument.
-        instruments_dict (dict): A dictionary to store instrument data.
-    """
-
     FILENAME = "instruments.json"
     API_KEYS = ['name', 'type', 'displayName', 'pipLocation',
                 'displayPrecision', 'tradeUnitsPrecision', 'marginRate']
 
     def __init__(self):
-        """
-        Initializes the InstrumentCollection object.
-        """
         self.instruments_dict = {}
 
     def LoadInstruments(self, path):
-        """
-        Loads instrument data from a JSON file and populates the instruments_dict.
-
-        Args:
-            path (str): The path to the directory containing the JSON file.
-        """
         self.instruments_dict = {}
         file_name = f"{path}/{self.FILENAME}"
         with open(file_name, "r") as file:
@@ -37,13 +19,6 @@ class InstrumentCollection:
                 self.instruments_dict[key] = Instrument.FromApiObject(value)
 
     def CreateFile(self, data, path):
-        """
-        Creates a JSON file with instrument data.
-
-        Args:
-            data (list): The list of instrument data to be stored in the file.
-            path (str): The path to the directory where the file should be created.
-        """
         if data is None:
             print("InstrumentCollection.CreateFile: data is None")
             return
@@ -52,10 +27,29 @@ class InstrumentCollection:
             key = instrument_data['name']
             instruments_dict[key] = {k: instrument_data[k]
                                      for k in self.API_KEYS}
-
         file_name = f"{path}/{self.FILENAME}"
         with open(file_name, "w") as file:
             file.write(json.dumps(instruments_dict, indent=2))
+        
+    def DB_LoadInstruments(self):
+        self.instruments_dict = {}
+        data = DataBaseMongo().query_single(DataBaseMongo.INSTRUMENT_COLLECTION)
+        for key, value in data.items():
+            self.instruments_dict[key] = Instrument.FromApiObject(value)
+
+    def DB_CreateFile(self, data):
+        if data is None:
+            print("InstrumentCollection.CreateFile: data is None")
+            return
+        instruments_dict = {}
+        for instrument_data in data:
+            key = instrument_data['name']
+            instruments_dict[key] = {k: instrument_data[k]
+                                     for k in self.API_KEYS}
+        database = DataBaseMongo()
+        database.delete_many(DataBaseMongo.INSTRUMENT_COLLECTION)
+        database.add_one(DataBaseMongo.INSTRUMENT_COLLECTION, instruments_dict)
+
 
     def PrintInstruments(self):
         """

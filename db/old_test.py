@@ -29,3 +29,15 @@ def db_test():
     d = db.query_distinct(DataBaseMongo.LEARNING_COLLECTION, "hate")
     print(d)
 """
+"""
+if __name__ == '__main__':
+    api = OandaApi()
+    instruments_data = api.get_account_instruments()
+    instrumentCollection.LoadInstruments("./data")
+    instrumentCollection.DB_CreateFile(instruments_data)
+    instrumentCollection.DB_LoadInstruments()
+    print(instrumentCollection.instruments_dict)
+    run_streaming_application()
+    calendar = TradingEconomicsCalendar()
+    calendar.fetch_and_save_to_database()
+"""

@@ -11,9 +11,14 @@ def db_test():
 
 
 if __name__ == '__main__':
-#    api = OandaApi()
+    api = OandaApi()
+#    instruments_data = api.get_account_instruments()
 #    instrumentCollection.LoadInstruments("./data")
+#    instrumentCollection.DB_CreateFile(instruments_data)
+    instrumentCollection.DB_LoadInstruments()
+    print(instrumentCollection.instruments_dict)
 #    run_streaming_application()
-    calendar = TradingEconomicsCalendar()
-    calendar.fetch_and_save_to_database()
+#    calendar = TradingEconomicsCalendar()
+#    calendar.fetch_and_save_to_database()
+
 
