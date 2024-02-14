@@ -1,10 +1,9 @@
 from pymongo import MongoClient, errors
 from constants.defs import MONGO_CONNECTION_STRING
 
-
 class DataBaseMongo:
     LEARNING_COLLECTION = "forex_sample"
-    FOREX_CALANDER = "forex_calender"
+    FOREX_CALENDAR = "forex_calender"
     INSTRUMENT_COLLECTION = "forex_instruments"
 
     def __init__(self):
@@ -14,16 +13,16 @@ class DataBaseMongo:
     def test_connection(self):
         print(self.db.list_collection_names())
 
-    def add_one(self, collection, list_obj):
+    def add_one(self, collection, document):
         try:
-            _ = self.db[collection].insert_one(list_obj)
+            _ = self.db[collection].insert_one(document)
         except errors.InvalidOperation as e:
             print(f"add_one error: {e}")
             return
 
-    def add_many(self, collection, obj):
+    def add_many(self, collection, documents):
         try:
-            _ = self.db[collection].insert_many(obj)
+            _ = self.db[collection].insert_many(documents)
         except errors.InvalidOperation as e:
             print(f"add_many error: {e}")
             return
@@ -31,8 +30,8 @@ class DataBaseMongo:
     def query_all(self, collection, **kwargs):
         try:
             data = []
-            r = self.db[collection].find(kwargs, {'_id': 0})
-            for item in r:
+            results = self.db[collection].find(kwargs, {'_id': 0})
+            for item in results:
                 data.append(item)
             return data
         except errors.InvalidOperation as error:
@@ -40,8 +39,8 @@ class DataBaseMongo:
 
     def query_single(self, collection, **kwargs):
         try:
-            r = self.db[collection].find_one(kwargs, {'_id': 0})
-            return r
+            result = self.db[collection].find_one(kwargs, {'_id': 0})
+            return result
         except errors.InvalidOperation as error:
             print("query_single error:", error)
 
@@ -56,6 +55,7 @@ class DataBaseMongo:
             return self.db[collection].delete_many(kwargs)
         except errors.InvalidOperation as error:
             print("delete_many error:", error)
+    
     def delete_one(self, collection, **kwargs):
         try:
             return self.db[collection].delete_one(kwargs)
