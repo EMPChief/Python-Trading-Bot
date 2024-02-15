@@ -11,3 +11,4 @@ scrapy
 cloudscraper
 Pyarrow
 pymongo[srv]
+statsmodels
