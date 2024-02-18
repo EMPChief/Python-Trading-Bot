@@ -12,3 +12,4 @@ cloudscraper
 Pyarrow
 pymongo[srv]
 statsmodels
+flask-cores

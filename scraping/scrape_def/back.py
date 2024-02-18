@@ -3,15 +3,14 @@ import time
 import cloudscraper
 import pandas as pd
 import logging
-import requests
 from backoff import on_exception, expo
-from constants.defs import TFS, INVESTING_COM_PAIRS
-
+import requests
+from constants import TFS, INVESTING_COM_PAIRS
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 
 class InvestingComScraper:
-    def __init__(self, pair=None, time_frame=None):
+    def __init__(self):
         self.data_keys = [
             'pair_name',
             'ti_buy',
@@ -28,12 +27,11 @@ class InvestingComScraper:
             'percent_bullish',
             'percent_bearish'
         ]
-        self.pair = pair or 'EUR_JPY'
-        self.time_frame = time_frame or 'D'
 
     @on_exception(expo, requests.exceptions.RequestException, max_tries=3)
     def fetch_data(self, pair_id, time_frame):
-        logging.info(f"Fetching data for pair_id={pair_id}, time_frame={time_frame}...")
+        logging.info(f"Fetching data for pair_id={
+                     pair_id}, time_frame={time_frame}...")
         url = "https://www.investing.com/common/technical_studies/technical_studies_data.php"
         session = cloudscraper.create_scraper()
         headers = {
@@ -60,11 +58,13 @@ class InvestingComScraper:
 
             return self.process_data(data_str.split('*;*'), pair_id, time_frame)
         except requests.exceptions.RequestException as e:
-            logging.error(f"Error fetching data for pair_id={pair_id}, time_frame={time_frame}: {e}")
+            logging.error(f"Error fetching data for pair_id={
+                          pair_id}, time_frame={time_frame}: {e}")
             raise
 
     def process_data(self, text_list, pair_id, time_frame):
-        logging.info(f"Processing data for pair_id={pair_id}, time_frame={time_frame}...")
+        logging.info(f"Processing data for pair_id={
+                     pair_id}, time_frame={time_frame}...")
         data = {}
         data['pair_id'] = pair_id
         data['time_frame'] = time_frame
@@ -80,18 +80,26 @@ class InvestingComScraper:
 
         return data
     
-    def get_pair_id(self):
-        return INVESTING_COM_PAIRS.get(self.pair, {}).get('pair_id')
-
-    def scrape_data(self, pair=None, time_frame=None):
-        self.pair = pair or self.pair
-        self.time_frame = time_frame or self.time_frame
+    def get_pair(self, pair_name, time_frame):
+        INVESTING_COM_PAIRS[pair_name]['pair_id'] = pair_id
         
-        pair_id = self.get_pair_id()
-        time_frame_seconds = TFS.get(self.time_frame, 86400)
-        if not pair_id:
-            raise ValueError("Pair ID not found.")
-        data = self.fetch_data(pair_id, time_frame_seconds)
-        dataframe = pd.DataFrame([data])
-        return dataframe
 
+    def scrape_all_data(self):
+        data = []
+        for pair_id in range(1, 17):
+            for time_frame in [3600, 86400]:
+                logging.info(f"Scraping data for pair_id={
+                             pair_id}, time_frame={time_frame}...")
+                fetched_data = self.fetch_data(pair_id, time_frame)
+                if fetched_data:
+                    data.append(fetched_data)
+                time.sleep(0.5)
+
+        dataframe = pd.DataFrame(data)
+        dataframe['updated'] = dataframe['updated'].astype(str)
+        numeric_columns = ['ti_buy', 'ti_sell', 'ma_buy',
+                           'ma_sell', 'S1', 'S2', 'S3', 'pivot', 'R1', 'R2', 'R3']
+        dataframe[numeric_columns] = dataframe[numeric_columns].apply(
+            pd.to_numeric, errors='coerce')
+
+        return dataframe
