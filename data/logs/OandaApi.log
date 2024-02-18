@@ -1,9 +1,1 @@
-2024-02-18 17:03:20 LogWrapper init() ./data/logs/OandaApi.log
-2024-02-18 17:03:34 https://api-fxpractice.oanda.com/v3//instruments/NOK_EUR/candles get {'granularity': 'W', 'price': 'MBA', 'count': '50'} None
-2024-02-18 17:03:34 response:400
-2024-02-18 17:03:41 https://api-fxpractice.oanda.com/v3//instruments/NOK_EUR/candles get {'granularity': 'D', 'price': 'MBA', 'count': '50'} None
-2024-02-18 17:03:41 response:400
-2024-02-18 17:03:46 https://api-fxpractice.oanda.com/v3//instruments/EUR_NOK/candles get {'granularity': 'W', 'price': 'MBA', 'count': '50'} None
-2024-02-18 17:03:46 response:200
-2024-02-18 17:04:01 https://api-fxpractice.oanda.com/v3//instruments/EUR_NOK/candles get {'granularity': 'W', 'price': 'MBA', 'count': '500'} None
-2024-02-18 17:04:01 response:200
+2024-02-18 17:11:13 LogWrapper init() ./data/logs/OandaApi.log
