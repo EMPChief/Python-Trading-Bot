@@ -13,12 +13,15 @@ reuters_scraper = ReutersComScraper()
 investing_scraper = InvestingComScraper()
 o_api = OandaApi()
 
+
 class CustomError(Exception):
     pass
+
 
 @app.route('/api/test')
 def test():
     return jsonify({'message': 'Hello, World!'})
+
 
 @app.route('/api/headlines')
 def headlines():
@@ -34,10 +37,12 @@ def headlines():
         logger.exception("An unexpected error occurred:")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
 
+
 @app.route('/api/technical/<pair>/<time_frame>')
 def investing_data(pair, time_frame):
     try:
-        technical_data = investing_scraper.scrape_data(pair=pair, time_frame=time_frame)
+        technical_data = investing_scraper.scrape_data(
+            pair=pair, time_frame=time_frame)
         if technical_data is None:
             raise CustomError('No data found.')
         json_data = technical_data.to_json(orient='records', indent=4)
@@ -49,6 +54,7 @@ def investing_data(pair, time_frame):
         logger.exception("An unexpected error occurred:")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
 
+
 @app.route('/api/prices/<pair_name>/<granularity>/<count>')
 def instruments(pair_name, granularity, count):
     try:
@@ -57,6 +63,7 @@ def instruments(pair_name, granularity, count):
     except Exception as e:
         logger.exception("An unexpected error occurred:")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
